@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inequality Measures &mdash; Roma v2 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Genetic Algorithms" href="evolve.html" />
+    <link rel="prev" title="Neural Networks" href="NNets.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Roma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General information:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/generalinfo.html">Graduate Certificate Program  in Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/tracks.html">General Path and Tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/people.html">Staff</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and Simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NNets.html">Neural Networks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Inequality Measures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gini-index">Gini index</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#entropy">Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#idea">Idea</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#codemaster">codemaster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theil-index">Theil index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hamming-distance">Hamming distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#k-means">K-means</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#euclidean">Euclidean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manhattan">Manhattan</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#another-distance">Another distance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="evolve.html">Genetic Algorithms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Guidelines:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Guidelines/contents.html">Content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Guidelines/workflow.html">Work Flow</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Roma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Inequality Measures</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Courses/ineqlab.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="inequality-measures">
+<h1>Inequality Measures<a class="headerlink" href="#inequality-measures" title="Permalink to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>Is important understand the uses of inequality Measures
+to stuy the widespread of a disease over a territory,
+the public</p>
+<section id="gini-index">
+<h3>Gini index<a class="headerlink" href="#gini-index" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="entropy">
+<h2>Entropy<a class="headerlink" href="#entropy" title="Permalink to this heading"></a></h2>
+</section>
+<section id="idea">
+<h2>Idea<a class="headerlink" href="#idea" title="Permalink to this heading"></a></h2>
+<p>Is a concept shanon offert a perspective…
+comes from information theory…</p>
+<p><span class="math notranslate nohighlight">\(p_{i}\)</span> the probability of occurnce
+of the <span class="math notranslate nohighlight">\(i\)</span> event, and <span class="math notranslate nohighlight">\(h(p_{i})\)</span> is the value of of get the information that <span class="math notranslate nohighlight">\(i\)</span> has been occur before than other one
+known, not have value knonw with anticipation that occur a likyely event
+that everyone wait.</p>
+<p>if we have N events or in a</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+E = \sum p_{i} h(p_{i})
+\end{equation}</div><p>The entropy reach the maximun value with all the envets have the same probability.</p>
+<p># Bag model</p>
+<p>We can think to <span class="math notranslate nohighlight">\(p_{i}\)</span> as the probability of drawm from a bag with ‘pesos’ one ‘peso’ what is the
+probability of the ‘peso’ belong
+to the <span class="math notranslate nohighlight">\(i\)</span> person or unity.</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+p_{i} = s_{i} = \frac{ x_{i}}{N \bar{y}}
+\end{equation}</div><p>the theil index will be the difference between the maximun theil possible and the real.</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+T = \sum \frac{1}{N} h(\frac{1}{N}) - \sum s_{i}h(s_{i})
+\end{equation}</div><p>if we assmume that <span class="math notranslate nohighlight">\(h()\)</span> is <span class="math notranslate nohighlight">\(-ln()\)</span> we can
+take adwhile of that some properties
+remember that a decresing function is good,
+and some logarithmic properties…</p>
+<p>applying to the equations we have:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+T = \sum \frac{1}{N} -ln(\frac{1}{N}) - \sum s_{i} -ln(s_{i})
+\end{equation}</div><p>changing the value function we have:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+-ln(\frac{1}{N}) - \sum (\frac{x_{i}}{N \bar{y}})- ln(\frac{x_{i}}{N\bar{y}})
+\end{equation}</div><p>applying logartimic properties we have:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+T = -ln(\frac{1}{N}) - \sum \frac{x_{i}}{N\bar{y}} - ln(\frac{x_{i}}{\bar{y}}) - ln(\frac{1}{N})
+\end{equation}</div><p>therefore:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+T = \frac{1}{N} \sum \frac{x_{i}}{\bar{y}}ln(\frac{x_{i}}{\bar{y}})
+\end{equation}</div><p>#Restricted to <span class="math notranslate nohighlight">\((0-1)\)</span> theil index</p>
+<p>Another point of view in SEN:</p>
+<p>remeber that <span class="math notranslate nohighlight">\(\sum_{i}^{n} x_{i} = 1\)</span>.
+<span class="math notranslate nohighlight">\(h(x) = ln(1/x) \)</span> while <span class="math notranslate nohighlight">\(x\)</span> be more improbably more value have$ (x) = \sum x_{i} log(\frac{1}{x_{i}})$ therefore
+with <span class="math notranslate nohighlight">\(x_{i} = \frac{1}{n}\)</span> then  <span class="math notranslate nohighlight">\(H(x) = log(n)\)</span>, remeber that we can write <span class="math notranslate nohighlight">\(log(n) = \sum x_{i} log(n)\)</span>, thus</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+T =  \sum x_{i}log(n) - \sum x_{i}log(\frac{1}{x_{i}})
+\end{equation}</div><p>We can acotate Theil index:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+\frac{T}{log(n)} = \frac{log(n) - H(x)}{log(n)}
+\end{equation}</div><p>if <span class="math notranslate nohighlight">\(H(x)\)</span> is evenely distributed then <span class="math notranslate nohighlight">\(H(x) = log(n)\)</span>  if one person concentrate all then <span class="math notranslate nohighlight">\(H(x) = 0\)</span>. then wen a person concentrate all income <span class="math notranslate nohighlight">\(1*log(1/1) =0\)</span>.</p>
+<p>therefore our index will be <span class="math notranslate nohighlight">\(1\)</span> to perfect inequality and zero by uniform distribution.</p>
+<p>code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">theil</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="n">relative</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">/</span><span class="n">Y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">array</span><span class="p">]</span>
+<span class="n">Theil</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">y</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">N</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">relative</span><span class="p">])</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="k">return</span> <span class="n">Theil</span>
+</pre></div>
+</div>
+<p># Discrete gini</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+G = \frac{0.5 - B}{0.5}
+\end{equation}</div><p>Now we can see that</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+G = 1 - 2B
+\end{equation}</div><div class="math notranslate nohighlight">
+\begin{equation}
+B = \sum \frac{(y_{i-1} + y_{i})}{2}*(N_{i} - N_{i-1})
+\end{equation}</div><p>the gini could be calculated with:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+G = 1 - \sum (y_{i-1} + y_{i}) * (N_{i} - N_{i-1})
+\end{equation}</div><dl class="simple">
+<dt>code::</dt><dd><p>def print(x)</p>
+</dd>
+</dl>
+<section id="codemaster">
+<h3>codemaster<a class="headerlink" href="#codemaster" title="Permalink to this heading"></a></h3>
+</section>
+<section id="theil-index">
+<h3>Theil index<a class="headerlink" href="#theil-index" title="Permalink to this heading"></a></h3>
+<p>Theil index was defined by the economist Theil, and is based in information theory….</p>
+<p>This lectuer is very important to constrait the gini index to a value.</p>
+<p>The Theil index will be defined as:</p>
+<p>the equations are important <span class="math notranslate nohighlight">\(h(X)=\sum_{i=1}^{N}x\)</span></p>
+<p><div class="math notranslate nohighlight">
+\[H(x)  = \sum_{i=1}^{N}\]</div>
+</p>
+<p>This is a excelent renderization, however never is enough..</p>
+</section>
+<section id="hamming-distance">
+<h3>Hamming distance<a class="headerlink" href="#hamming-distance" title="Permalink to this heading"></a></h3>
+<p id="hammingdistance">Hamming is a important distance</p>
+<p>Sometimes we need establish..</p>
+</section>
+<section id="k-means">
+<h3>K-means<a class="headerlink" href="#k-means" title="Permalink to this heading"></a></h3>
+<p>The ideas of similarity also been linked to distance,
+in a simple way, the way in which measure the distance is
+a fucking problem, given there are a lot of fucking distances…</p>
+</section>
+<section id="euclidean">
+<h3>Euclidean<a class="headerlink" href="#euclidean" title="Permalink to this heading"></a></h3>
+</section>
+<section id="manhattan">
+<h3>Manhattan<a class="headerlink" href="#manhattan" title="Permalink to this heading"></a></h3>
+</section>
+<section id="another-distance">
+<h3>Another distance<a class="headerlink" href="#another-distance" title="Permalink to this heading"></a></h3>
+<p>We can test that there are a lot of distances.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="NNets.html" class="btn btn-neutral float-left" title="Neural Networks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="evolve.html" class="btn btn-neutral float-right" title="Genetic Algorithms" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Iván Andrés Trujillo Abella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
