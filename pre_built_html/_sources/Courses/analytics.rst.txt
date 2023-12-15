@@ -59,6 +59,20 @@ Confusion Matrix
 Accuracy
 ---------------------------
 
+
+
+
+.. math:: 
+    :nowrap:
+
+    \begin{equation}
+       \frac{ TP  + TN}{(FP + FN + TP + FN)}
+    \end{equation}
+
+
+
+
+
 .. warning:: 
     
     This measure is biased when there are unbalanced classes
@@ -67,17 +81,6 @@ Accuracy
 is a unbiased measure of performance given that is affected by unbalanced classes.
 
 
-.. math:: 
-    :nowrap:
-
-    \begin{equation}
-        \text{Accuracy} = \frac{TP  + TN}{FP + FN + TP + FN}
-    \end{equation}
-
-
-
-
- *Type I Error* and *False Positive Error*
 
 .. math:: 
     :nowrap:
@@ -94,7 +97,38 @@ is a unbiased measure of performance given that is affected by unbalanced classe
         \text{Type 2} = \frac{FN}{TP+FN}
     \end{equation}
 
-For instance in bankruptcy is better have a error one or two?
 
 
-We can extend to hypothesis testing.....
+
+Now, we are going to see in probability terms to have major intuition of the some measures.
+
+.. math::
+    :nowrap:
+
+    \begin{equation}
+    Sesintivity  = recall = \frac{TP}{TP+FN} = \frac{ P( + \cap \hat{+})}{P(+)} = P(\hat{+} \mid +)
+    \end{equation}
+
+.. math::
+    :nowrap:
+
+    \begin{equation}
+    PPV = precision = \frac{TP}{TP+FP} = \frac{P(+ \cap \hat{+})}{P(\hat{+})}  = P(+ \mid \hat{+})
+    \end{equation}
+
+ 
+
+.. note::
+
+    `(See lab) <https://colab.research.google.com/drive/1M8AzYbuaGZOheAg7KTYUu5-c9kziIYP2?usp=sharing>`_
+
+
+
+Bayes theorem
+-------------------------------------------------------------------------
+
+Think a moment what is the relationship behind precision and recall or
+recall and predicted positive values?
+
+
+

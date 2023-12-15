@@ -13,8 +13,22 @@ beautiful mathematical formulas.
 
 
 
+
+
+
+
+
 Chain Rule
 -----------------------------------------------
+
+
+
+
+
+
+
+
+
 
 
 The chain rule is a good process to begin

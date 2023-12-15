@@ -45,3 +45,6 @@ way see :doc:`Genetic Algorithm <./evolve>`  add somthing.
 
 You could uses :ref:`Hamming distance <hammingdistance>`
 
+
+
+To see this pleare refer :ref:`chain rule` 

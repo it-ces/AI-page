@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en">
 <head>
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Analytics &mdash; Roma v2 documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
@@ -27,11 +32,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../index.html" class="icon icon-home"> Roma
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Roma
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -56,6 +65,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#specificity">specificity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#sensitivity">sensitivity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#accuracy">Accuracy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bayes-theorem">Bayes theorem</a></li>
 </ul>
 </li>
 </ul>
@@ -63,6 +73,7 @@
 <li class="toctree-l1"><a class="reference internal" href="NNets.html">Neural Networks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ineqlab.html">Inequality Measures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="evolve.html">Genetic Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathappendix.html">Mathematical Appendix</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Guidelines:</span></p>
 <ul>
@@ -83,8 +94,8 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Analytics</li>
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Analytics</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/Courses/analytics.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -139,24 +150,36 @@ think in diagnose of covid-19 there are some situations</p>
 </section>
 <section id="accuracy">
 <h3>Accuracy<a class="headerlink" href="#accuracy" title="Permalink to this heading"></a></h3>
-<div class="admonition warning">
+<div class="math notranslate nohighlight">
+\begin{equation}
+   \frac{ TP  + TN}{(FP + FN + TP + FN)}
+\end{equation}</div><div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This measure is biased when there are unbalanced classes</p>
 </div>
 <p>is a unbiased measure of performance given that is affected by unbalanced classes.</p>
-<div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}:nowrap:\\   \begin{equation}
-       \text{Accuracy} = \frac{TP  + TN}{FP + FN + TP + FN}
-   \end{equation}\\
-*Type I Error* and *False Positive Error*\end{aligned}\end{align} \]</div>
 <div class="math notranslate nohighlight">
 \begin{equation}
     \text{Type 1} = \frac{FP}{TN + FP}
 \end{equation}</div><div class="math notranslate nohighlight">
 \begin{equation}
     \text{Type 2} = \frac{FN}{TP+FN}
-\end{equation}</div><p>For instance in bankruptcy is better have a error one or two?</p>
-<p>We can extend to hypothesis testing…..</p>
+\end{equation}</div><p>Now, we are going to see in probability terms to have major intuition of the some measures.</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+Sesintivity  = recall = \frac{TP}{TP+FN} = \frac{ P( + \cap \hat{+})}{P(+)} = P(\hat{+} \mid +)
+\end{equation}</div><div class="math notranslate nohighlight">
+\begin{equation}
+PPV = precision = \frac{TP}{TP+FP} = \frac{P(+ \cap \hat{+})}{P(\hat{+})}  = P(+ \mid \hat{+})
+\end{equation}</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://colab.research.google.com/drive/1M8AzYbuaGZOheAg7KTYUu5-c9kziIYP2?usp=sharing">(See lab)</a></p>
+</div>
+</section>
+<section id="bayes-theorem">
+<h3>Bayes theorem<a class="headerlink" href="#bayes-theorem" title="Permalink to this heading"></a></h3>
+<p>Think a moment what is the relationship behind precision and recall or
+recall and predicted positive values?</p>
 </section>
 </section>
 </section>
