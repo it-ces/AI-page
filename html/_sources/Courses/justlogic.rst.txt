@@ -1,0 +1,39 @@
+Entropy
+++++++++++
+
+Idea
+============
+Is a concept shanon offert a perspective...
+
+
+
+
+
+Mathematical definition
+===========================
+
+.. math::
+   :nowrap:
+
+   \begin{eqnarray}
+      y    & = & ax^2 + bx + c \\
+      f(x) & = & x^2 + 2xy + y^2
+   \end{eqnarray}
+
+.. math::
+   :nowrap:
+
+   
+   \begin{pmatrix}
+   a & b
+   \end{pmatrix}
+   *
+   \begin{pmatrix}
+    c & d
+   \end{pmatrix}
+
+
+
+
+codemaster
+----------------
