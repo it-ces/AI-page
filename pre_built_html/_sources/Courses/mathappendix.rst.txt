@@ -3,6 +3,16 @@ Mathematical Appendix
 
 
 
+In this lecture you will find  a summary of important mathematical concepts useful in 
+economics and data analysis, include functions, logarithms, derivatives and optimization principles.
+
+
+
+
+
+
+
+
 .. math:: e^{i\pi} + 1 = 0
    :label: euler
 
@@ -111,3 +121,17 @@ $$f(x)$$
 
 
 add newer
+
+
+
+
+
+Numerical Optimization
+------------------------------------------------------------------
+
+Gradient descent algorithm
+
+
+
+
+Raphson Newthon

@@ -63,26 +63,22 @@ Topics
    :hidden:
    :caption: Courses:
 
-   Courses/probsimul
    Courses/handledata
+   Courses/probsimul
+   Courses/opto
+   Courses/mining
    Courses/analytics
+   Courses/ML
    Courses/NNets
    Courses/ineqlab
    Courses/evolve
+   Courses/economics
    Courses/mathappendix
 ..
    Courses/programming
 ..
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Guidelines:
 
-   Guidelines/contents
-   Guidelines/workflow
-
-here we can add some text to see the modifications
 
 
 

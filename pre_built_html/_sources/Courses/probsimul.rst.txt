@@ -4,6 +4,12 @@ Probability and Simulations
 Introduction
 ======================================================
 
+Probability is a great matter....
+
+
+
+
+Probability basic.
 
 
 Pi simulation
@@ -47,7 +53,23 @@ $$
 
 
 
+
+Birthday paradox
+----------------------------------------------------------
+This a great phenomena.
+
+* `Birtday paradox simulation <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/birthday_simulation.ipynb>`_
+
+
 Monty Hall simulation
 ---------------------------------------------------------
 
 There is a great history behind this simulation:
+
+This history involves some persons as Savant and Paul erdos.
+
+* `Monty Hall Simulation <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/Monty_hall_Simulation.ipynb>`_ 
+
+
+
+Add poisson simulation...

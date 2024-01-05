@@ -154,6 +154,13 @@ code::
     return Theil
 
 
+
+Theil in pandas `Theil pandas <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Theil-pandas(BIT).ipynb>`_
+
+
+
+
+
 # Discrete gini
 
 .. math::
@@ -259,6 +266,12 @@ Another distance
 
 We can test that there are a lot of distances.
 
+
+
+
+
+Kullback - Leiber  or KL divergence
+-----------------------------------------------------------------------
 
 
 

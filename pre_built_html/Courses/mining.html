@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Probability and Simulations &mdash; Roma v2 documentation</title>
+  <title>Data mining &mdash; Roma v2 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
       <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
@@ -23,7 +23,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Optimization" href="opto.html" />
+    <link rel="next" title="Analytics" href="analytics.html" />
     <link rel="prev" title="Handling data with pandas" href="handledata.html" /> 
 </head>
 
@@ -58,19 +58,24 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and Simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Probability and Simulations</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#pi-simulation">Pi simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#linconl-petersen">Linconl - Petersen</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#birthday-paradox">Birthday paradox</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#monty-hall-simulation">Monty Hall simulation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data mining</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#association-rules">Association rules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#apriori-algorith">Apriori algorith</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#clustering">Clustering</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#k-means">K-means</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#reduction-of-dimensionality">Reduction of dimensionality</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#curse-of-dimensionality">Curse of dimensionality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#principal-component-analysis">Principal Component analysis</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ML.html">Machine learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NNets.html">Neural Networks</a></li>
@@ -94,9 +99,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Probability and Simulations</li>
+      <li class="breadcrumb-item active">Data mining</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Courses/probsimul.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Courses/mining.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -104,60 +109,69 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="probability-and-simulations">
-<h1>Probability and Simulations<a class="headerlink" href="#probability-and-simulations" title="Permalink to this heading"></a></h1>
-<section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
-<p>Probability is a great matter….</p>
-<p>Probability basic.</p>
-<section id="pi-simulation">
-<h3>Pi simulation<a class="headerlink" href="#pi-simulation" title="Permalink to this heading"></a></h3>
-<p>In this section you will find some simulations that could be very useful.</p>
-<p>You could think the following</p>
-<p><span class="math notranslate nohighlight">\(\pi\)</span> is a wonderful number:</p>
+  <section id="data-mining">
+<h1>Data mining<a class="headerlink" href="#data-mining" title="Permalink to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf">Click here to see the slides…</a></p>
+</div>
+<p>In this section we will find information about different topics as
+Association rules, clustering and, reduction of dimensionality.</p>
+<section id="association-rules">
+<h2>Association rules<a class="headerlink" href="#association-rules" title="Permalink to this heading"></a></h2>
+<section id="apriori-algorith">
+<h3>Apriori algorith<a class="headerlink" href="#apriori-algorith" title="Permalink to this heading"></a></h3>
+<p>We are interested in find out if the products <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are sistutes  or complementaries.
+in a database with transactions made it of inovices in a period of time:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>id</p></td>
+<td><p>Products</p></td>
+</tr>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Milk, Bread,…,</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Eggs, Coce,…,</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Milk, Cookies,…,</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td><p>…</p></td>
+</tr>
+<tr class="row-even"><td><p>N</p></td>
+<td><p>Oranges, lettuce</p></td>
+</tr>
+</tbody>
+</table>
+<p>How to known what products will be bought togheter of a total of <span class="math notranslate nohighlight">\(N\)</span>?
+if we assest each possible combination then will have a computational complexity of</p>
 <div class="math notranslate nohighlight">
 \begin{equation}
-\pi = D/P
-\end{equation}</div><ul class="simple">
-<li><p>implementation:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Pi_simulation(BIT).ipynb">On python</a></p></li>
-</ul>
-</li>
-</ul>
+    3^{N} - 2^{N-1} + 1
+\end{equation}</div><p>Therefore the Apriori algorithm allow us solve this in a more effcient way.</p>
 </section>
-<section id="linconl-petersen">
-<h3>Linconl - Petersen<a class="headerlink" href="#linconl-petersen" title="Permalink to this heading"></a></h3>
-<p>Imagine that do you wan to know how many foxy there are, or the numner of hypopotamus
-that are in <em>colombia</em> you can uses the method of capture and recapture.</p>
-<p><div class="math notranslate nohighlight">
-\[
-\hat{N} = \frac{k1 * k2}{recounter}
-\]</div>
-</p>
-<ul class="simple">
-<li><p>Implementation:</p>
-<ul>
-<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/Lincoln-chapman.ipynb">On python</a></p></li>
-</ul>
-</li>
-</ul>
 </section>
-<section id="birthday-paradox">
-<h3>Birthday paradox<a class="headerlink" href="#birthday-paradox" title="Permalink to this heading"></a></h3>
-<p>This a great phenomena.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/birthday_simulation.ipynb">Birtday paradox simulation</a></p></li>
-</ul>
+<section id="clustering">
+<h2>Clustering<a class="headerlink" href="#clustering" title="Permalink to this heading"></a></h2>
+<p>The unsupervised learning is a field of learning.</p>
+<section id="k-means">
+<h3>K-means<a class="headerlink" href="#k-means" title="Permalink to this heading"></a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The models based in distance are affected by <cite>curse of dimensionality</cite>
+to see more information about that please refer to.</p>
+</div>
 </section>
-<section id="monty-hall-simulation">
-<h3>Monty Hall simulation<a class="headerlink" href="#monty-hall-simulation" title="Permalink to this heading"></a></h3>
-<p>There is a great history behind this simulation:</p>
-<p>This history involves some persons as Savant and Paul erdos.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/Monty_hall_Simulation.ipynb">Monty Hall Simulation</a></p></li>
-</ul>
-<p>Add poisson simulation…</p>
+</section>
+<section id="reduction-of-dimensionality">
+<h2>Reduction of dimensionality<a class="headerlink" href="#reduction-of-dimensionality" title="Permalink to this heading"></a></h2>
+<section id="curse-of-dimensionality">
+<h3>Curse of dimensionality<a class="headerlink" href="#curse-of-dimensionality" title="Permalink to this heading"></a></h3>
+</section>
+<section id="principal-component-analysis">
+<h3>Principal Component analysis<a class="headerlink" href="#principal-component-analysis" title="Permalink to this heading"></a></h3>
 </section>
 </section>
 </section>
@@ -167,7 +181,7 @@ that are in <em>colombia</em> you can uses the method of capture and recapture.<
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="handledata.html" class="btn btn-neutral float-left" title="Handling data with pandas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="opto.html" class="btn btn-neutral float-right" title="Optimization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="analytics.html" class="btn btn-neutral float-right" title="Analytics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -15,6 +15,9 @@ Dayana Castro Guevara
 
 
 
+
+I'm Dayana Castro, currently i teach econometrics and analytics at Universidad Surcolombiana.
+
 Contact me
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ``Email:`` Myyaya30@gmail.com
@@ -29,10 +32,8 @@ Iván Andrés Trujillo Abella
    :width:  500px
    :scale: 50 %
 
-Hi, i'm Iván Andrés  economist and study *artificial intelligence* at Pontificia Universidad Javeriana (PUJ),
-i have been working in training neural networks with Metaheuristics and its application to financial 
-problems as credit risk and bankruptcy.
-
+Hi, I'm  studying  *artificial intelligence* at Pontificia Universidad Javeriana (PUJ),
+my current research area, is evolutionary computation to train neural networks.
 
 
 

@@ -1,0 +1,40 @@
+Machine learning
+=====================================================================
+
+There several algorithms of machine learning,  among them we can 
+find Support Vector Machine (SVM), linear regression, 
+logistic regression, Decision Trees, Random Forest, Adaboost among another popular
+algorithms.
+
+
+Linear regression and Logistic regression
+--------------------------------------------------------------------------
+
+Laboratory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+Support Vector Machine
+------------------------------------------------------------------------
+
+Created by vanipk 
+
+.. note::
+
+    `Click here to see the slides... <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
+
+
+
+Decision Tree (In construction)
+---------------------------------------------------------------------------
+
+
+Laboratory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+K-means, PCA, a priori algorithm are in ``Data mining`` folder...

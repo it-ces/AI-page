@@ -2,16 +2,18 @@ Handling data with pandas
 ++++++++++++++++++++++++++++++++++++++++
 
 
-
-
 Overview
 =====================================================
 We can consulte the slides about pandas in the following link
 
 
+In this folder you will find some laboratories about database managment with pandas (a python library) the purpose not is 
+present notebooks to deploy rather to expose some methods or functions.
+
+
 Dataframe structure
 ----------------------------------------------------------
-The main object 
+The main object with interact with data.
 
 
 
@@ -25,17 +27,96 @@ problems according to keywords
 Load data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Load a URL
-
+#. Load a URL and excel file
 
 Change name and drop columns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #. Change name of columns
-#. drop a column or a set of them
+#. Drop a column or a set of them
 
 
 Counting Missing values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. NAN
 
+
+
+Filter values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. `Filter lab I <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/clase_filtro_pandas(BIT).ipynb>`_
+#. `Filter lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/labPandas3(BIT).ipynb>`_
+
+Duplicates values 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#.  `Lab duplicated <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/BIT_lab_duplicates.ipynb>`_
+
+
+#. `Lab duplicated groupby <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Duplicates_groupby(BIT).ipynb>`_
+
+
+
+
+Summation or mean over columns or rows
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Sometimes you need calculate the mean or sum a set of columns or the values of a variable
+
+#.   `Lab mean-sum <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/DataFrame_sum_mean(BIT).ipynb>`_
+
+
+
+Replace
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. `Replace values <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Pandas_to_replace(BIT).ipynb>`_
+
+
+
+Merge and append dataframes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. `Basic merge <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/clase_merge(BIT).ipynb>`_
+
+#. `Loop-merge <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Loop_dataframes(BIT).ipynb>`_
+
+#. `Variables consistency <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Check_variables_loop(BIT).ipynb>`_
+
+
+Imputation values
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. `Basic imputation <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Nulls_imputation(BIT).ipynb>`_
+
+
+Practical laboratories
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The following laboratory is to review some concepts with practical results, to realize 
+this lab dowloand the database `pibs-dptos.xlsx` avaliable `(Click here) <https://github.com/it-ces/Datasets/blob/main/pibs-dptos.xlsx>`_
+
+#. `Gdps lab I <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Pandas_manejo(BIT).ipynb>`_
+#. `Gdps lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Lab_PIBS(BIT).ipynb>`_
+
+Regular expressions (Regex)
+------------------------------------------------------------------------------------------
+
+This topic deserve "apartado" given its importance.
+"Al principio" regex could be messy, but with practice each time its implementation
+is more inutitive.
+
+
+Regex lab
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`regex basic <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/freq_problems_pandas(BIT).ipynb>`_
+
+
+
+
+
+Laboratories I
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Contigency Table <https://github.com/it-ces/labHealth/blob/master/Health_Second_Class.ipynb>`_
