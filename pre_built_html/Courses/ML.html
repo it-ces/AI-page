@@ -19,6 +19,7 @@
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -57,18 +58,27 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and Simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and Simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Machine learning</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#linear-regression-and-logistic-regression">Linear regression and Logistic regression</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#laboratory">Laboratory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linear-regression">Linear regression</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#slides">Slides</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#laboratories">Laboratories</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#logistic-regression">Logistic Regression</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Laboratories</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#support-vector-machine">Support Vector Machine</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#decision-tree-in-construction">Decision Tree (In construction)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Laboratory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#laboratory">Laboratory</a></li>
 </ul>
 </li>
 </ul>
@@ -112,12 +122,50 @@ logistic regression, Decision Trees, Random Forest, Adaboost among another popul
 algorithms.</p>
 <section id="linear-regression-and-logistic-regression">
 <h2>Linear regression and Logistic regression<a class="headerlink" href="#linear-regression-and-logistic-regression" title="Permalink to this heading"></a></h2>
-<section id="laboratory">
-<h3>Laboratory<a class="headerlink" href="#laboratory" title="Permalink to this heading"></a></h3>
+<section id="linear-regression">
+<h3>Linear regression<a class="headerlink" href="#linear-regression" title="Permalink to this heading"></a></h3>
+<p>The main is find the better line that adjust to the data, for instance for the following pictures constructed using the
+world bank data.</p>
+<p><a class="reference internal" href="../_images/gdp-ruralpop.jpg"><img alt="pic1" src="../_images/gdp-ruralpop.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/gdp-co2.jpg"><img alt="pic2" src="../_images/gdp-co2.jpg" style="width: 45%;" /></a></p>
+<p>the problem in each datasets consist of a linear approximation  <span class="math notranslate nohighlight">\(\hat{y}_{i}\)</span> over the real value <span class="math notranslate nohighlight">\(y_{i}\)</span>
+in which the error is measured by <span class="math notranslate nohighlight">\(u_{i}^{2} = (y_{i} - \hat{y}_{i})^{2}\)</span></p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \min_{\beta_{0}, \beta_{1}} \sum u_{i}^{2}
+\end{equation}</div><p><a class="reference internal" href="../_images/gdp-ruralpop-fit.jpg"><img alt="pic3" src="../_images/gdp-ruralpop-fit.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/gdp-co2-fit.jpg"><img alt="pic4" src="../_images/gdp-co2-fit.jpg" style="width: 45%;" /></a></p>
+<p>Here we go see that the values <span class="math notranslate nohighlight">\(\beta_{0}\)</span> and <span class="math notranslate nohighlight">\(\beta_{1}\)</span> that solve the problem could be
+gotted by two methods <strong>Maximun likelihood estimation</strong> and <strong>Least Square Method</strong>  both methods
+offer similar results.</p>
+<p>what is the most important for us according to the strcutre</p>
+<section id="slides">
+<h4>Slides<a class="headerlink" href="#slides" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LogisticRegression.pdf">Logistic and linear regression slides</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Apendice-ecuacionespdf.pdf">Appendix</a></p></li>
+</ul>
+</section>
+<section id="laboratories">
+<h4>Laboratories<a class="headerlink" href="#laboratories" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Introducci%C3%B3n_Problem_OLS.ipynb">Cobb-Douglas production function</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LN_producci%C3%B3n(BIT).ipynb">Cobb-Douglas production function II</a></p></li>
+</ul>
+</section>
+</section>
+<section id="logistic-regression">
+<h3>Logistic Regression<a class="headerlink" href="#logistic-regression" title="Permalink to this heading"></a></h3>
+<p>The main objective is the prediction…</p>
+<section id="id1">
+<h4>Laboratories<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LogisticRegression_bankruptcy(lab).ipynb">Logistic regression LAB 1</a></p></li>
+</ul>
+</section>
 </section>
 </section>
 <section id="support-vector-machine">
 <h2>Support Vector Machine<a class="headerlink" href="#support-vector-machine" title="Permalink to this heading"></a></h2>
+<p>Ok ok for what it is this line</p>
 <p>Created by vanipk</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -126,8 +174,8 @@ algorithms.</p>
 </section>
 <section id="decision-tree-in-construction">
 <h2>Decision Tree (In construction)<a class="headerlink" href="#decision-tree-in-construction" title="Permalink to this heading"></a></h2>
-<section id="id1">
-<h3>Laboratory<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h3>
+<section id="laboratory">
+<h3>Laboratory<a class="headerlink" href="#laboratory" title="Permalink to this heading"></a></h3>
 <p>K-means, PCA, a priori algorithm are in <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">mining</span></code> folder…</p>
 </section>
 </section>

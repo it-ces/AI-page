@@ -6,6 +6,11 @@ Introduction
 
 Probability is a great matter....
 
+Slides
+*********************************************************************
+
+* `Introduction to probability, counting and bayes theorem <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/prob_counting_bayes.pdf>`_
+
 
 
 

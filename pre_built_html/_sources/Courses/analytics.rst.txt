@@ -10,6 +10,13 @@ find notebook(s) to replicate in python.
 
 
 
+Slides
+****************************************************************************************
+
+* `EDA <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+
+
+
 **Levels of measurement**  allow us classify the data according to the information nature and its  mathematical richness 
 in terms of operations, the herarchy is the following:
 
@@ -280,16 +287,20 @@ If we select $\lambda = 1.5$ then the probability of getting a *outlier value* i
 
 
 
+
+
 Line chart
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes we need decribes variables as a time series.
+??sadasdasd
 
 
 .. image:: ./images/time-serie.jpg
    :height: 800px
    :width:  800px
    :scale: 50 %
+
 
 
 
@@ -307,18 +318,6 @@ Here we find some laboratories to practice.
 * `Relative position <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Quantile(BIT).ipynb>`_
 * `Practical lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/LaboratoryPandas(ONE).ipynb>`_
 * `Matplotlib lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/introduction%20to%20matplotlib.ipynb>`_
-
-
-
-
-Next section
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-
-
-Kaplan Meyer Estimator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Useful to describe phenomena in time.
 
 
 
@@ -419,6 +418,64 @@ Given that $\sigma_{z}^{2}  = \frac{\sum (x_{i} - \bar{x})^{2}}{n}$, This show u
 
     `(See lab) <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/Z_standard(BIT).ipynb>`_
 
+
+
+
+
+
+Normality 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+What it is normal? 
+
+We are going to say that $X$ is normal as; $X \sim N(\mu, \sigma)$ Discovered by abraham de moivre.
+
+
+
+
+Standard Normal distribution
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+$X \sim N(0,1)$.
+
+.. image:: ./images/normaldist.jpg
+   :height: 800px
+   :width:  800px
+   :scale: 50 %
+
+The before distribution have $\mu=0$ and $\sigma = 1$.
+
+our guide text..
+
+There are a family of nornal distributions described by its mean and standard deviation.
+
+its $x$ is described as:
+
+
+.. math::
+    :nowrap:
+
+    \begin{equation}
+    \frac{1}{ \sqrt{2 \pi \sigma^{2}}} \exp{ \left( \frac{-(x-\mu)^{2}}{2\sigma^{2}} \right)}
+    \end{equation}
+
+
+
+.. image:: ./images/normales.jpg
+   :height: 800px
+   :width:  800px
+   :scale: 50 %
+
+
+Each curve is described by its median and standard deviation.
+
+
+
+
+
+
+Laboratories
+*************************************************************************************************
 
 
 
@@ -819,4 +876,16 @@ How you believe that is the behavior of the retirement age?..
 
 what happend whith the difference?, this behavior is more adecuate in right-skewed variables.
 in left-skewed variables you could uses quadratic or cubic transformation why?.
+
+
+
+Linear regression we can put two images side by side and how we can make this?
+
+
+.. image::  ./images/time-serie.jpg
+    :width: 50 %
+.. image::  ./images/time-serie.jpg
+    :width: 50 %
+
+
 
