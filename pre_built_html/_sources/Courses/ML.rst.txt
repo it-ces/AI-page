@@ -61,6 +61,10 @@ Slides
 * `Appendix  <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Apendice-ecuacionespdf.pdf>`_
  
 
+Videos
+***********************************************************
+* `Bivariate - MCO <https://www.youtube.com/watch?v=ZM1nhydYUKk&t=1360s>`_
+
 Laboratories
 ********************************************************
 

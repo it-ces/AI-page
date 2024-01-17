@@ -5,13 +5,13 @@ Analytics
 Exploratory Data Analysis (EDA)
 ------------------------------------------------------------------------------------------
 
-In this section we are going to see a brief description of each element and the end 
-find notebook(s) to replicate in python.
+In this section we are going to see a brief description of different concepts as mean, standard deviation and so on, 
+you also will find notebook(s) to replicate in python.
 
 
 
 Slides
-****************************************************************************************
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * `EDA <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
 
@@ -118,8 +118,37 @@ Used as central tendency measure is sensible to outliers (very tiny or bigger va
 Median and Quartiles
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Quartiles split the data in four equal groups, therefore 
+each slice group a $\frac{1}{4}$ of data.
+Median is the data point that split the data in two halves, finally
+percentiles split the data in $100$ equal groups.
+
+* Q1 = P25 
+* Q2 = P50
+* Q3 = P75
 
 
+The following table summary some values aforementioned:
+
++-------+----------------------+
+|       | Life expectancy 2020 |
++-------+----------------------+
+| count |          209         |
++-------+----------------------+
+|  mean |         72,31        |
++-------+----------------------+
+|  std  |         7,483        |
++-------+----------------------+
+|  min  |        52,777        |
++-------+----------------------+
+|  25%  |        66,797        |
++-------+----------------------+
+|  50%  |        72,889        |
++-------+----------------------+
+|  75%  |        78,041        |
++-------+----------------------+
+|  max  |        85,498        |
++-------+----------------------+
 
 Standard deviation and Interquantile Range
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -215,11 +244,42 @@ Boxplot
 
 There are three important things to remark in this graph, p25, p50, p75,  we need sort the values of the variables
 from smallest to largest.
-
-p25 or Q1 first quartile.
-
+The wide of box is denominated as Interquantile range.
 
 
+
+
+
+
+
+Box plot also give us visual information about *skewness* of the distribution:
+
+Skewness  is a measure of the asymetry:
+
+
+
+
+* In *poisitive skew (skewed to the right)*, The right tail is longer, the mass of the distribution is concentrated on the left of the figure.
+
+
+.. |pic1| image:: ./images/GDP-percapita.jpg
+   :width: 45%
+.. |pic2| image:: ./images/boxplot-gdp2020.jpg
+   :width: 45%
+|pic1| |pic2|
+
+
+* In *negative skew (skewed to the left)*,  the left tail is longer; the mass  of the distribution is 
+Concentrated on the right of the figure.
+
+.. |pic3| image:: ./images/hist-acc_clean.jpg
+   :width: 45%
+.. |pic4| image:: ./images/boxplot-acc_clean.jpg
+   :width: 45%
+|pic3| |pic4|
+
+
+Boxplot is also very usefult to compare numerical variables over groups.
 
 .. image:: ./images/boxplot-incomelevel.jpg
    :height: 800px
@@ -227,7 +287,8 @@ p25 or Q1 first quartile.
    :scale: 50 %
 
 
-Consider the following:
+
+
 
 .. code::
 
@@ -236,7 +297,6 @@ Consider the following:
     norm.ppf(0.75) # Give us the value of the 75 centil  Q3
 
 
-you can check  with 
 
 ..  code::
     
@@ -244,12 +304,12 @@ you can check  with
     norm.cdf(norm.ppf(0.25))
 
 
-The interquantile range (IQR) is $Q_{3} - Q_{1} \approx 1.34$ 
+The interquantile range (IQR) is $Q_{3} - Q_{1}$ and for normal distribution is  $\approx 1.34$ 
 
 Now cosider the following:
 
 
-Now we are searching that a smaller probability of getting a extreme value.
+Now we are searching two values as decision criteria to values more extreme of them as outliers values:
 
 .. math::
     :nowrap:
@@ -287,14 +347,79 @@ If we select $\lambda = 1.5$ then the probability of getting a *outlier value* i
 
 
 
+Normality
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Notes about normality...
+
+
+.. image:: ./images/normalHistogram.jpg
+   :height: 800px
+   :width:  800px
+   :scale: 50 %
+
+
+Test of normality is important to decide the statistics used
+to describe data or to use parametric or no parametric statistics, for instance
+uses mean with no-normal variables could lead to misleading conclusions.
+
+
+there are numercial and graphically methods to test data normality, some
+of those are:
+
+* Shapiro-Wilk test
+* Kolgomorov-Sirnov test
+* Histogram
+* Q-Q plot
+
+
+where used each one?
+
+uses Shapiro-Wilk for small  sample sizes (<50)
+uses Kolgomorov-Sirnov with sizes greater than  or equal to  50.
+in both test $H_{0}$ indicate normality.
+
+
+The histogram must be as the presented above, the Q-Q plot or Quantile-Quantile plot graph 
+expected vs observed quantiles in standardize data with standardize normal distribution.
+For normal data the points must be looks like a line.
+
+
+
+.. |nhist| image:: ./images/normalHistogram.jpg
+   :width: 45%
+.. |qqplotnorm| image:: ./images/qqplot-normal.jpg
+   :width: 45%
+|nhist| |qqplotnorm|
+
+
+The following is a not normal especifically a exponential distribution:
+
+
+
+.. |exphist| image:: ./images/exponentialHistogram.jpg
+   :width: 45%
+.. |qqplotexp| image:: ./images/qqplot-exponential.jpg
+   :width: 45%
+|exphist| |qqplotexp|
+
+
+
+
+
+So far, we conclude that the descriptive 
+statistics aim to communicate the major quantity of information in the simplest way.
+
+
+
+
+
+
 
 
 Line chart
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes we need decribes variables as a time series.
-??sadasdasd
-
 
 .. image:: ./images/time-serie.jpg
    :height: 800px
@@ -332,7 +457,26 @@ Covariance
 
 Correlation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Measure the degree of linearity among two variables.
+Measure the degree of linearity among two variables, take values among
+-1 and 1, there is not correlation among variables when the coefficient is equal to zero.
+
+.. |pic5| image:: ./images/gdp-ruralpop.jpg
+   :width: 45%
+.. |pic6| image:: ./images/gdp-co2.jpg
+   :width: 45%
+|pic5| |pic6|
+
+For this image put here the notebook, where two important pearson and spearman.
+
+
+
++----------+----------------------+--------------------------------+---------------------+
+|          |                      | Percentage of rural population | Co2 tons per capita |
++----------+----------------------+--------------------------------+---------------------+
+| GDP 2020 |  Pearson coefficient |             -0,634             |        0,722        |
++----------+----------------------+--------------------------------+---------------------+
+|          | Spearman Coefficient |             -0,712             |        0,907        |
++----------+----------------------+--------------------------------+---------------------+
 
 
 
@@ -876,16 +1020,6 @@ How you believe that is the behavior of the retirement age?..
 
 what happend whith the difference?, this behavior is more adecuate in right-skewed variables.
 in left-skewed variables you could uses quadratic or cubic transformation why?.
-
-
-
-Linear regression we can put two images side by side and how we can make this?
-
-
-.. image::  ./images/time-serie.jpg
-    :width: 50 %
-.. image::  ./images/time-serie.jpg
-    :width: 50 %
 
 
 
