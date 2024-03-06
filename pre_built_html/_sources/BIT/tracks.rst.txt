@@ -1,6 +1,11 @@
 General Path and Tracks
 ++++++++++++++++++++++++++++++++++++++
 
+HEYYYYYYYYYYYYYYYYYYYYYYYYYYYYY and this information what??
+In this section are the slides we can make changes...
+
+this could be current :doc:`Genetic Algorithm <../Courses/evolve>` this text is added but i dont 
+see the link.
 
 
 General
@@ -13,25 +18,25 @@ General
       - Description
       - Material
     * - Week 1
-      - Basic structures
-      - see material here
+      - Exploratory Data Analysis (EDA)
+      - `Slides EDA <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
     * - Week 2
       - Pandas
-      - See Material here
+      - `Slides Pandas <https://github.com/it-ces/PUBLIC-AI/blob/main/PANDAS(talleres-slides)/Pandas_.pdf>`_
     * - Week 3
-      - Pandas workshops
-      - See Materual here  
+      - Practical Pandas 
+      - :doc:`Pandas labs <../Courses/handledata>`
     * - Week 4
-      - Neural Networks
-      - See Material Here
+      - A priori algorithm
+      - `Slides Apriori <Slides A priori https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_
     * - Week 5
-      - Decision Tree
-      - See material Here
+      - Naive classifiers; K-nearest neighbors and Naive Bayes
+      - `KNN <Slides A priori https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_  -  `Naive Bayes <Slides A priori https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_ 
     * - Week 6
-      - Benchmark 
+      - Decision Tree
       - See material here
     * - Week 7 
-      - Track  
+      - Analytics workflow  
       - See material here
     * - Week 8
       - Final work
@@ -69,3 +74,8 @@ You could uses genetic algorithms, fuzzy logic..
 
 * Feature selection using genetic algorithms
 * Traning Neural Networks
+
+
+
+
+

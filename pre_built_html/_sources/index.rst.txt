@@ -1,4 +1,4 @@
-Roma project
+Data Analysis project
 =============================
 
 We consolidate the work of *Iván Andrés Trujillo* & *Dayana Castro Guevara*
@@ -19,11 +19,7 @@ Topics
       * Neural Networs...
       * Support Vector Machine
 
-* Metaheuristics:
-      * Genetic Algorithms
-      * Simulated Annealing
-      * Ant colony Optimization
-      * Grey Wolf Optimizer
+
 
 * Probability and statistics:
       * Random Variable
@@ -35,7 +31,6 @@ Topics
 * Economics:
       * Microeconomics
       * Economic Growth
-      * Theory of Games
 
 
 .. toctree::
@@ -56,7 +51,7 @@ Topics
 
    BIT/generalinfo
    BIT/tracks
-   BIT/people
+   
 
 .. toctree::
    :maxdepth: 2

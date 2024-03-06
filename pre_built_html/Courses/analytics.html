@@ -446,6 +446,8 @@ The wide of box is denominated as Interquantile range.</p>
 <p>Test of normality is important to decide the statistics used
 to describe data or to use parametric or no parametric statistics, for instance
 uses mean with no-normal variables could lead to misleading conclusions.</p>
+<p>We also need normality for uses ANOVA and compare groups, for instance when you need
+test if the treatment A , B , C  or D present significative difference among a group of patients.</p>
 <p>there are numercial and graphically methods to test data normality, some
 of those are:</p>
 <ul class="simple">
@@ -461,9 +463,16 @@ in both test <span class="math notranslate nohighlight">\(H_{0}\)</span> indicat
 <p>The histogram must be as the presented above, the Q-Q plot or Quantile-Quantile plot graph
 expected vs observed quantiles in standardize data with standardize normal distribution.
 For normal data the points must be looks like a line.</p>
+<p>In Q-Q plot we are comparing theoretical agains empirical quantiles of a
+variable. If the variable come from that distribution Q-Q plot is a straigth
+line.</p>
 <p><a class="reference internal" href="../_images/normalHistogram.jpg"><img alt="nhist" src="../_images/normalHistogram.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/qqplot-normal.jpg"><img alt="qqplotnorm" src="../_images/qqplot-normal.jpg" style="width: 45%;" /></a></p>
 <p>The following is a not normal especifically a exponential distribution:</p>
 <p><a class="reference internal" href="../_images/exponentialHistogram.jpg"><img alt="exphist" src="../_images/exponentialHistogram.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/qqplot-exponential.jpg"><img alt="qqplotexp" src="../_images/qqplot-exponential.jpg" style="width: 45%;" /></a></p>
+<p>Analytical methods are sensitive to sample size.
+assuming that <span class="math notranslate nohighlight">\(X \sim N()\)</span> with small samples <span class="math notranslate nohighlight">\(p-value\)</span> tend to be greater, and with
+larges samples <span class="math notranslate nohighlight">\(p-value\)</span> tend to be small.</p>
+<p>Rule: if you have sample size <span class="math notranslate nohighlight">\(&lt; 30\)</span> uses Q-Q plot.</p>
 <p>So far, we conclude that the descriptive
 statistics aim to communicate the major quantity of information in the simplest way.</p>
 </section>

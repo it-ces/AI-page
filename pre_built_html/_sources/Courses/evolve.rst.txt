@@ -46,8 +46,6 @@ All problems listed in this section was resolver using ``GAs`` and
 
 
 
-deap
---------------------------------------------------------
 
 
 
@@ -56,6 +54,3 @@ stoppong criteria
 
 One of the most fundamental issues in GA is when stop given that there are not
 a stablished criteria.
-
-convergencee
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

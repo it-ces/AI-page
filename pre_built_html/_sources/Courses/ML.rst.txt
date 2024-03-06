@@ -85,6 +85,9 @@ Laboratories
 ***************************************************************************
 * `Logistic regression LAB 1 <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LogisticRegression_bankruptcy(lab).ipynb>`_
 
+
+
+
 Support Vector Machine
 ------------------------------------------------------------------------
 
@@ -115,3 +118,24 @@ Laboratory
 K-means, PCA, a priori algorithm are in ``Data mining`` folder...
 
 
+
+
+
+
+
+Slides
+----------------------------------------------------------------------------------------
+.. list-table:: Another resources....
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Model
+      - Material
+    * - K-Nearest Neighborhoods (KNN)
+      - `Slides KNN <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+    * - Decision Tree
+      - `Slides DT <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+    * - Logistic Regression
+      - `Slides LR <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+    * - Support Vector Machine (SVM)
+      - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_

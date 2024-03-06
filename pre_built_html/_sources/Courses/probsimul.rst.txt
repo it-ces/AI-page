@@ -1,8 +1,8 @@
-Probability and Simulations
+Probability and statistics
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Introduction
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Probability and statistics play a important role in industrial processes, take decisions
 and as a language to another fields as game theory or econometrics.
@@ -10,17 +10,16 @@ and as a language to another fields as game theory or econometrics.
 Slides
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* `Introduction to probability, counting and bayes theorem <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/prob_counting_bayes.pdf>`_
-* `Binomial, normal and sampling <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/binomial%2Cnormal%2Csampling.pdf>`_
-* `Confidence interval and hypothesis testing <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/ci-hypothesis.pdf>`_
-* `Comparing groups`_
+* `Introduction to probability, counting and bayes theorem. <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/prob_counting_bayes.pdf>`_
+* `Binomial, normal and sampling. <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/binomial%2Cnormal%2Csampling.pdf>`_
+* `Confidence interval <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/ci-hypothesis.pdf>`_
+* `hypothesis testing`
+* `Comparing groups.` 
 
 
 
 Simulations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Probability basic.
 
 
 Pi simulation
