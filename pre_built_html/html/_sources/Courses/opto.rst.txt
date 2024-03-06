@@ -1,0 +1,16 @@
+Optimization
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+We are going to see two important aspects.
+
+
+
+In this section we are going to cover some popular algorithms:
+
+ #. Gradient Descendent
+ #. Raphson Newthon
+
+
+

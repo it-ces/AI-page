@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handling data with pandas &mdash; Roma v2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Probability and statistics" href="probsimul.html" />
+    <link rel="prev" title="Staff" href="../BIT/people.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Roma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General information:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/generalinfo.html">Graduate Certificate Program  in Data Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/tracks.html">General Path and Tracks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/people.html">Staff</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Handling data with pandas</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dataframe-structure">Dataframe structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#laboratories">Laboratories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#load-data">Load data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#change-name-and-drop-columns">Change name and drop columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#counting-missing-values">Counting Missing values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#filter-values">Filter values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#duplicates-values">Duplicates values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#summation-or-mean-over-columns-or-rows">Summation or mean over columns or rows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#replace">Replace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#merge-and-append-dataframes">Merge and append dataframes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#imputation-values">Imputation values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#practical-laboratories">Practical laboratories</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#regular-expressions-regex">Regular expressions (Regex)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#regex-lab">Regex lab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#laboratories-i">Laboratories I</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ML.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NNets.html">Neural Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ineqlab.html">Inequality Measures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evolve.html">Genetic Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="economics.html">Lectures in Economics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathappendix.html">Mathematical Appendix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Roma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Handling data with pandas</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Courses/handledata.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="handling-data-with-pandas">
+<h1>Handling data with pandas<a class="headerlink" href="#handling-data-with-pandas" title="Permalink to this heading"></a></h1>
+<section id="overview">
+<span id="labpandas"></span><h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h2>
+<p>We can consulte the slides about pandas in the following link</p>
+<p>In this folder you will find some laboratories about database managment with pandas (a python library) the purpose not is
+present notebooks to deploy rather to expose some methods or functions.</p>
+<section id="dataframe-structure">
+<h3>Dataframe structure<a class="headerlink" href="#dataframe-structure" title="Permalink to this heading"></a></h3>
+<p>The main object with interact with data.</p>
+</section>
+<section id="laboratories">
+<h3>Laboratories<a class="headerlink" href="#laboratories" title="Permalink to this heading"></a></h3>
+<p>The objective is that you can find how solve some
+problems according to keywords</p>
+<section id="load-data">
+<h4>Load data<a class="headerlink" href="#load-data" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Load a URL and excel file</p></li>
+</ol>
+</section>
+<section id="change-name-and-drop-columns">
+<h4>Change name and drop columns<a class="headerlink" href="#change-name-and-drop-columns" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Change name of columns</p></li>
+<li><p>Drop a column or a set of them</p></li>
+</ol>
+</section>
+<section id="counting-missing-values">
+<h4>Counting Missing values<a class="headerlink" href="#counting-missing-values" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>NAN</p></li>
+</ol>
+</section>
+<section id="filter-values">
+<h4>Filter values<a class="headerlink" href="#filter-values" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/clase_filtro_pandas(BIT).ipynb">Filter lab I</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/labPandas3(BIT).ipynb">Filter lab II</a></p></li>
+</ol>
+</section>
+<section id="duplicates-values">
+<h4>Duplicates values<a class="headerlink" href="#duplicates-values" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/BIT_lab_duplicates.ipynb">Lab duplicated</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Duplicates_groupby(BIT).ipynb">Lab duplicated groupby</a></p></li>
+</ol>
+</section>
+<section id="summation-or-mean-over-columns-or-rows">
+<h4>Summation or mean over columns or rows<a class="headerlink" href="#summation-or-mean-over-columns-or-rows" title="Permalink to this heading"></a></h4>
+<p>Sometimes you need calculate the mean or sum a set of columns or the values of a variable</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/DataFrame_sum_mean(BIT).ipynb">Lab mean-sum</a></p></li>
+</ol>
+</section>
+<section id="replace">
+<h4>Replace<a class="headerlink" href="#replace" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Pandas_to_replace(BIT).ipynb">Replace values</a></p></li>
+</ol>
+</section>
+<section id="merge-and-append-dataframes">
+<h4>Merge and append dataframes<a class="headerlink" href="#merge-and-append-dataframes" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/clase_merge(BIT).ipynb">Basic merge</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Loop_dataframes(BIT).ipynb">Loop-merge</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Check_variables_loop(BIT).ipynb">Variables consistency</a></p></li>
+</ol>
+</section>
+<section id="imputation-values">
+<h4>Imputation values<a class="headerlink" href="#imputation-values" title="Permalink to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Nulls_imputation(BIT).ipynb">Basic imputation</a></p></li>
+</ol>
+</section>
+<section id="practical-laboratories">
+<h4>Practical laboratories<a class="headerlink" href="#practical-laboratories" title="Permalink to this heading"></a></h4>
+<p>The following laboratory is to review some concepts with practical results, to realize
+this lab dowloand the database <cite>pibs-dptos.xlsx</cite> avaliable <a class="reference external" href="https://github.com/it-ces/Datasets/blob/main/pibs-dptos.xlsx">(Click here)</a></p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Pandas_manejo(BIT).ipynb">Gdps lab I</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Lab_PIBS(BIT).ipynb">Gdps lab II</a></p></li>
+</ol>
+</section>
+</section>
+<section id="regular-expressions-regex">
+<h3>Regular expressions (Regex)<a class="headerlink" href="#regular-expressions-regex" title="Permalink to this heading"></a></h3>
+<p>This topic deserve “apartado” given its importance.
+“Al principio” regex could be messy, but with practice each time its implementation
+is more inutitive.</p>
+<section id="regex-lab">
+<h4>Regex lab<a class="headerlink" href="#regex-lab" title="Permalink to this heading"></a></h4>
+<p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/freq_problems_pandas(BIT).ipynb">regex basic</a></p>
+</section>
+<section id="laboratories-i">
+<h4>Laboratories I<a class="headerlink" href="#laboratories-i" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/labHealth/blob/master/Health_Second_Class.ipynb">Contigency Table</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../BIT/people.html" class="btn btn-neutral float-left" title="Staff" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="probsimul.html" class="btn btn-neutral float-right" title="Probability and statistics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Iván Andrés Trujillo Abella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

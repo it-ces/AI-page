@@ -1,0 +1,141 @@
+Machine learning
+=====================================================================
+
+There several algorithms of machine learning,  among them we can 
+find Support Vector Machine (SVM), linear regression, 
+logistic regression, Decision Trees, Random Forest, Adaboost among another popular
+algorithms.
+
+
+Linear regression and Logistic regression
+--------------------------------------------------------------------------
+
+
+
+
+Linear regression 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The main is find the better line that adjust to the data, for instance for the following pictures constructed using the 
+world bank data.
+
+.. |pic1| image:: ./images/gdp-ruralpop.jpg
+   :width: 45%
+.. |pic2| image:: ./images/gdp-co2.jpg
+   :width: 45%
+|pic1| |pic2|
+
+
+the problem in each datasets consist of a linear approximation  $\hat{y}_{i}$ over the real value $y_{i}$
+in which the error is measured by $u_{i}^{2} = (y_{i} - \hat{y}_{i})^{2}$ 
+
+.. math::
+    :nowrap:
+
+    \begin{equation}
+        \min_{\beta_{0}, \beta_{1}} \sum u_{i}^{2}
+    \end{equation}
+
+
+.. |pic3| image:: ./images/gdp-ruralpop-fit.jpg
+   :width: 45%
+.. |pic4| image:: ./images/gdp-co2-fit.jpg
+   :width: 45%
+|pic3| |pic4|
+
+Here we go see that the values $\beta_{0}$ and $\beta_{1}$ that solve the problem could be 
+gotted by two methods **Maximun likelihood estimation** and **Least Square Method**  both methods
+offer similar results.
+
+
+
+
+what is the most important for us according to the strcutre
+
+
+
+Slides 
+********************************************************
+
+* `Logistic and linear regression slides <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LogisticRegression.pdf>`_
+* `Appendix  <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Apendice-ecuacionespdf.pdf>`_
+ 
+
+Videos
+***********************************************************
+* `Bivariate - MCO <https://www.youtube.com/watch?v=ZM1nhydYUKk&t=1360s>`_
+
+Laboratories
+********************************************************
+
+* `Cobb-Douglas production function <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Introducci%C3%B3n_Problem_OLS.ipynb>`_
+* `Cobb-Douglas production function II <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LN_producci%C3%B3n(BIT).ipynb>`_
+
+
+
+Logistic Regression 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The main objective is the prediction...
+
+
+
+
+Laboratories
+***************************************************************************
+* `Logistic regression LAB 1 <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LogisticRegression_bankruptcy(lab).ipynb>`_
+
+
+
+
+Support Vector Machine
+------------------------------------------------------------------------
+
+
+Ok ok for what it is this line
+
+adasd
+''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Created by vanipk 
+
+.. note::
+
+    `Click here to see the slides... <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
+
+
+
+Decision Tree (In construction)
+---------------------------------------------------------------------------
+
+
+Laboratory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+K-means, PCA, a priori algorithm are in ``Data mining`` folder...
+
+
+
+
+
+
+
+Slides
+----------------------------------------------------------------------------------------
+.. list-table:: Another resources....
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Model
+      - Material
+    * - K-Nearest Neighborhoods (KNN)
+      - `Slides KNN <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+    * - Decision Tree
+      - `Slides DT <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+    * - Logistic Regression
+      - `Slides LR <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+    * - Support Vector Machine (SVM)
+      - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
