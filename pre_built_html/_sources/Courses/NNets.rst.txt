@@ -3,23 +3,17 @@ Neural Networks
 ++++++++++++++++++++++++++++++++++
 
 
-
 History
 ===================================
-
-
-It is important undersantd the concept, and the names that play a important 
-role. Rossentablan present his contribution, however the XOR problem not is overcomed by perceptron.
 
 
 Models
 =====================================
 
-You can find all slides here
+`Slides Neural Networks <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Neural_NetworksV0.pdf>`_
 
-perceptron
+Perceptron
 -------------------------------------------
-Is a good 
 
 Perceptron implementation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -45,4 +39,4 @@ way see :doc:`Genetic Algorithm <./evolve>`  add somthing.
 
 
 
-To see this pleare refer :ref:`chain rule` 
+To see this pleare refer :ref:`chain rule` .

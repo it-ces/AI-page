@@ -7,6 +7,36 @@ logistic regression, Decision Trees, Random Forest, Adaboost among another popul
 algorithms.
 
 
+
+
+
+
+Slides
+----------------------------------------------------------------------------------------
+.. list-table:: Another resources....
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Model
+      - Material
+    * - Naive Bayes
+      - `Slides Naive Bayes <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Naive-preliminar.pdf>`_
+    * - K-Nearest Neighborhoods (KNN)
+      - `Slides KNN <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/KKN.pdf>`_
+    * - Neural Networks (NN)
+      - `Slides Neural Networks <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Neural_NetworksV0.pdf>`_
+    * - Decision Tree
+      - `Slides DT <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Decision-tree-preliminar.pdf>`_
+    * - Logistic Regression
+      -  In construction...
+    * - Support Vector Machine (SVM)
+      - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
+
+
+
+
+
+
 Linear regression and Logistic regression
 --------------------------------------------------------------------------
 
@@ -121,21 +151,3 @@ K-means, PCA, a priori algorithm are in ``Data mining`` folder...
 
 
 
-
-
-Slides
-----------------------------------------------------------------------------------------
-.. list-table:: Another resources....
-    :widths: 10  20 
-    :header-rows: 1
-
-    * - Model
-      - Material
-    * - K-Nearest Neighborhoods (KNN)
-      - `Slides KNN <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
-    * - Decision Tree
-      - `Slides DT <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
-    * - Logistic Regression
-      - `Slides LR <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
-    * - Support Vector Machine (SVM)
-      - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_

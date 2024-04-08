@@ -20,14 +20,14 @@ General
       - Practical Pandas 
       - :doc:`Pandas labs <../Courses/handledata>`
     * - Week 4
-      - A priori algorithm
-      - `Slides Apriori <Slides A priori https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_
+      - Decision Tree 
+      - `Slides Decision Tree <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Decision-tree-preliminar.pdf>`_
     * - Week 5
-      - Naive classifiers; K-nearest neighbors and Naive Bayes
-      - `KNN <Slides A priori https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_  -  `Naive Bayes <Slides A priori https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_ 
+      - KNN
+      - `Slides KNN <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/KKN.pdf>`_  
     * - Week 6
-      - Decision Tree
-      - See material here
+      - Support Vector Machine
+      - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
     * - Week 7 
       - Analytics workflow  
       - See material here
