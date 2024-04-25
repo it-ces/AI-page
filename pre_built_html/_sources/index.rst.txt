@@ -20,12 +20,6 @@ Topics
       * Microeconomics
       * Economic Growth
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: General information:
-
-   info/information
 
 
 
@@ -57,6 +51,12 @@ Topics
    Courses/programming
 ..
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Contributors:
+
+   info/information
 
 
 

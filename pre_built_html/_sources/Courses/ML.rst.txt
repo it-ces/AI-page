@@ -116,35 +116,6 @@ Laboratories
 * `Logistic regression LAB 1 <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LogisticRegression_bankruptcy(lab).ipynb>`_
 
 
-
-
-Support Vector Machine
-------------------------------------------------------------------------
-
-
-Ok ok for what it is this line
-
-adasd
-''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-Created by vanipk 
-
-.. note::
-
-    `Click here to see the slides... <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
-
-
-
-Decision Tree (In construction)
----------------------------------------------------------------------------
-
-
-Laboratory
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
 K-means, PCA, a priori algorithm are in ``Data mining`` folder...
 
 
