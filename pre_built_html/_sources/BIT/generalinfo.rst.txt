@@ -11,7 +11,7 @@ Sessions
 ===================================================
 
 
-The sessions will be in `Google Meet <https://meet.google.com/ttv-fqaj-nvf>`_ and The videos are stored  in `Youtube <https://www.youtube.com/playlist?list=PLpD_vYWjZt11Co-f0-qNNh44bexbXAk8_>`_.
+The sessions will be in `Google Meet <https://meet.google.com/rwp-bdab-tti>`_ and The videos are stored  in `Youtube <https://www.youtube.com/playlist?list=PLpD_vYWjZt11wTcnErO4p7JLIKFoeC2vz>`_.
 
 
 .. csv-table:: Scheduling
