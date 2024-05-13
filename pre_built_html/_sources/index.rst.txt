@@ -51,6 +51,15 @@ Topics
    Courses/programming
 ..
 
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Research:
+
+   Research
+
+
 .. toctree::
    :maxdepth: 2
    :hidden:
