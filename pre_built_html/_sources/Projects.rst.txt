@@ -1,0 +1,52 @@
+Projects
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Here you find  some projects 
+
+Mortality inequality by tuberculosis
+-------------------------------------------------------
+
+The followint project used information retrieved from
+DANE to study the inequality mortality in Colombia.
+
+The project is hosted in `github <https://github.com/it-ces/ai-page-LABS/tree/main/Mortality>`_
+
+
+Educational gap
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+Ranking of universities
+-----------------------------------------------------------------------------------------------
+
+
+
+
+
+TSP using genetic algorithms
+--------------------------------------------------------------------------------------------------
+
+The Travel Salesman Problem (TSP).
+
+
+
+Feature selection
+------------------------------------------------------------------------------------------------
+
+In this repo will be developed an Ant Colony Optimization (ACO) algorithm to develop
+feature selection. 
+
+
+
+
+Genetic K-means 
+---------------------------------------------------------------------------------------------------
+
+K-means is a greedy algorithm in this repo we will develop the exposed by ...
+
+

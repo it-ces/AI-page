@@ -7,7 +7,7 @@ Topics
 * Machine learning:
       * Linear Regression
       * Logistic Regression
-      * Neural Networs...
+      * Neural Networs
       * Support Vector Machine
 
 * Genetic algorithms
@@ -35,8 +35,11 @@ Topics
    :maxdepth: 2
    :hidden:
    :caption: Courses:
+   
 
+   Courses/programming
    Courses/handledata
+   Courses/timeSeries
    Courses/probsimul
    Courses/opto
    Courses/mining
@@ -58,6 +61,15 @@ Topics
    :caption: Research:
 
    Research
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Projects:
+
+   Projects
+
 
 
 .. toctree::

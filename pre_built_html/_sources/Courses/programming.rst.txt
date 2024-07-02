@@ -1,57 +1,205 @@
 Introduction to programming
 ++++++++++++++++++++++++++++++++++++++++++++
 
-History
-===================================================
 
+
+History
+----------------------------------------------------------------------
 
 Programming is exciting field, ``OOP`` is a revolutionary concept.
 
 There are important person we are begin with womans:
 
+
+
 Ada lovelace
-------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. image:: /Courses/images/Ada.jpg
 
 Was a revolutionary woman!
 
 
-
 Python
-++++++++++++++++++++++++++++++++++++
+-------------------------------------------------------------------
 
-Python History
-==========================================
-Desiged by Guido Van 
+Is a programming language open source.
 
 
 
-Structures 
-======================================
+Data structures 
+----------------------------------------------------------------------
+
 The list are properly structures to keep information
 
-list
------------------------------------------
-A simple way 
+
+List
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+List will be useful to keep our information.
+
+code::
+
+    data =  [0.5, 0.1]
+    data2 = [True, False]
+    data3 = ['on', 'off']
+    data4 = [0.01, True, 'False']
+
+This is an very flexible structure.
+
+code::
+
+    data = ['Up', 'left', 'right', 'down']
+
+We can *indexing* to select a particular object in the list using a index as position (starting with 0).
+
+for instance
+
+code::
+
+    data[0] # Return the first element -> 'Up'
+    data[1] # Return the second element -> 'left'
+
+
+
+Sometimes you can uses the append method to add information a list.
+
+code::
+
+    data = [] # Empty initialization
+    data.append(1)
+    data.append(True)
+    print(data) # Will return [1,True]
+
+
 
 tuple
------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Similar to lists.
+
+
+Dictionaries 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Dictionary is extremly useful structure 
+
+code::
+
+    data  = {'key1':[True, False], 'key2':[1,0]}
+
+Composode of *keys* and *value key*.
+
+
+
+Loops
+-------------------------------------------------------------------------------------
+
+The loops allow us execute a sentence  n-times or a number of times (?) until a condition  is reached.
+In the case that we known which is the number of times that that is needed execute the setence will used *for* 
+unlike *while* will be used:
+
+
+while
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Think in box process,
+
+hint: Draw the boxeses.
+
+code::
+
+    i  = 0   # Initialize the number.
+    while i < 10:  # The loop will be executed until the number is lesser than 10.
+        print(i)   # Shows the number on screen.
+        i = i + 1  # Update i each time that the loop is executed increase 1 to the current value of i.
+
+
+Note that the condition is that i be lesser than 10, when i be equal to 10 then the 
+expression 10 < 10 will return a False. Therefore, the loop not will be executed
+
+
+for
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+this  is a particular case of while.
+
+code::
+
+    for i in range(0,10): 
+    print(i) # will be executed the number from zero to nine.
+
+All loop for could be constructed with while.
+
+
 
 
 Functions
-==========================================
+--------------------------------------------------------
+
+It is important remark the *def* is a keyword and will be used to define a function.
+
+
+definition
+-------------------------------------------
 
 Here is a definition of code::
 
     def h(x):
     return ENTROPY
 
-definition
--------------------------------------------
-
 lambda Functions
 -------------------------------------------
 
+This kind of functions are very practical.
+
 code::
-    lambda x : x**2
+
+    lambda x: x**2
+
+
+
+
+Work : 
+
+Review the following nobteook
+
+`Homework 1: <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/built_in_fnt.ipynb>_`
+
+
+
+
+Laboratories 
+----------------------------------------------------------------------------------------
+.. list-table:: Another resources....
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Problem
+      - Laboratory
+    * - Loops
+      - `Loops lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Loops(BIT).ipynb>`_
+    * - Count vocals
+      - `Count vocal <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Count_vocals(BIT).ipynb>`_
+    * - Problems 
+      - `Problems I  <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Excersices(BIT).ipynb>`_
+    * - Factorial
+      - `Factorial & Combination <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Factorial_Permutation_Combination(BIT).ipynb>`_
+    * - Prime number
+      - `Prime number <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Primo(BIT).ipynb>`_
+    * - Matrix operations
+      - `Matrix lab operations <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Matrix_operations(BIT).ipynb>`_
+    * - Collatz
+      - `Collatz lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/collatz(BIT).ipynb>`_
+    * - Binary search
+      - `Binary search lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Binary_search(BIT).ipynb>`_
+    * - Cesar cypher
+      - `Lab cesar cypher <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Cesar_cripto(BIT).ipynb>`_
+    * - Stop words
+      - `Stop words lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Stopwords(BIT).ipynb>`_
+    * - Matrix diagonal
+      - `Matrix lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/tallerDiagonales(BIT).ipynb>`_
+
+
+
+

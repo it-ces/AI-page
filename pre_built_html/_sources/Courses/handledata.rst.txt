@@ -49,6 +49,16 @@ Filter values
 #. `Filter lab I <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/clase_filtro_pandas(BIT).ipynb>`_
 #. `Filter lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/labPandas3(BIT).ipynb>`_
 
+
+
+Groupby
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#. `Introduction to groupby  <https://github.com/it-ces/PUBLIC-AI/blob/main/PANDAS(talleres-slides)/Labs/GroupBy(ai_page).ipynb>`_
+#. `Excersice using groupby <https://github.com/it-ces/PUBLIC-AI/blob/main/PANDAS(talleres-slides)/Labs/lab-share-market.ipynb>`_
+
+
+
 Duplicates values 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -97,6 +107,7 @@ Practical laboratories
 The following laboratory is to review some concepts with practical results, to realize 
 this lab dowloand the database `pibs-dptos.xlsx` avaliable `(Click here) <https://github.com/it-ces/Datasets/blob/main/pibs-dptos.xlsx>`_
 
+#. `Health lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/LaboratoryPandas(ONE).ipynb>`_
 #. `Gdps lab I <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Pandas_manejo(BIT).ipynb>`_
 #. `Gdps lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Lab_PIBS(BIT).ipynb>`_
 
@@ -121,3 +132,9 @@ Laboratories I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * `Contigency Table <https://github.com/it-ces/labHealth/blob/master/Health_Second_Class.ipynb>`_
+
+
+
+Visualization 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* `Introduction to matplolib <https://github.com/it-ces/PUBLIC-AI/blob/952e12ad3b9f65ee11717c2974be8c4cf7613bc0/short-labs-pandas/introduction%20to%20matplotlib.ipynb#L10>`_

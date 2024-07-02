@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mathematical Appendix &mdash; Roma v2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
 
   
@@ -14,15 +14,16 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6b480424"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Research" href="../Research.html" />
     <link rel="prev" title="Lectures in Economics" href="economics.html" /> 
 </head>
 
@@ -45,20 +46,18 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">General information:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../BIT/generalinfo.html">Graduate Certificate Program  in Data Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../BIT/tracks.html">General Path and Tracks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../BIT/people.html">Staff</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and Simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Introduction to programming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeSeries.html">Time series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ML.html">Machine learning</a></li>
@@ -71,6 +70,18 @@
 <li class="toctree-l2"><a class="reference internal" href="#numerical-optimization">Numerical Optimization</a></li>
 </ul>
 </li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Research.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Projects.html">Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contributors:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
 </ul>
 
         </div>
@@ -98,15 +109,15 @@
            <div itemprop="articleBody">
              
   <section id="mathematical-appendix">
-<h1>Mathematical Appendix<a class="headerlink" href="#mathematical-appendix" title="Permalink to this heading"></a></h1>
+<h1>Mathematical Appendix<a class="headerlink" href="#mathematical-appendix" title="Link to this heading"></a></h1>
 <p>In this lecture you will find  a summary of important mathematical concepts useful in
 economics and data analysis, include functions, logarithms, derivatives and optimization principles.</p>
 <div class="math notranslate nohighlight" id="equation-euler">
-<span class="eqno">(1)<a class="headerlink" href="#equation-euler" title="Permalink to this equation"></a></span>\[e^{i\pi} + 1 = 0\]</div>
+<span class="eqno">(1)<a class="headerlink" href="#equation-euler" title="Link to this equation"></a></span>\[e^{i\pi} + 1 = 0\]</div>
 <p>Euler’s identity, equation <a class="reference internal" href="#equation-euler">(1)</a>, was elected one of the most
 beautiful mathematical formulas.</p>
 <section id="chain-rule">
-<h2>Chain Rule<a class="headerlink" href="#chain-rule" title="Permalink to this heading"></a></h2>
+<h2>Chain Rule<a class="headerlink" href="#chain-rule" title="Link to this heading"></a></h2>
 <p>The chain rule is a good process to begin</p>
 <div class="math notranslate nohighlight">
 \begin{eqnarray}
@@ -125,12 +136,12 @@ beautiful mathematical formulas.</p>
  5 &amp; 6
  \end{pmatrix}
  \]</div><div class="math notranslate nohighlight" id="equation-entropy">
-<span class="eqno">(2)<a class="headerlink" href="#equation-entropy" title="Permalink to this equation"></a></span>\[H(x)  = \sum_{i}^{N} x_{i} h(x_{i})\]</div>
+<span class="eqno">(2)<a class="headerlink" href="#equation-entropy" title="Link to this equation"></a></span>\[H(x)  = \sum_{i}^{N} x_{i} h(x_{i})\]</div>
 <p>in this case we can ref  maybe works <a class="reference internal" href="#equation-entropy">(2)</a></p>
 <div class="math notranslate nohighlight" id="equation-pfx">
-<span class="eqno">(3)<a class="headerlink" href="#equation-pfx" title="Permalink to this equation"></a></span>\[p = f(x)\]</div>
+<span class="eqno">(3)<a class="headerlink" href="#equation-pfx" title="Link to this equation"></a></span>\[p = f(x)\]</div>
 <div class="math notranslate nohighlight" id="equation-eq-pfx">
-<span class="eqno">(4)<a class="headerlink" href="#equation-eq-pfx" title="Permalink to this equation"></a></span>\[p=f(x)\]</div>
+<span class="eqno">(4)<a class="headerlink" href="#equation-eq-pfx" title="Link to this equation"></a></span>\[p=f(x)\]</div>
 <p>hello i add a important equation here and not is rendered <strong>why</strong>?
 <div class="math notranslate nohighlight">
 \[f(x)\]</div>
@@ -145,7 +156,7 @@ a &amp; b
 \end{pmatrix}</div><p>add newer</p>
 </section>
 <section id="numerical-optimization">
-<h2>Numerical Optimization<a class="headerlink" href="#numerical-optimization" title="Permalink to this heading"></a></h2>
+<h2>Numerical Optimization<a class="headerlink" href="#numerical-optimization" title="Link to this heading"></a></h2>
 <p>Gradient descent algorithm</p>
 <p>Raphson Newthon</p>
 </section>
@@ -156,6 +167,7 @@ a &amp; b
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="economics.html" class="btn btn-neutral float-left" title="Lectures in Economics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Research.html" class="btn btn-neutral float-right" title="Research" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

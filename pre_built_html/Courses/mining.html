@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data mining &mdash; Roma v2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
       <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
 
   
@@ -14,17 +14,17 @@
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script src="../_static/jquery.js"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-        <script src="../_static/doctools.js"></script>
-        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=6b480424"></script>
+        <script src="../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Analytics" href="analytics.html" />
-    <link rel="prev" title="Handling data with pandas" href="handledata.html" /> 
+    <link rel="prev" title="Optimization" href="opto.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,20 +46,18 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">General information:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
-</ul>
-<p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../BIT/generalinfo.html">Graduate Certificate Program  in Data Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../BIT/tracks.html">General Path and Tracks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../BIT/people.html">Staff</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and Simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Introduction to programming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeSeries.html">Time series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data mining</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#association-rules">Association rules</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#apriori-algorith">Apriori algorith</a></li>
@@ -83,6 +81,18 @@
 <li class="toctree-l1"><a class="reference internal" href="evolve.html">Genetic Algorithms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="economics.html">Lectures in Economics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mathappendix.html">Mathematical Appendix</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Research.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Projects.html">Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contributors:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
 </ul>
 
         </div>
@@ -110,7 +120,7 @@
            <div itemprop="articleBody">
              
   <section id="data-mining">
-<h1>Data mining<a class="headerlink" href="#data-mining" title="Permalink to this heading"></a></h1>
+<h1>Data mining<a class="headerlink" href="#data-mining" title="Link to this heading"></a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf">Click here to see the slides…</a></p>
@@ -118,9 +128,9 @@
 <p>In this section we will find information about different topics as
 Association rules, clustering and, reduction of dimensionality.</p>
 <section id="association-rules">
-<h2>Association rules<a class="headerlink" href="#association-rules" title="Permalink to this heading"></a></h2>
+<h2>Association rules<a class="headerlink" href="#association-rules" title="Link to this heading"></a></h2>
 <section id="apriori-algorith">
-<h3>Apriori algorith<a class="headerlink" href="#apriori-algorith" title="Permalink to this heading"></a></h3>
+<h3>Apriori algorith<a class="headerlink" href="#apriori-algorith" title="Link to this heading"></a></h3>
 <p>We are interested in find out if the products <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are sistutes  or complementaries.
 in a database with transactions made it of inovices in a period of time:</p>
 <table class="docutils align-default">
@@ -154,10 +164,10 @@ if we assest each possible combination then will have a computational complexity
 </section>
 </section>
 <section id="clustering">
-<h2>Clustering<a class="headerlink" href="#clustering" title="Permalink to this heading"></a></h2>
+<h2>Clustering<a class="headerlink" href="#clustering" title="Link to this heading"></a></h2>
 <p>The unsupervised learning is a field of learning.</p>
 <section id="k-means">
-<h3>K-means<a class="headerlink" href="#k-means" title="Permalink to this heading"></a></h3>
+<h3>K-means<a class="headerlink" href="#k-means" title="Link to this heading"></a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The models based in distance are affected by <cite>curse of dimensionality</cite>
@@ -166,12 +176,12 @@ to see more information about that please refer to.</p>
 </section>
 </section>
 <section id="reduction-of-dimensionality">
-<h2>Reduction of dimensionality<a class="headerlink" href="#reduction-of-dimensionality" title="Permalink to this heading"></a></h2>
+<h2>Reduction of dimensionality<a class="headerlink" href="#reduction-of-dimensionality" title="Link to this heading"></a></h2>
 <section id="curse-of-dimensionality">
-<h3>Curse of dimensionality<a class="headerlink" href="#curse-of-dimensionality" title="Permalink to this heading"></a></h3>
+<h3>Curse of dimensionality<a class="headerlink" href="#curse-of-dimensionality" title="Link to this heading"></a></h3>
 </section>
 <section id="principal-component-analysis">
-<h3>Principal Component analysis<a class="headerlink" href="#principal-component-analysis" title="Permalink to this heading"></a></h3>
+<h3>Principal Component analysis<a class="headerlink" href="#principal-component-analysis" title="Link to this heading"></a></h3>
 </section>
 </section>
 </section>
@@ -180,7 +190,7 @@ to see more information about that please refer to.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="handledata.html" class="btn btn-neutral float-left" title="Handling data with pandas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="opto.html" class="btn btn-neutral float-left" title="Optimization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="analytics.html" class="btn btn-neutral float-right" title="Analytics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
