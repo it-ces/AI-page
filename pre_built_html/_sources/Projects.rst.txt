@@ -2,7 +2,7 @@ Projects
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-Here you find  some projects 
+Here you find some projects using data managment and machine learning models using public data.
 
 Mortality inequality by tuberculosis
 -------------------------------------------------------
@@ -20,12 +20,16 @@ Educational gap
 
 
 
-
 Ranking of universities
 -----------------------------------------------------------------------------------------------
 
 
 
+Gravity model
+-------------------------------------------------------------------------------------------------
+In this module are concatenate four databases to test international hypothesis over international trade.
+
+`Github repo <https://github.com/it-ces/ai-page-LABS/blob/main/Gravity%20-%20model/Gravity_model(ai_page).ipynb>`_
 
 
 TSP using genetic algorithms

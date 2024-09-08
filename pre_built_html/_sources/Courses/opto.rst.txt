@@ -1,16 +1,23 @@
 Optimization
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+This section is important given some models as linear regressiona and logistic regression
+based its learning algorithms in this numericall solutions.
 
 
-
-We are going to see two important aspects.
-
+why doest work?
 
 
-In this section we are going to cover some popular algorithms:
+   
+Slides
+----------------------------------------------------------------------------------------
+.. list-table:: Notebooks 
+    :widths: 10  20 
+    :header-rows: 1
 
- #. Gradient Descendent
- #. Raphson Newthon
-
-
-
+    * - Model
+      - Material
+  
+    * - Gradient Descendent
+      - `GDS <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/Numerical%20optimization/sgd_GradientDescent(ai_page).ipynb>`_
+    * - Raphson Newton
+      - `Raphson Newton <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/Numerical%20optimization/RaphsonNewthon(ai_page).ipynb>`_

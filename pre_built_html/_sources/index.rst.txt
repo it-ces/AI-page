@@ -45,6 +45,7 @@ Topics
    Courses/mining
    Courses/analytics
    Courses/ML
+   Courses/NLP
    Courses/NNets
    Courses/ineqlab
    Courses/evolve

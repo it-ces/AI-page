@@ -110,6 +110,9 @@ this lab dowloand the database `pibs-dptos.xlsx` avaliable `(Click here) <https:
 #. `Health lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/LaboratoryPandas(ONE).ipynb>`_
 #. `Gdps lab I <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Pandas_manejo(BIT).ipynb>`_
 #. `Gdps lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Lab_PIBS(BIT).ipynb>`_
+#. `World bank data <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/solow_data(ai_page).ipynb>`_
+#. `TMR lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/TMR_model(ai_page).ipynb>`_
+#. `Hanushek lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Hanushek_hypothesis(Ai_page).ipynb>`_
 
 Regular expressions (Regex)
 ------------------------------------------------------------------------------------------
@@ -132,6 +135,20 @@ Laboratories I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * `Contigency Table <https://github.com/it-ces/labHealth/blob/master/Health_Second_Class.ipynb>`_
+
+
+
+Reshaping data
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*   `Reshape data <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/reshape_data_pivot(ai_page).ipynb>`_
+*   `Pivot data <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/pivot_pivotTable(ai_page).ipynb>`_
+
+Table one
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#. `Table one bankrupt <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Tableone(ai-page).ipynb>`_
+
+
 
 
 
