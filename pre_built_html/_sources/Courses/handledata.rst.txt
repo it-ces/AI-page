@@ -129,8 +129,6 @@ Regex lab
 
 
 
-
-
 Laboratories I
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -147,8 +145,6 @@ Reshaping data
 Table one
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #. `Table one bankrupt <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Tableone(ai-page).ipynb>`_
-
-
 
 
 

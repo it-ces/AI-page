@@ -19,15 +19,17 @@ Slides
     * - Association rules (Apriori)
       - `Slides Apriori algorithm <https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_
     * - Principal Components Algorithms(PCA)
-      - `Slides in construnction `_
-
-
-
+      - `Slides PCA <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/PCA_slides.pdf>`_
 
 In this section we will find information about different topics as 
 Association rules, clustering and, reduction of dimensionality.
 
 
+  Laboratories
+***************************************************************************
+
+* `PCA - linear regression <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/PCA(ai_page).ipynb>`_
+* `Course of dimensionality simulation <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/Curse_of_dimensionality_simulation(ai_page).ipynb>`_
 
 
 

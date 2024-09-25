@@ -21,3 +21,5 @@ Slides
       - `GDS <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/Numerical%20optimization/sgd_GradientDescent(ai_page).ipynb>`_
     * - Raphson Newton
       - `Raphson Newton <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/Numerical%20optimization/RaphsonNewthon(ai_page).ipynb>`_
+    * - Lagrange Multiplier (notebook)
+      - `Lagrante utility maximization <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/Lagrange/Lagrange(ai-page).ipynb>`_
