@@ -20,6 +20,8 @@ Slides
       - `Slides Background concepts <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Background-ML.pdf>`_
     * - Linear regression
       - `Slides Linear regression <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Linear-regression.pdf>`_
+    * -  Regularization
+      - `Slides Regularization <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Regularization.pdf>`_
     * - Logistic regression
       -  `Slides logistic regression <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/LogisticRegression.pdf>`_
     * - Naive Bayes
@@ -101,7 +103,7 @@ Laboratories
 * `Cobb-Douglas production function <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Introducci%C3%B3n_Problem_OLS.ipynb>`_
 * `Cobb-Douglas production function II <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LN_producci%C3%B3n(BIT).ipynb>`_
 * `Instrumental variables <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Instrumental%20Variables.ipynb>`_
-
+* `Regularization <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Regularization-linear(ai_page).ipynb>`_
 
 
 Logistic Regression 

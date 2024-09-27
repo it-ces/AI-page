@@ -30,7 +30,7 @@ Association rules, clustering and, reduction of dimensionality.
 
 * `PCA - linear regression <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/PCA(ai_page).ipynb>`_
 * `Course of dimensionality simulation <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/Curse_of_dimensionality_simulation(ai_page).ipynb>`_
-
+* `Clustering <https://github.com/it-ces/PUBLIC-AI/blob/main/CLUSTER/clustering-K-H-DS(ai-page).ipynb>`_
 
 
 Association rules
