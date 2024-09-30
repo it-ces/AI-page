@@ -1,7 +1,6 @@
 Natural Language Processing
 ----------------------------------------------------------
-
-With the ideas of Naive bayes some books...
+The text is very important in industrial or financial applications.
 
 Notebooks
 ----------------------------------------------------------------------------------------
@@ -18,3 +17,5 @@ Notebooks
       - `Notebook lyrics classification  <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/lyrics_nlp(ai_page).ipynb>`_
     * - Topic Modelling
       - `Notebook lyrics topic <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/Topic_modelling_summary(ai_page).ipynb>`_
+    * - Cluster songs
+      - `Notebook cluster text <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/ClusteringText(ai_page).ipynb>`_

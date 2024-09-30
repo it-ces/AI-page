@@ -33,10 +33,6 @@ Association rules, clustering and, reduction of dimensionality.
 * `Clustering <https://github.com/it-ces/PUBLIC-AI/blob/main/CLUSTER/clustering-K-H-DS(ai-page).ipynb>`_
 
 
-Association rules
----------------------------------------------------------------------------
-
-
 
 
 
@@ -92,18 +88,3 @@ K-means
     The models based in distance are affected by `curse of dimensionality`
     to see more information about that please refer to.
 
-
-
-
-Reduction of dimensionality
------------------------------------------------------------------------------
-
-
-
-Curse of dimensionality
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-Principal Component analysis
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

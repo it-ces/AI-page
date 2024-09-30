@@ -3,6 +3,44 @@ Introduction to programming
 
 
 
+Laboratories 
+----------------------------------------------------------------------------------------
+.. list-table:: Another resources....
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Problem
+      - Laboratory
+    * - Slides
+      - `Introductory slides <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/To-load-to-ai-page.pdf>`_
+    * - Introductory
+      - `Intro 1 <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Introduction_python(ai_page).ipynb>`_
+    * - Loops
+      - `Loops lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Loops(BIT).ipynb>`_
+    * - Count vocals
+      - `Count vocal <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Count_vocals(BIT).ipynb>`_
+    * - Problems 
+      - `Problems I  <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Excersices(BIT).ipynb>`_
+    * - Factorial
+      - `Factorial & Combination <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Factorial_Permutation_Combination(BIT).ipynb>`_
+    * - Prime number
+      - `Prime number <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Primo(BIT).ipynb>`_
+    * - Matrix operations
+      - `Matrix lab operations <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Matrix_operations(BIT).ipynb>`_
+    * - Collatz
+      - `Collatz lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/collatz(BIT).ipynb>`_
+    * - Binary search
+      - `Binary search lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Binary_search(BIT).ipynb>`_
+    * - Cesar cypher
+      - `Lab cesar cypher <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Cesar_cripto(BIT).ipynb>`_
+    * - Stop words
+      - `Stop words lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Stopwords(BIT).ipynb>`_
+    * - Matrix diagonal
+      - `Matrix lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/tallerDiagonales(BIT).ipynb>`_
+
+
+
+
 History
 ----------------------------------------------------------------------
 
@@ -165,41 +203,5 @@ Work :
 Review the following nobteook
 
 `Homework 1: <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/built_in_fnt.ipynb>_`
-
-
-
-
-Laboratories 
-----------------------------------------------------------------------------------------
-.. list-table:: Another resources....
-    :widths: 10  20 
-    :header-rows: 1
-
-    * - Problem
-      - Laboratory
-    * - Loops
-      - `Loops lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Loops(BIT).ipynb>`_
-    * - Count vocals
-      - `Count vocal <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Count_vocals(BIT).ipynb>`_
-    * - Problems 
-      - `Problems I  <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Excersices(BIT).ipynb>`_
-    * - Factorial
-      - `Factorial & Combination <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Factorial_Permutation_Combination(BIT).ipynb>`_
-    * - Prime number
-      - `Prime number <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Primo(BIT).ipynb>`_
-    * - Matrix operations
-      - `Matrix lab operations <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Matrix_operations(BIT).ipynb>`_
-    * - Collatz
-      - `Collatz lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/collatz(BIT).ipynb>`_
-    * - Binary search
-      - `Binary search lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Binary_search(BIT).ipynb>`_
-    * - Cesar cypher
-      - `Lab cesar cypher <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Cesar_cripto(BIT).ipynb>`_
-    * - Stop words
-      - `Stop words lab <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/Stopwords(BIT).ipynb>`_
-    * - Matrix diagonal
-      - `Matrix lab II <https://github.com/it-ces/PUBLIC-AI/blob/main/Short-labs/tallerDiagonales(BIT).ipynb>`_
-
-
 
 
