@@ -19,3 +19,5 @@ Notebooks
       - `Notebook lyrics topic <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/Topic_modelling_summary(ai_page).ipynb>`_
     * - Cluster songs
       - `Notebook cluster text <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/ClusteringText(ai_page).ipynb>`_
+    * - Emoji prediction
+      - `Emoji prediction text <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/Emoji-prediction(ai-page).ipynb>`_
