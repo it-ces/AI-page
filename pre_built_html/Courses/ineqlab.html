@@ -183,7 +183,7 @@ T = \frac{1}{N} \sum \frac{x_{i}}{\bar{y}}ln(\frac{x_{i}}{\bar{y}})
 \end{equation}</div><p>#Restricted to <span class="math notranslate nohighlight">\((0-1)\)</span> theil index</p>
 <p>Another point of view in SEN:</p>
 <p>remeber that <span class="math notranslate nohighlight">\(\sum_{i}^{n} x_{i} = 1\)</span>.
-<span class="math notranslate nohighlight">\(h(x) = ln(1/x) \)</span> while <span class="math notranslate nohighlight">\(x\)</span> be more improbably more value have$ (x) = \sum x_{i} log(\frac{1}{x_{i}})$ therefore
+<span class="math notranslate nohighlight">\(h(x) = ln(1/x) \)</span> while <span class="math notranslate nohighlight">\(x\)</span> be more improbably more value have <span class="math notranslate nohighlight">\(x = \sum x_{i} log( \frac{1}{x_{i}} )\)</span> therefore
 with <span class="math notranslate nohighlight">\(x_{i} = \frac{1}{n}\)</span> then  <span class="math notranslate nohighlight">\(H(x) = log(n)\)</span>, remeber that we can write <span class="math notranslate nohighlight">\(log(n) = \sum x_{i} log(n)\)</span>, thus</p>
 <div class="math notranslate nohighlight">
 \begin{equation}
@@ -196,11 +196,11 @@ T =  \sum x_{i}log(n) - \sum x_{i}log(\frac{1}{x_{i}})
 <p>therefore our index will be <span class="math notranslate nohighlight">\(1\)</span> to perfect inequality and zero by uniform distribution.</p>
 <p>code:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">theil</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
-<span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
-<span class="n">relative</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">/</span><span class="n">Y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">array</span><span class="p">]</span>
-<span class="n">Theil</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">y</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">N</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">relative</span><span class="p">])</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
-<span class="k">return</span> <span class="n">Theil</span>
+  <span class="n">Y</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+  <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+  <span class="n">relative</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">/</span><span class="n">Y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">array</span><span class="p">]</span>
+  <span class="n">Theil</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">y</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">y</span> <span class="o">*</span> <span class="n">N</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">relative</span><span class="p">])</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">Theil</span>
 </pre></div>
 </div>
 <p>Theil in pandas <a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Theil-pandas(BIT).ipynb">Theil pandas</a></p>
@@ -219,10 +219,25 @@ B = \sum \frac{(y_{i-1} + y_{i})}{2}*(N_{i} - N_{i-1})
 <div class="math notranslate nohighlight">
 \begin{equation}
 G = 1 - \sum (y_{i-1} + y_{i}) * (N_{i} - N_{i-1})
-\end{equation}</div><dl class="simple">
-<dt>code::</dt><dd><p>def print(x)</p>
-</dd>
-</dl>
+\end{equation}</div><p>code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gini</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">cumsum</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span>
+        <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="n">e</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">counter</span><span class="o">/</span><span class="n">total</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">output</span>
+    <span class="n">array</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span>
+    <span class="n">acum_array</span> <span class="o">=</span> <span class="n">cumsum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+    <span class="n">area</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">acum_array</span><span class="p">)):</span>
+        <span class="n">area</span> <span class="o">=</span> <span class="n">area</span> <span class="o">+</span>  <span class="p">(</span><span class="n">acum_array</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">acum_array</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="p">(</span><span class="n">n</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">n</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">return</span> <span class="mi">1</span>  <span class="o">-</span> <span class="n">area</span>
+</pre></div>
+</div>
 <section id="codemaster">
 <h3>codemaster<a class="headerlink" href="#codemaster" title="Link to this heading"></a></h3>
 </section>

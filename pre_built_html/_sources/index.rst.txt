@@ -39,6 +39,7 @@ Topics
 
    Courses/programming
    Courses/handledata
+   Courses/IIND2107
    Courses/timeSeries
    Courses/probsimul
    Courses/opto

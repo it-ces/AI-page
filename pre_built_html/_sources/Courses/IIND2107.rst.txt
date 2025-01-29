@@ -1,0 +1,43 @@
+IIND-2107
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Welcome this page is support  IIND-2107.  
+
+
+
+
+Information
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The databases used in the excersises could be dowland here  - `datasets repository <https://github.com/it-ces/datasets-iind2107>`_.
+
+
+
+Slides
+----------------------------------------------------------------------------------------
+.. list-table:: Slides
+    :widths: 10  20 10
+    :header-rows: 1
+
+    * - Description
+      - Material
+      - Excercisces
+    
+    * - Introduction to R
+      - `R slides <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/R-slides.pdf>`_
+      -  dupliacate the see!
+    * - Week2
+      - `Slides 1 <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/Sesi%C3%B3n1.pdf>`_ 
+      - `Counting tanks <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/count-tanks.pdf>`_
+
+
+Additional 
+----------------------------------------------------------------------------------------
+.. list-table:: Slides
+    :widths: 10  20
+    :header-rows: 1
+
+    * - Description
+      - Material    
+    * -  sum of squared normals follow chi-square.
+      - `slides <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/mgf-gauss-chisquare.pdf>`_
+ 

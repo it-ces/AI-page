@@ -119,7 +119,7 @@ therefore:
 Another point of view in SEN:
 
 remeber that $\sum_{i}^{n} x_{i} = 1$.
-$h(x) = ln(1/x) $ while $x$ be more improbably more value have$ (x) = \sum x_{i} log(\frac{1}{x_{i}})$ therefore
+$h(x) = ln(1/x) $ while $x$ be more improbably more value have $x = \sum x_{i} log( \frac{1}{x_{i}} )$ therefore
 with $x_{i} = \frac{1}{n}$ then  $H(x) = log(n)$, remeber that we can write $log(n) = \sum x_{i} log(n)$, thus 
 
 
@@ -147,11 +147,11 @@ therefore our index will be $1$ to perfect inequality and zero by uniform distri
 code::
 
     def theil(array):
-    Y = sum(array)
-    N = len(array)
-    relative = [y/Y for y in array]
-    Theil = sum([y * math.log(y * N) for y in relative])/math.log(N)
-    return Theil
+      Y = sum(array)
+      N = len(array)
+      relative = [y/Y for y in array]
+      Theil = sum([y * math.log(y * N) for y in relative])/math.log(N)
+      return Theil
 
 
 
@@ -200,9 +200,24 @@ the gini could be calculated with:
 
 
 code::
-    def print(x)
 
 
+    def gini(array):
+        def cumsum(array):
+            output = [0]
+            counter = 0
+            total = sum(array)
+            for e in array:
+            counter = counter + e
+            output.append(counter/total)
+            return output
+        array.sort()
+        n = [i/len(array) for i in range(0,len(array)+1)]
+        acum_array = cumsum(array)
+        area = 0
+        for i in range(1,len(acum_array)):
+            area = area +  (acum_array[i] + acum_array[i-1]) * (n[i] - n[i-1])
+        return 1  - area
 
 
 codemaster
