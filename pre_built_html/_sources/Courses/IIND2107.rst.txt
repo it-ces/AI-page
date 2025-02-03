@@ -4,8 +4,6 @@ IIND-2107
 Welcome this page is support  IIND-2107.  
 
 
-
-
 Information
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The databases used in the excersises could be dowland here  - `datasets repository <https://github.com/it-ces/datasets-iind2107>`_.
@@ -24,11 +22,26 @@ Slides
     
     * - Introduction to R
       - `R slides <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/R-slides.pdf>`_
-      -  dupliacate the see!
+      -  test on colab.
     * - Week2
       - `Slides 1 <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/Sesi%C3%B3n1.pdf>`_ 
       - `Counting tanks <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/count-tanks.pdf>`_
 
+
+Excercisces
+----------------------------------------------------------------------------------------
+.. list-table:: Slides
+    :widths: 10  20 10
+    :header-rows: 1
+
+    * - Description
+      - Material
+      - Excercisces
+    
+    * - Week-2 
+      - `Excercisces - 2 <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/R-slides.pdf>`_
+      -  dupliacate the see!
+  
 
 Additional 
 ----------------------------------------------------------------------------------------
@@ -37,7 +50,9 @@ Additional
     :header-rows: 1
 
     * - Description
-      - Material    
-    * -  sum of squared normals follow chi-square.
+      - Material
+    * - Cochrans simulation
+      - `Simulaton Cochrans theorem <https://colab.research.google.com/drive/1khrP2As9j6wQxgJawp8dCmPjiN0bKiab#scrollTo=XPevsHHj9EtA>`_
+    * - Sum of squared normals follow chi-square.
       - `slides <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/mgf-gauss-chisquare.pdf>`_
  
