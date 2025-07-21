@@ -39,12 +39,8 @@ Excercisces
       - Excercisces
     
     * - Week-2 
-      - `Excercisces - 2 <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/exc-week2.pdf>`_
+      - `Excercisces - 2 <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/R-slides.pdf>`_
       -  dupliacate the see!
-    * - Week-3 
-      - `Excercisces - 2 <https://github.com/it-ces/PUBLIC-AI/blob/main/proba2/exc-week2.pdf>`_
-      -  dupliacate the see!
-  
   
 
 Additional 

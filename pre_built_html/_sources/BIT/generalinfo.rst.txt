@@ -1,10 +1,11 @@
-Graduate Certificate Program  in Data Analysis
+Data Analysis Bootcamp
 ++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Welcome
 =============================
 
-In this program you will recieve training to analyse data in an intermediate level.
+In this session you will find my personal resources to teach in bootcamps programs.
+
 
 
 Sessions 
@@ -25,7 +26,6 @@ The sessions will be in `Google Meet <https://meet.google.com/rwp-bdab-tti>`_ an
 Staff
 ===============================================================
 
-Bogotá Institute of Technology guarantees your educational journey. Should you have any questions, please feel free to reach out to us at lider.mejora@bit.institute.
 
 
 .. note:: 
@@ -35,7 +35,7 @@ Bogotá Institute of Technology guarantees your educational journey. Should you 
    Attendance is not mandatory; however, students are responsible for all information presented in class, even if it is not recorded.
 
 .. tip:: 
-   BIT promotes respect for diversity.
+    Try, Try....
 
 
 

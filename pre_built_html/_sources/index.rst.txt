@@ -4,6 +4,13 @@ Data Analysis project
 Topics 
 =========================
 
+
+The General index could be:
+
+* Data mining: 
+   * Clustering
+   * Apriori
+
 * Machine learning:
       * Linear Regression
       * Logistic Regression

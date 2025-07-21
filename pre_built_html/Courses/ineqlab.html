@@ -7,7 +7,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inequality Measures &mdash; Roma v2 documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
 
@@ -53,6 +53,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Introduction to programming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IIND2107.html">IIND-2107</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timeSeries.html">Time series</a></li>
 <li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
@@ -195,7 +196,7 @@ T =  \sum x_{i}log(n) - \sum x_{i}log(\frac{1}{x_{i}})
 \end{equation}</div><p>if <span class="math notranslate nohighlight">\(H(x)\)</span> is evenely distributed then <span class="math notranslate nohighlight">\(H(x) = log(n)\)</span>  if one person concentrate all then <span class="math notranslate nohighlight">\(H(x) = 0\)</span>. then wen a person concentrate all income <span class="math notranslate nohighlight">\(1*log(1/1) =0\)</span>.</p>
 <p>therefore our index will be <span class="math notranslate nohighlight">\(1\)</span> to perfect inequality and zero by uniform distribution.</p>
 <p>code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">theil</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">theil</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
   <span class="n">Y</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
   <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
   <span class="n">relative</span> <span class="o">=</span> <span class="p">[</span><span class="n">y</span><span class="o">/</span><span class="n">Y</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">array</span><span class="p">]</span>
@@ -220,8 +221,8 @@ B = \sum \frac{(y_{i-1} + y_{i})}{2}*(N_{i} - N_{i-1})
 \begin{equation}
 G = 1 - \sum (y_{i-1} + y_{i}) * (N_{i} - N_{i-1})
 \end{equation}</div><p>code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">gini</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">cumsum</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">gini</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">cumsum</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
         <span class="n">output</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
