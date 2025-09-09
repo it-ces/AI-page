@@ -1,0 +1,900 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analytics &mdash; Roma v2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=6b480424"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]]}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Machine learning" href="ML.html" />
+    <link rel="prev" title="Data mining" href="mining.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Roma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/generalinfo.html">Data Analysis Bootcamp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/tracks.html">General Path and Tracks</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Introduction to programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IIND2107.html">IIND-2107</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeSeries.html">Time series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Analytics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#slides">Slides</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#frequencies-categorical-data">Frequencies - categorical data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mean">Mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#median-and-quartiles">Median and Quartiles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#standard-deviation-and-interquantile-range">Standard deviation and Interquantile Range</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#coefficient-of-variation">Coefficient of variation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#histogram">Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boxplot">Boxplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#normality">Normality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#line-chart">Line chart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eda-laboratories-i">EDA laboratories I</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#covariance">Covariance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#correlation">Correlation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#eda-laboratories-ii">EDA laboratories II</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#preprocessing">Preprocessing</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standarization">Standarization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Normality</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#standard-normal-distribution">Standard Normal distribution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#handling-categorical-variables">Handling categorical variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#prediction-perfromance-assestmet">Prediction perfromance assestmet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specificity">specificity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#sensitivity">sensitivity</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#confusion-matrix">Confusion Matrix</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#accuracy">Accuracy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bayes-theorem">Bayes theorem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#threshold-to-profit-risk">Threshold to profit - risk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#training-and-test">Training and Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#crossvalidation">Crossvalidation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#k-fold">K-fold</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stratified-k-fold">Stratified K-fold</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hyperparameter-tunning">Hyperparameter tunning</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#grid-search">Grid search</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#feature-selection">Feature selection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#feature-enginiring">Feature enginiring</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#logarithm-transformation">Logarithm transformation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ML.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NLP.html">Natural Language Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NLP.html#notebooks">Notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NNets.html">Neural Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ineqlab.html">Inequality Measures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evolve.html">Genetic Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="economics.html">Lectures in Economics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathappendix.html">Mathematical Appendix</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Research.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Projects.html">Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contributors:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Roma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Analytics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Courses/analytics.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="analytics">
+<h1>Analytics<a class="headerlink" href="#analytics" title="Link to this heading"></a></h1>
+<section id="exploratory-data-analysis-eda">
+<h2>Exploratory Data Analysis (EDA)<a class="headerlink" href="#exploratory-data-analysis-eda" title="Link to this heading"></a></h2>
+<p>In this section we are going to see a brief description of different concepts as mean, standard deviation and so on,
+you also will find notebook(s) to replicate in python.</p>
+<section id="slides">
+<h3>Slides<a class="headerlink" href="#slides" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf">EDA</a></p></li>
+</ul>
+<p><strong>Levels of measurement</strong>  allow us classify the data according to the information nature and its  mathematical richness
+in terms of operations, the herarchy is the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ratio</p></li>
+<li><p>Interval</p></li>
+<li><p>Ordinal</p></li>
+<li><p>Nominal</p></li>
+</ul>
+</div></blockquote>
+<p>This level of classification give us flexbility and precision in our analysis, consider the  income of persons, you could collect ordinal ranges as
+<em>high income</em>, <em>Medium income</em>  annd <em>lower income</em> and so, but this not allow us the degree of differences and lesser to known the exact value. Unlike if you
+collect the numerical values, with this information  you could construct the ranges aforementioned and gain precision over the collected information.</p>
+<p>Temperature measured in Celsious is not  a intervale variable given that zero not indicate absence of temperature, also the definition of
+zero differ in Farenheith regarding celcious. Unlike zero meters and zero feets means the same; absence of distance!.</p>
+<p><em>inverval variables</em> have an arbitary zero point and <em>ratio varibales</em> have an absolute zero point.
+IQ  is an example of interval scale, a IQ test of 80 and another of 160 not imply that that one person  twice smarter  that another, but you can said that
+a person is twice loaded of another.</p>
+<p>This is important to carry out adecuately statistical description or analysis, for instance the coeffcieint of variation
+only have sense in <em>ratio</em> varaibles.</p>
+</section>
+<section id="frequencies-categorical-data">
+<h3>Frequencies - categorical data<a class="headerlink" href="#frequencies-categorical-data" title="Link to this heading"></a></h3>
+<p>Categorical data as countries name, kind of bacteria (gram positive or negative),
+or in sport base ball teams, could be described with <em>absolute</em> and <em>relative</em> frequencies.</p>
+<p>Example: World bank data have a classification of countries by its level of income.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Category</p></td>
+<td><p>Absolute frequency <span class="math notranslate nohighlight">\((n_{i})\)</span></p></td>
+<td><p>Relative frequency <span class="math notranslate nohighlight">\((freq_{i})\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>HIC</p></td>
+<td><p>82</p></td>
+<td><p>0.378</p></td>
+</tr>
+<tr class="row-odd"><td><p>LMC</p></td>
+<td><p>54</p></td>
+<td><p>0.249</p></td>
+</tr>
+<tr class="row-even"><td><p>UMC</p></td>
+<td><p>54</p></td>
+<td><p>0.249</p></td>
+</tr>
+<tr class="row-odd"><td><p>LIC</p></td>
+<td><p>26</p></td>
+<td><p>0.120</p></td>
+</tr>
+<tr class="row-even"><td><p>INX</p></td>
+<td><p>1</p></td>
+<td><p>0.005</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../_images/bar-chart.jpg"><img alt="../_images/bar-chart.jpg" src="../_images/bar-chart.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+<p>We can also repsent the distribution of some numerical value in each category, for instance:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Category</p></td>
+<td><p>Relative share of population 2020</p></td>
+</tr>
+<tr class="row-even"><td><p>HIC</p></td>
+<td><p>15.624</p></td>
+</tr>
+<tr class="row-odd"><td><p>INX</p></td>
+<td><p>0.365</p></td>
+</tr>
+<tr class="row-even"><td><p>LIC</p></td>
+<td><p>8.556</p></td>
+</tr>
+<tr class="row-odd"><td><p>LMC</p></td>
+<td><p>39.982</p></td>
+</tr>
+<tr class="row-even"><td><p>UMC</p></td>
+<td><p>35.473</p></td>
+</tr>
+</tbody>
+</table>
+<a class="reference internal image-reference" href="../_images/pie-popDist.jpg"><img alt="../_images/pie-popDist.jpg" src="../_images/pie-popDist.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+</section>
+<section id="mean">
+<h3>Mean<a class="headerlink" href="#mean" title="Link to this heading"></a></h3>
+<p>Used as central tendency measure is sensible to outliers (very tiny or bigger values…)</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \bar{x} = \frac{1}{N} \sum_{i=1}^{N} x_{i}
+\end{equation}</div></section>
+<section id="median-and-quartiles">
+<h3>Median and Quartiles<a class="headerlink" href="#median-and-quartiles" title="Link to this heading"></a></h3>
+<p>Quartiles split the data in four equal groups, therefore
+each slice group a <span class="math notranslate nohighlight">\(\frac{1}{4}\)</span> of data.
+Median is the data point that split the data in two halves, finally
+percentiles split the data in <span class="math notranslate nohighlight">\(100\)</span> equal groups.</p>
+<ul class="simple">
+<li><p>Q1 = P25</p></li>
+<li><p>Q2 = P50</p></li>
+<li><p>Q3 = P75</p></li>
+</ul>
+<p>The following table summary some values aforementioned:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Life expectancy 2020</p></td>
+</tr>
+<tr class="row-even"><td><p>count</p></td>
+<td><p>209</p></td>
+</tr>
+<tr class="row-odd"><td><p>mean</p></td>
+<td><p>72,31</p></td>
+</tr>
+<tr class="row-even"><td><p>std</p></td>
+<td><p>7,483</p></td>
+</tr>
+<tr class="row-odd"><td><p>min</p></td>
+<td><p>52,777</p></td>
+</tr>
+<tr class="row-even"><td><p>25%</p></td>
+<td><p>66,797</p></td>
+</tr>
+<tr class="row-odd"><td><p>50%</p></td>
+<td><p>72,889</p></td>
+</tr>
+<tr class="row-even"><td><p>75%</p></td>
+<td><p>78,041</p></td>
+</tr>
+<tr class="row-odd"><td><p>max</p></td>
+<td><p>85,498</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="standard-deviation-and-interquantile-range">
+<h3>Standard deviation and Interquantile Range<a class="headerlink" href="#standard-deviation-and-interquantile-range" title="Link to this heading"></a></h3>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \sigma^{2} = \frac{\sum_{i=1}^{N} (x_{i} - \bar{x})^{2}}{N}
+\end{equation}</div><div class="math notranslate nohighlight">
+\begin{equation}
+    \sigma^{2} = \frac{\sum_{i=1}^{N} (x_{i} - \bar{x})^{2}}{N-1}
+\end{equation}</div><p>Why it is important this distiction? statistics give us; procedures, techniques and mathematical formulas to take better
+decisions with data this imply that we need draw the most information possible our data, and in this case the second formula
+give us a better approximation to the population parameter that describe the variability.
+See here <a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/Variance_estimators(Biased_unbiased).ipynb">Simulation</a></p>
+</section>
+<section id="coefficient-of-variation">
+<h3>Coefficient of variation<a class="headerlink" href="#coefficient-of-variation" title="Link to this heading"></a></h3>
+<p>Useful when need compare population with different characteristics, for instance
+the life expectancy in different geographical unities grouped by level of income.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Income   Level (Category)</p></td>
+<td><p>Count</p></td>
+<td><p>Mean</p></td>
+<td><p>Std</p></td>
+<td><p>CV(%)</p></td>
+</tr>
+<tr class="row-even"><td><p>HIC</p></td>
+<td><p>75</p></td>
+<td><p>79,127</p></td>
+<td><p>3,987</p></td>
+<td><p>5,039</p></td>
+</tr>
+<tr class="row-odd"><td><p>INX</p></td>
+<td><p>1</p></td>
+<td><p>71,095</p></td>
+<td><p>NaN</p></td>
+<td><p>NaN</p></td>
+</tr>
+<tr class="row-even"><td><p>LIC</p></td>
+<td><p>26</p></td>
+<td><p>62,106</p></td>
+<td><p>4,805</p></td>
+<td><p>7,737</p></td>
+</tr>
+<tr class="row-odd"><td><p>LMC</p></td>
+<td><p>54</p></td>
+<td><p>67,839</p></td>
+<td><p>5,642</p></td>
+<td><p>8,317</p></td>
+</tr>
+<tr class="row-even"><td><p>UMC</p></td>
+<td><p>53</p></td>
+<td><p>72,246</p></td>
+<td><p>4,232</p></td>
+<td><p>5,858</p></td>
+</tr>
+</tbody>
+</table>
+<p>According to the table the category LIC and HIC have considerably differences in means.</p>
+</section>
+<section id="histogram">
+<h3>Histogram<a class="headerlink" href="#histogram" title="Link to this heading"></a></h3>
+<p>This represent graphically the distribution of variable itself according to ranges,
+this histogram shows the life expectancy in some countries in the world.</p>
+<p>The height of each bar is porportional to the number of data points that are in the
+respective range, for instance….</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>data</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
+<td><p>10</p></td>
+<td><p>8</p></td>
+<td><p>5</p></td>
+<td><p>12</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Ranges</p></td>
+<td><p>Values</p></td>
+<td><p>Height</p></td>
+</tr>
+<tr class="row-even"><td><p>(1-5)</p></td>
+<td><p>1,2,4,5</p></td>
+<td><p>0,57</p></td>
+</tr>
+<tr class="row-odd"><td><p>(6-10)</p></td>
+<td><p>8,10</p></td>
+<td><p>0,29</p></td>
+</tr>
+<tr class="row-even"><td><p>(11-16)</p></td>
+<td><p>12</p></td>
+<td><p>0,14</p></td>
+</tr>
+</tbody>
+</table>
+<p>Note that column Height  could sum up 1.</p>
+<a class="reference internal image-reference" href="../_images/Histogram.jpg"><img alt="../_images/Histogram.jpg" src="../_images/Histogram.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+</section>
+<section id="boxplot">
+<h3>Boxplot<a class="headerlink" href="#boxplot" title="Link to this heading"></a></h3>
+<p>There are three important things to remark in this graph, p25, p50, p75,  we need sort the values of the variables
+from smallest to largest.
+The wide of box is denominated as Interquantile range.</p>
+<p>Box plot also give us visual information about <em>skewness</em> of the distribution:</p>
+<p>Skewness  is a measure of the asymetry:</p>
+<ul class="simple">
+<li><p>In <em>poisitive skew (skewed to the right)</em>, The right tail is longer, the mass of the distribution is concentrated on the left of the figure.</p></li>
+</ul>
+<p><a class="reference internal" href="../_images/GDP-percapita.jpg"><img alt="pic1" src="../_images/GDP-percapita.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/boxplot-gdp2020.jpg"><img alt="pic2" src="../_images/boxplot-gdp2020.jpg" style="width: 45%;" /></a></p>
+<ul class="simple">
+<li><p>In <em>negative skew (skewed to the left)</em>,  the left tail is longer; the mass  of the distribution is</p></li>
+</ul>
+<p>Concentrated on the right of the figure.</p>
+<p><a class="reference internal" href="../_images/hist-acc_clean.jpg"><img alt="pic3" src="../_images/hist-acc_clean.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/boxplot-acc_clean.jpg"><img alt="pic4" src="../_images/boxplot-acc_clean.jpg" style="width: 45%;" /></a></p>
+<p>Boxplot is also very usefult to compare numerical variables over groups.</p>
+<a class="reference internal image-reference" href="../_images/boxplot-incomelevel.jpg"><img alt="../_images/boxplot-incomelevel.jpg" src="../_images/boxplot-incomelevel.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">norm</span>
+<span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.25</span><span class="p">)</span> <span class="c1"># Give us the value of the 25 centil  Q1</span>
+<span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.75</span><span class="p">)</span> <span class="c1"># Give us the value of the 75 centil  Q3</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mf">0.25</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>The interquantile range (IQR) is <span class="math notranslate nohighlight">\(Q_{3} - Q_{1}\)</span> and for normal distribution is  <span class="math notranslate nohighlight">\(\approx 1.34\)</span></p>
+<p>Now cosider the following:</p>
+<p>Now we are searching two values as decision criteria to values more extreme of them as outliers values:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+ Q_{3} +  \lambda   IQR
+\end{equation}
+
+\begin{equation}
+ Q_{1} - \lambda IQR
+\end{equation}</div><p>Reemplacing the values we need select a <span class="math notranslate nohighlight">\(\lambda\)</span> value:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+0.67 + \lambda 1.34
+\end{equation}
+
+\begin{equation}
+- (0.67 + \lambda 1.34)
+\end{equation}</div><p>If we select <span class="math notranslate nohighlight">\(\lambda = 1.5\)</span> then the probability of getting a <em>outlier value</em> is 0.0073.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="o">-</span><span class="mf">2.68</span><span class="p">)</span><span class="o">*</span><span class="mi">2</span> <span class="c1"># The probability of be a outlier....</span>
+</pre></div>
+</div>
+</section>
+<section id="normality">
+<h3>Normality<a class="headerlink" href="#normality" title="Link to this heading"></a></h3>
+<p>Notes about normality…</p>
+<a class="reference internal image-reference" href="../_images/normalHistogram.jpg"><img alt="../_images/normalHistogram.jpg" src="../_images/normalHistogram.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+<p>Test of normality is important to decide the statistics used
+to describe data or to use parametric or no parametric statistics, for instance
+uses mean with no-normal variables could lead to misleading conclusions.</p>
+<p>We also need normality for uses ANOVA and compare groups, for instance when you need
+test if the treatment A , B , C  or D present significative difference among a group of patients.</p>
+<p>there are numercial and graphically methods to test data normality, some
+of those are:</p>
+<ul class="simple">
+<li><p>Shapiro-Wilk test</p></li>
+<li><p>Kolgomorov-Sirnov test</p></li>
+<li><p>Histogram</p></li>
+<li><p>Q-Q plot</p></li>
+</ul>
+<p>where used each one?</p>
+<p>uses Shapiro-Wilk for small  sample sizes (&lt;50)
+uses Kolgomorov-Sirnov with sizes greater than  or equal to  50.
+in both test <span class="math notranslate nohighlight">\(H_{0}\)</span> indicate normality.</p>
+<p>The histogram must be as the presented above, the Q-Q plot or Quantile-Quantile plot graph
+expected vs observed quantiles in standardize data with standardize normal distribution.
+For normal data the points must be looks like a line.</p>
+<p>In Q-Q plot we are comparing theoretical agains empirical quantiles of a
+variable. If the variable come from that distribution Q-Q plot is a straigth
+line.</p>
+<p><a class="reference internal" href="../_images/normalHistogram.jpg"><img alt="nhist" src="../_images/normalHistogram.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/qqplot-normal.jpg"><img alt="qqplotnorm" src="../_images/qqplot-normal.jpg" style="width: 45%;" /></a></p>
+<p>The following is a not normal especifically a exponential distribution:</p>
+<p><a class="reference internal" href="../_images/exponentialHistogram.jpg"><img alt="exphist" src="../_images/exponentialHistogram.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/qqplot-exponential.jpg"><img alt="qqplotexp" src="../_images/qqplot-exponential.jpg" style="width: 45%;" /></a></p>
+<p>Analytical methods are sensitive to sample size.
+assuming that <span class="math notranslate nohighlight">\(X \sim N()\)</span> with small samples <span class="math notranslate nohighlight">\(p-value\)</span> tend to be greater, and with
+larges samples <span class="math notranslate nohighlight">\(p-value\)</span> tend to be small.</p>
+<p>Rule: if you have sample size <span class="math notranslate nohighlight">\(&lt; 30\)</span> uses Q-Q plot.</p>
+<p>So far, we conclude that the descriptive
+statistics aim to communicate the major quantity of information in the simplest way.</p>
+</section>
+<section id="line-chart">
+<h3>Line chart<a class="headerlink" href="#line-chart" title="Link to this heading"></a></h3>
+<p>Sometimes we need decribes variables as a time series.</p>
+<a class="reference internal image-reference" href="../_images/time-serie.jpg"><img alt="../_images/time-serie.jpg" src="../_images/time-serie.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+</section>
+<section id="eda-laboratories-i">
+<h3>EDA laboratories I<a class="headerlink" href="#eda-laboratories-i" title="Link to this heading"></a></h3>
+<p>Here we find some laboratories to practice.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_population(BIT).ipynb">EDA Categorical</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_lifeExp_(BIT).ipynb">EDA Numerical</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Quantile(BIT).ipynb">Relative position</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/LaboratoryPandas(ONE).ipynb">Practical lab</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/introduction%20to%20matplotlib.ipynb">Matplotlib lab</a></p></li>
+</ul>
+</section>
+<section id="covariance">
+<h3>Covariance<a class="headerlink" href="#covariance" title="Link to this heading"></a></h3>
+</section>
+<section id="correlation">
+<h3>Correlation<a class="headerlink" href="#correlation" title="Link to this heading"></a></h3>
+<p>Measure the degree of linearity among two variables, take values among
+-1 and 1, there is not correlation among variables when the coefficient is equal to zero.</p>
+<p><a class="reference internal" href="../_images/gdp-ruralpop.jpg"><img alt="pic5" src="../_images/gdp-ruralpop.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/gdp-co2.jpg"><img alt="pic6" src="../_images/gdp-co2.jpg" style="width: 45%;" /></a></p>
+<p>For this image put here the notebook, where two important pearson and spearman.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td></td>
+<td></td>
+<td><p>Percentage of rural population</p></td>
+<td><p>Co2 tons per capita</p></td>
+</tr>
+<tr class="row-even"><td><p>GDP 2020</p></td>
+<td><p>Pearson coefficient</p></td>
+<td><p>-0,634</p></td>
+<td><p>0,722</p></td>
+</tr>
+<tr class="row-odd"><td></td>
+<td><p>Spearman Coefficient</p></td>
+<td><p>-0,712</p></td>
+<td><p>0,907</p></td>
+</tr>
+</tbody>
+</table>
+<p>Here there are a plot of correlation matrix…</p>
+</section>
+<section id="eda-laboratories-ii">
+<h3>EDA laboratories II<a class="headerlink" href="#eda-laboratories-ii" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Correlation_matrix(BIT).ipynb">Correlation Matrix</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_population(BIT).ipynb">Normality test</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/labHealth/blob/master/Health_Second_Class.ipynb">Contigency Table</a></p></li>
+</ul>
+<p>Matrix correlation could be useful…</p>
+</section>
+</section>
+<section id="preprocessing">
+<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Link to this heading"></a></h2>
+<section id="standarization">
+<h3>Standarization<a class="headerlink" href="#standarization" title="Link to this heading"></a></h3>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    z_{i} = \frac{x_{i} - \bar{x}}{\sigma_{x}}
+\end{equation}</div><p>where <span class="math notranslate nohighlight">\(\bar{x}\)</span> is the mean, and <span class="math notranslate nohighlight">\(\sigma\)</span> is standard deviation, this very useful given
+that <span class="math notranslate nohighlight">\(z \sim (0, 1)\)</span> follow a distribution with mean zero and standard deviation of one.</p>
+<p>You can see it from:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \bar{z} =  \frac{1}{n}  \sum_{i=1}^{n} \left( \frac{x_{i} - \bar{x}}{ \sigma_{x} } \right)
+\end{equation}</div><p>note that <span class="math notranslate nohighlight">\(\sum_{i=1}^{n}  (x_{i} - \bar{x}) = n\bar{x}  - n\bar{x} = 0\)</span> therefore <span class="math notranslate nohighlight">\(\bar{z} = 0\)</span>.</p>
+<p>Now consider the variance of the variable <span class="math notranslate nohighlight">\(z\)</span>:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \sigma_{z} = \frac{\sum (z_{i} -  \bar{z})^{2}}{n}
+\end{equation}</div><p>reemplacing <span class="math notranslate nohighlight">\(\bar{z}=0\)</span>  and <span class="math notranslate nohighlight">\(z_{i} = \frac{x_{i} - \bar{x}}{\sigma_{x}}\)</span> then:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+ \sigma_{z} =  \frac{1}{n} \sum  \left(   \frac{ x_{i} - \bar{x} }{\sigma_{x}}  \right)^{2}    =  \frac{1}{\sigma_{x}^{2}} \frac{\sum (x_{i} - \bar{x})^{2}}{n}.
+\end{equation}</div><p>Given that <span class="math notranslate nohighlight">\(\sigma_{z}^{2}  = \frac{\sum (x_{i} - \bar{x})^{2}}{n}\)</span>, This show us that <span class="math notranslate nohighlight">\(\sigma_{z} = 1\)</span>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/Z_standard(BIT).ipynb">(See lab)</a></p>
+</div>
+</section>
+<section id="id1">
+<h3>Normality<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<p>What it is normal?</p>
+<p>We are going to say that <span class="math notranslate nohighlight">\(X\)</span> is normal as; <span class="math notranslate nohighlight">\(X \sim N(\mu, \sigma)\)</span> Discovered by abraham de moivre.</p>
+<section id="standard-normal-distribution">
+<h4>Standard Normal distribution<a class="headerlink" href="#standard-normal-distribution" title="Link to this heading"></a></h4>
+<p><span class="math notranslate nohighlight">\(X \sim N(0,1)\)</span>.</p>
+<a class="reference internal image-reference" href="../_images/normaldist.jpg"><img alt="../_images/normaldist.jpg" src="../_images/normaldist.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+<p>The before distribution have <span class="math notranslate nohighlight">\(\mu=0\)</span> and <span class="math notranslate nohighlight">\(\sigma = 1\)</span>.</p>
+<p>our guide text..</p>
+<p>There are a family of nornal distributions described by its mean and standard deviation.</p>
+<p>its <span class="math notranslate nohighlight">\(x\)</span> is described as:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+\frac{1}{ \sqrt{2 \pi \sigma^{2}}} \exp{ \left( \frac{-(x-\mu)^{2}}{2\sigma^{2}} \right)}
+\end{equation}</div><a class="reference internal image-reference" href="../_images/normales.jpg"><img alt="../_images/normales.jpg" src="../_images/normales.jpg" style="width: 400.0px; height: 400.0px;" />
+</a>
+<p>Each curve is described by its median and standard deviation.</p>
+<section id="laboratories">
+<h5>Laboratories<a class="headerlink" href="#laboratories" title="Link to this heading"></a></h5>
+</section>
+</section>
+</section>
+<section id="handling-categorical-variables">
+<h3>Handling categorical variables<a class="headerlink" href="#handling-categorical-variables" title="Link to this heading"></a></h3>
+<p>In this section we are going to work with categories in Machine learning, using important methos as OneHotEncoder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/Encoding(Sklearn_pandas).ipynb">(See lab)</a></p>
+</div>
+</section>
+</section>
+<section id="prediction-perfromance-assestmet">
+<h2>Prediction perfromance assestmet<a class="headerlink" href="#prediction-perfromance-assestmet" title="Link to this heading"></a></h2>
+<p>OCD occurs whent you cant stop of thinking about something,
+but i could i sure that i have OCD?,
+you can visit your professional health, and take several test to diagnose,
+but what happens if the test is wrong? or what happend if the test said that not and
+your thoughts are persistent!</p>
+<p>imagine a similar situation with a major degree of certain, whichs means?
+this means that there are a golden standard to diagnose, and you are testing a cheaper method,
+think in diagnose of covid-19 there are some situations</p>
+<ol class="arabic simple">
+<li><p>Test say <strong>not</strong> and i’m really <strong>not have</strong> covid-19</p></li>
+<li><p>Test say <strong>not</strong> and i’m reall <strong>have</strong> covid-19</p></li>
+<li><p>Test say <strong>yes</strong> and i’m really <strong>have</strong> covid-19</p></li>
+<li><p>Test say <strong>yes</strong> and i’m really <strong>dont have</strong> covid-19</p></li>
+</ol>
+<p>This could be summaries in:</p>
+<p>Ok!, then how good fit this test?,  there are some metrics that i could study:</p>
+<section id="specificity">
+<h3>specificity<a class="headerlink" href="#specificity" title="Link to this heading"></a></h3>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    P( \hat{-} \mid - )
+\end{equation}</div><p>In other words, you can understand as the probability of get a negative result given that
+the persons not have a the condition.</p>
+</section>
+<section id="sensitivity">
+<h3>sensitivity<a class="headerlink" href="#sensitivity" title="Link to this heading"></a></h3>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    P( \hat{+} \mid + )
+\end{equation}</div><p>This is the probability of get a test positive result when really exist the condition.</p>
+<p>All this measures are built on the <strong>confusion matrix</strong></p>
+</section>
+<section id="confusion-matrix">
+<h3>Confusion Matrix<a class="headerlink" href="#confusion-matrix" title="Link to this heading"></a></h3>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Disease (Positive)</p></td>
+<td><p>No-disease (Negative)</p></td>
+</tr>
+<tr class="row-even"><td><p>Test Positive</p></td>
+<td><p>True Positive (TP)</p></td>
+<td><p>False Positive (FP)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Test Negative</p></td>
+<td><p>False Negative (FN)</p></td>
+<td><p>True Negative (TN)</p></td>
+</tr>
+</tbody>
+</table>
+<p>The confusion matrix present the different combinations of possible results.</p>
+</section>
+<section id="accuracy">
+<h3>Accuracy<a class="headerlink" href="#accuracy" title="Link to this heading"></a></h3>
+<div class="math notranslate nohighlight">
+\begin{equation}
+   \frac{ TP  + TN}{(FP + FN + TP + FN)}
+\end{equation}</div><div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This measure is biased when there are unbalanced classes</p>
+</div>
+<p>is a unbiased measure of performance given that is affected by unbalanced classes.</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \text{Type 1} = \frac{FP}{TN + FP}
+\end{equation}</div><div class="math notranslate nohighlight">
+\begin{equation}
+    \text{Type 2} = \frac{FN}{TP+FN}
+\end{equation}</div><p>Now, we are going to see in probability terms to have major intuition of the some measures.</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+Sesintivity  = recall = \frac{TP}{TP+FN} = \frac{ P( + \cap \hat{+})}{P(+)} = P(\hat{+} \mid +)
+\end{equation}</div><div class="math notranslate nohighlight">
+\begin{equation}
+PPV = precision = \frac{TP}{TP+FP} = \frac{P(+ \cap \hat{+})}{P(\hat{+})}  = P(+ \mid \hat{+})
+\end{equation}</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://colab.research.google.com/drive/1M8AzYbuaGZOheAg7KTYUu5-c9kziIYP2?usp=sharing">(See lab)</a></p>
+</div>
+</section>
+</section>
+<section id="bayes-theorem">
+<h2>Bayes theorem<a class="headerlink" href="#bayes-theorem" title="Link to this heading"></a></h2>
+<p>Think a moment what is the relationship behind precision and recall or
+recall and predicted positive values?.</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    P(A \mid B) = \frac{P(A \cap B)}{P(B)}
+\end{equation}</div><div class="math notranslate nohighlight">
+\begin{equation}
+    P(B \mid A) = \frac{P( A \cap B)}{P(B)}
+\end{equation}</div><p>Note that <span class="math notranslate nohighlight">\(P(  A \cap B) = P(A \mid B)P(B)\)</span> and <span class="math notranslate nohighlight">\(P(A \cap B ) = P(B \mid A ) P(A)\)</span>, therefore</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+P(A \mid B) P(B)  = P(B \mid A) P(A)
+\end{equation}</div><p>We can write:</p>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\begin{equation}
+    P(A \mid B ) = \frac{P(B \mid A) P(A) }{P(B)}
+\end{equation}</div></div></blockquote>
+<p>How a model could be snesible and not precise?</p>
+<p>the patient <span class="math notranslate nohighlight">\(X\)</span>, have a diagnose confirmed <span class="math notranslate nohighlight">\(+\)</span> or <span class="math notranslate nohighlight">\(-\)</span> and the results test as <span class="math notranslate nohighlight">\(\hat{+}\)</span> or <span class="math notranslate nohighlight">\(\hat{-}\)</span>
+thus a patient with confirmed diagnose and a negative result test is
+denoted as: <span class="math notranslate nohighlight">\(X_{+}^{\hat{-}}\)</span>, Analize the following situation:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+X_{+}^{\hat{+}} \quad X_{-}^{\hat{+}} \quad X_{-}^{\hat{+}} \quad X_{+}^{\hat{+}} \quad X_{-}^{\hat{+}} \quad X_{-}^{\hat{-}}
+\end{equation}</div><p>Notice that the test have a sensitivity of 100%, and whics is the value of precision?
+consider that a false positive case is  positive test when really is a negative confirmed diagnosed.</p>
+<p>We could be interested in a model that the two properties</p>
+<blockquote>
+<div><p>how is related precision and specificity?..</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Take in mind that precision and specificity are related
+by False Negatives.</p>
+</div>
+<p>You could uses take an average two ponder recall and precision,
+however note that the mean not differentiated of balanced (model 4) and extreme cases (models 1,2,3).</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td></td>
+<td><p>Recall</p></td>
+<td><p>Precision</p></td>
+<td><p>Mean</p></td>
+<td><p>F1 -score</p></td>
+</tr>
+<tr class="row-even"><td><p>Model 1</p></td>
+<td><p>0,3</p></td>
+<td><p>0,8</p></td>
+<td><p>0,55</p></td>
+<td><p>0,44</p></td>
+</tr>
+<tr class="row-odd"><td><p>Model 2</p></td>
+<td><p>0,8</p></td>
+<td><p>0,3</p></td>
+<td><p>0,55</p></td>
+<td><p>0,44</p></td>
+</tr>
+<tr class="row-even"><td><p>Model 3</p></td>
+<td><p>0,12</p></td>
+<td><p>0,98</p></td>
+<td><p>0,55</p></td>
+<td><p>0,21</p></td>
+</tr>
+<tr class="row-odd"><td><p>Model 4</p></td>
+<td><p>0,52</p></td>
+<td><p>0,58</p></td>
+<td><p>0,55</p></td>
+<td><p>0,55</p></td>
+</tr>
+<tr class="row-even"><td><p>Model 5</p></td>
+<td><p>0,83</p></td>
+<td><p>0,91</p></td>
+<td><p>0,87</p></td>
+<td><p>0,87</p></td>
+</tr>
+<tr class="row-odd"><td><p>Model 6</p></td>
+<td><p>0,08</p></td>
+<td><p>100</p></td>
+<td><p>50,04</p></td>
+<td><p>0,16</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="threshold-to-profit-risk">
+<h2>Threshold to profit - risk<a class="headerlink" href="#threshold-to-profit-risk" title="Link to this heading"></a></h2>
+<p>What level of precision and sensitivity could maximize the profit?</p>
+</section>
+<section id="training-and-test">
+<h2>Training and Test<a class="headerlink" href="#training-and-test" title="Link to this heading"></a></h2>
+<p>A simplified <strong>workflow</strong> could be described as;</p>
+<p>A common way to build machine learning models is assest the performance
+of the model to solve  a particular task; for instance classification of a new message
+in <em>spamn</em> or <em>jam</em>.</p>
+<p>in ML is important to known that the evaluation of a model is a large task,
+that include the metric that quantify the model performance until the dataset selected,</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/K_fold_Simple_Stratified(Sklearn).ipynb">See lab</a></p>
+</div>
+</section>
+<section id="crossvalidation">
+<h2>Crossvalidation<a class="headerlink" href="#crossvalidation" title="Link to this heading"></a></h2>
+<section id="k-fold">
+<h3>K-fold<a class="headerlink" href="#k-fold" title="Link to this heading"></a></h3>
+<p>Over a dataset <span class="math notranslate nohighlight">\(D\)</span> make <span class="math notranslate nohighlight">\(k\)</span> partitions(folds) <span class="math notranslate nohighlight">\((d_{1}, d_{2}, d_{3}, ..., d_{k})\)</span>  where <span class="math notranslate nohighlight">\(d_{i} \cap d_{j}  = \emptyset\)</span>
+<span class="math notranslate nohighlight">\(,\forall i \neq j\)</span>, and <span class="math notranslate nohighlight">\(\bigcup_{i=1}^{k} d_{i} = D\)</span>.  The goal is select the <span class="math notranslate nohighlight">\(p\)</span> partition to evaluate the training made it
+with another <span class="math notranslate nohighlight">\(k-1\)</span> partitions. This process is repeated with each partition <span class="math notranslate nohighlight">\((d_{i})\)</span>  of the <span class="math notranslate nohighlight">\(k\)</span> as validation dataset.
+Now defining <span class="math notranslate nohighlight">\(\Xi(d_{j})\)</span>  as the model performance in the dataset <span class="math notranslate nohighlight">\(d_{j}\)</span> then
+the overall assesment of the model will be:</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \frac{1}{K} \sum_{i=1}^{K} \Xi(d_{i})
+\end{equation}</div></section>
+<section id="stratified-k-fold">
+<h3>Stratified K-fold<a class="headerlink" href="#stratified-k-fold" title="Link to this heading"></a></h3>
+<p>Given a more realistic scenario,  each partition have the target variable in roughly the same
+approxiamate proportion that original dataset….</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/K_fold_Simple_Stratified(Sklearn).ipynb">See lab</a></p>
+</div>
+</section>
+</section>
+<section id="hyperparameter-tunning">
+<h2>Hyperparameter tunning<a class="headerlink" href="#hyperparameter-tunning" title="Link to this heading"></a></h2>
+<p>It is important note that grid search not is the only way to
+search the hyperameters in a model, for instance GA’s also can be used see here.</p>
+<p>In machine learning algorithms the learning process is affected by some parameter, this means that
+there are paraemters that are not learned by the algorithm, si no por el contario the user must specified,
+for instance learning rate in multilayer perceptron. Therefore the objective is find
+the set of parameters that optimize the algorithm.</p>
+<section id="grid-search">
+<h3>Grid search<a class="headerlink" href="#grid-search" title="Link to this heading"></a></h3>
+<p>This approach consist in test all the possible combinations of parameters defined by the users for instance
+test the epochs:<span class="math notranslate nohighlight">\((100, 120, 300)\)</span> and the learning rates of <span class="math notranslate nohighlight">\((0.05 , 0.01, 0.001)\)</span> that
+give us a total of <span class="math notranslate nohighlight">\(9\)</span> combinations,</p>
+<p>In this case, how will be selected the number of epocs and the value of the learning rate?</p>
+<p>An overall metric performance will be obtanaied using <code class="docutils literal notranslate"><span class="pre">cross-validation</span></code> and the set of parameters
+with higher value  will be selected <span class="math notranslate nohighlight">\(\max \Xi(X | \alpha, epochs)\)</span>.</p>
+<p>this approach is computationally expensive, and not guaranteed reach a optimal solution,
+there are some other techniques as <code class="docutils literal notranslate"><span class="pre">random</span> <span class="pre">search`</span></code>, <code class="docutils literal notranslate"><span class="pre">bayesian</span>&#160; <span class="pre">optimization`</span></code>, <code class="docutils literal notranslate"><span class="pre">evolutionary</span> <span class="pre">techniques</span></code>, among others…</p>
+</section>
+</section>
+<section id="feature-selection">
+<h2>Feature selection<a class="headerlink" href="#feature-selection" title="Link to this heading"></a></h2>
+<p>there are a many techniques to select variables,</p>
+</section>
+<section id="feature-enginiring">
+<h2>Feature enginiring<a class="headerlink" href="#feature-enginiring" title="Link to this heading"></a></h2>
+<section id="logarithm-transformation">
+<h3>Logarithm transformation<a class="headerlink" href="#logarithm-transformation" title="Link to this heading"></a></h3>
+<p>A symmetric distribution, mean and median are equal, therefore in the central half of data have a lesser
+value and the other halve have a greater value.</p>
+<p>Skewed is presented in some variables for instance in Gross Product Domestic (GDP), namely <em>right skewed</em>,
+this mean that only a minor fraction of countries have a huge GDP! otherwise. Another example could be
+the time that a person is in hospital, and a transformation aim to be more symmetric distribution.</p>
+<p>How you believe that is the behavior of the retirement age?..</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>what happend whith the difference?, this behavior is more adecuate in right-skewed variables.
+in left-skewed variables you could uses quadratic or cubic transformation why?.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mining.html" class="btn btn-neutral float-left" title="Data mining" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ML.html" class="btn btn-neutral float-right" title="Machine learning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Iván Andrés Trujillo Abella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

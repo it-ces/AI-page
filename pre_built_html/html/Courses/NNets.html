@@ -1,0 +1,184 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neural Networks &mdash; Roma v2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=6b480424"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Inequality Measures" href="ineqlab.html" />
+    <link rel="prev" title="Natural Language Processing" href="NLP.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Roma
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">BIT:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/generalinfo.html">Data Analysis Bootcamp</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../BIT/tracks.html">General Path and Tracks</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Courses:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="programming.html">Introduction to programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="IIND2107.html">IIND-2107</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeSeries.html">Time series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ML.html">Machine learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NLP.html">Natural Language Processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NLP.html#notebooks">Notebooks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Neural Networks</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#history">History</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#models">Models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#perceptron">Perceptron</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#perceptron-implementation">Perceptron implementation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#multilayer-perceptron">Multilayer Perceptron</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#backpropagation">Backpropagation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ineqlab.html">Inequality Measures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="evolve.html">Genetic Algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="economics.html">Lectures in Economics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathappendix.html">Mathematical Appendix</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Research:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Research.html">Research</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Projects:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Projects.html">Projects</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Contributors:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../info/information.html">General information</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Roma</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Neural Networks</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Courses/NNets.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="neural-networks">
+<h1>Neural Networks<a class="headerlink" href="#neural-networks" title="Link to this heading"></a></h1>
+<section id="history">
+<h2>History<a class="headerlink" href="#history" title="Link to this heading"></a></h2>
+</section>
+<section id="models">
+<h2>Models<a class="headerlink" href="#models" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Neural_NetworksV0.pdf">Slides Neural Networks</a></p>
+<section id="perceptron">
+<h3>Perceptron<a class="headerlink" href="#perceptron" title="Link to this heading"></a></h3>
+<section id="perceptron-implementation">
+<h4>Perceptron implementation<a class="headerlink" href="#perceptron-implementation" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>implementation</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Omega%20-%20Neural%20Networks/Implementaci%C3%B3n_Perceptron(Omega)From_scratch.ipynb">Using native python</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Omega%20-%20Neural%20Networks/Perceptron_FS(numpy).ipynb">Using numpy</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="multilayer-perceptron">
+<h3>Multilayer Perceptron<a class="headerlink" href="#multilayer-perceptron" title="Link to this heading"></a></h3>
+<p>Adding more layers we can tackle the problems of XOR.</p>
+</section>
+<section id="backpropagation">
+<h3>Backpropagation<a class="headerlink" href="#backpropagation" title="Link to this heading"></a></h3>
+<p>A paper publication was the idead how train neural networks, howevert this not is the unique
+way see <a class="reference internal" href="evolve.html"><span class="doc">Genetic Algorithm</span></a>  add somthing.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="NLP.html" class="btn btn-neutral float-left" title="Natural Language Processing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ineqlab.html" class="btn btn-neutral float-right" title="Inequality Measures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Iván Andrés Trujillo Abella.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

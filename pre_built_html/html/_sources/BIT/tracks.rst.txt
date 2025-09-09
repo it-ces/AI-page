@@ -1,0 +1,206 @@
+General Path and Tracks
+++++++++++++++++++++++++++++++++++++++
+
+ General 16 weeks program...
+=======================
+
+
+
+Programming
+~~~~~~~~~~~~~~~~~~~
+
+Week 1
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 1
+     - Exploratory Data Analysis (EDA)
+     - `Slides EDA <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_.pdf>`_
+   * - Day 2
+     - Pandas
+     - `Slides Pandas <https://github.com/it-ces/PUBLIC-AI/blob/main/PANDAS(talleres-slides)/Pandas_.pdf>`_
+
+Week 2
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 3
+     - Practical Pandas 
+     - :doc:`Pandas labs <../Courses/handledata>`
+   * - Day 4
+     - Decision Tree 
+     - `Slides Decision Tree <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Decision-tree-preliminar.pdf>`_
+
+Week 3
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 5
+     - KNN 
+     - SLIDES
+   * - Day 6
+     - Support Vector Machine
+     - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
+
+Week 4
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 7
+     - Analytics workflow  
+     - See material here
+   * - Day 8
+     - Final work
+     - Write presentation
+
+
+
+Machine Learning 
+~~~~~~~~~~~~~~~~
+
+Week 10
+---------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day 
+     - Description
+     - Material
+   * - Day 1
+     - Linear regression sklearn 
+     - `colab lr <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-notebooks/Linear_regression_sklearn_I_(ai_page).ipynb>`_ 
+   * - Day 2
+     - Regularized linear regression
+     - `colab Regularized lr <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-notebooks/Linear_regression_sklearn_II_(ai_page).ipynb>`_ 
+
+   * - Day 3
+     - Cross validation
+     - 
+      - `Slides cross val <https://github.com/it-ces/round-2/blob/main/flujo.pdf>`_ 
+      - `Slides cross val <https://github.com/it-ces/round-2/blob/main/flujo.pdf>`_
+Week 11
+------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day 
+     - Description
+     - Material
+   * - Day 1
+     - logistic regression 
+     - `colab logistic r. <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-notebooks/Logistic_Regressions_statsmodels_sklearn_I_(ai_page).ipynb>`_
+   * - Day 2
+     - Workflow and Metrics
+     - Write presentation
+   * - Day 3
+     - KNN 
+     - `Slides KNN <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/KKN.pdf>`_ 
+
+Week 12
+------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day 
+     - Description
+     - Material
+   * - Day 1
+     - Decision tree
+     - Material
+   * - Day 2
+     - Decision tree benchmark random forest and boosting
+     - make
+   * - Day 3
+     - Kaggle competition 
+     - See competition
+
+Week 13
+------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day 
+     - Description
+     - Material
+   * - Day 1
+     - Clustering and PCA
+     - See material here
+   * - Day 2
+     - Naive bayes
+     - Write presentation
+   * - Day 3
+     - Naive bayes and Natural Language Processing
+     - notebook integration!
+
+Week 14
+------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day 
+     - Description
+     - Material
+   * - Day 1 
+     - Neural Network
+     - See material here
+   * - Day 2 
+     - Neural Network
+     - Write presentation
+   * - Day 3
+     - Time series
+     - Material
+     
+Week 15
+------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day 
+     - Description
+     - Material
+   * - Day 1
+     - Apriori 
+     - See material here
+   * - Day 2
+     - Survival Analsysis
+     - Write presentation
+   * - Day 3 
+     - Final project
+     - material
+    
