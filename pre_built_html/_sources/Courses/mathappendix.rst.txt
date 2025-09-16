@@ -1,6 +1,11 @@
 Mathematical Appendix
 +++++++++++++++++++++++++++++++++++++++++++++
 
+
+Hola necesitamos saber si está actualizando o no como es posible que tengamos 
+$$\left(\frac{a}{b}\right)$$
+
+
 The following lecture aim give to lector a idea about some mathematical concetps used in  
 data science. This lecture not pretend subsitute the guide books, always is preferable read the proposed book.
 
@@ -67,7 +72,7 @@ $$f:\Re \longrightarrow \Re^{+}$$
 A question  $x^{2}+y^{2}=r^{2}$ is a function?.
 
 lineal function
-~~~~~~~~~~
+*****************************
 
 We are going to discuss the concept of **slope**, in some texts scope is denoted by $m$  and is defined as:
 $$ m = \frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}$$
@@ -120,13 +125,13 @@ two lines are parallel if have the same slope.
 
 consideremos el caso de como la función general de manera lineal dado un punto y la pendiente; es decir sabemos que es proporcionalidad esto quiere decir que si por el punto $a$ deben recaer puntos tales que sean proporcionales en sus cambios; 
 
-$$\dfrac{y-y_{1}}{x-x_{1}}= m$$ podemos reescribir como; 
+$$\frac{y-y_{1}}{x-x_{1}}= m$$ podemos reescribir como; 
 $$(y-y_{1})=m(x-x_{1})$$
 $$y=m(x-x_{1})+ y_{1}$$
 
 
 
-**Problema**; Cada tres años el valor de las casas disminuye exactamente $\beta$ \$ , si el valor promedio de las casas es de $\alpha$ \$, ¿como es la formula funcional que nos permite establecer una relación para este fenómeno económico?
+**Problema**; Cada tres años el valor de las casas disminuye exactamente $\beta$ monetary unities, si el valor promedio de las casas es de $\alpha$ \$, ¿como es la formula funcional que nos permite establecer una relación para este fenómeno económico?
 
 
 
@@ -240,7 +245,7 @@ Se pueden operar funciones, como su composición, suma, resta, multiplicación y
 
 La función inversa es importante en el análisis económico por eso la hemos incluido,
 para que una  una función $f$ tenga inversa $f^{-1}$ se debe cumplir la condición $f$ de que la función es biunívoca. 
-Es decir que si $f(x_{1}) = f(x_{{2})$ entonces, $ x_{1} = x_{2}$.
+Es decir que si $f(x_{1})=f(x_{2})$ entonces, $ x_{1} = x_{2}$.
 
 
 Es decir para la parábola en todo su dominio no podemos definir una función inversa debido a que como ya se dijo es simétrica y entonces $f(-x)=f(x)$ y $-x\neq x$.
@@ -255,8 +260,8 @@ $$y=ax+bx^{2}+c$$ así la producción esta curva nos permite conocer tales estim
 
 
 
-\subsection*{Función exponencial y logarítmica}
-
+Exponential and logarithm function
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La importancia de la función exponencial, radica en una variedad de problemas prácticos que se pueden resolver por ejemplo, cada día un población de bacterias crece en el doble que el día anterior pasado (n) días cuantas bacterias hay, igualmente para el caso del capital, y otros ejemplos, aquí la utilidad radica en el potencial de quien es capaz de modelar diferentes situaciones con esta, primero trataremos de analizar  un ejemplo que se expone en "que es  y que no es la estadística" 
 
@@ -285,7 +290,8 @@ Por lo que de manera general conocer el problema queda resuelto a unos parámetr
 
 $$l(t)=N_{0} \theta^{\gamma-t}$$
 
-\subsubsection{Logaritmos} 
+Logarithms
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 La introducción de los logaritmos se hace indispensable en un texto para economistas además, esta ingeniosa estructura matemática tuvo un valor histórico muy significativo como se relata en el texto de ian stewart. El uso de los logaritmos en economía es importante, tanto para el análisis empírico como teórico.
@@ -307,7 +313,7 @@ por lo tanto un logaritmo es un exponente, y como consecuencia directa  sus prop
 así $H=a^{x}$ y $L=a^{y}$ entonces;
 
 $$HL= a^{x+y}$$
-$$\dfrac{H}{L}= a^{x-y}$$
+$$\frac{H}{L}= a^{x-y}$$
 $$ H^{n}= (a^{x})^{n}= a^{xn}$$
 
 
@@ -320,8 +326,7 @@ $$\log(HL)= \log x + \log y$$
 
 
 
-
-$$ \log(\dfrac{H}{L})= \log x - \log y$$
+$$\log(H/L)= \log x - \log y$$
 
 Sin embargo, los logaritmos en el análisis económico tienen un base preferida como dijimos anteriormente el número $e$.
 
@@ -329,7 +334,7 @@ De acuerdo a  la relación $log_{a}(Y) = x$ entonces, $a>1$
 y $Y>1$ y $x \in \mathbb{R}$.
 
 otras de las propiedades importantes de los logaritmos son:
-$log_{a}a = 1$, $log_{a}1 =0$.
+$\log_{a}a = 1$, $\log_{a}1 =0$.
 
 
 
@@ -341,7 +346,7 @@ Como se verá el concepto de derivada es fundamental debido a que las relaciones
 En esta sección solo daremos una breve introducción intuitiva debido a que la teoría de la optimización es de suma importancia se recomienda leer directamente este tema en cualquiera de las referencias.
 
 
-En la figura que sigue se representa la función $F(x)$ para un intervalo de su dominio como se puede evidenciar, existen dos puntos en los cuales $\dfrac{dF(x)}{dx}=f(x)$ toma valor cero. Esto se evidencia en los puntos $x_{0} $ y $ x_{1}$.
+En la figura que sigue se representa la función $F(x)$ para un intervalo de su dominio como se puede evidenciar, existen dos puntos en los cuales $\frac{dF(x)}{dx}=f(x)$ toma valor cero. Esto se evidencia en los puntos $x_{0} $ y $ x_{1}$.
 
 Esto quiere decir que encontrar un punto de la función para la cual su derivada en ese punto es igual a cero no es una condición suficiente para establecer el máximo global de tal función. Sin embargo, usualmente en economía este problema queda descartado por el tipo de función con la cual se trabaja donde podemos estar seguros que ese punto donde la derivada es nula es el máximo.
 
@@ -383,8 +388,8 @@ Esto quiere decir que encontrar un punto de la función para la cual su derivada
 
 
 
-#### networks
-\subsubsection{Multiplicador de Lagrange}
+Lagrange multiplier
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Para los óptimos restringidos para los cuales el problema puede tornarse mucho mas complicado puesto que existe una limitación en los valores que $X$ puede tomar, esto debe ser incorporado en el criterio del máximo.
 
@@ -393,7 +398,7 @@ son $r_{1}$ y$ r_{2}$ lo interesante del hecho es que desde esta perspectiva ya 
 
 siendo $\pi_{1}$ , $\pi_{2}$ la ganancia de invertir en la primera y segunda empresa, y $k_{1}$ y $k_{2}$ es la cantidad de dinero invertida en las empresas respectivamente y $k_{1}+ k_{2} =K $ el total disponible de capital. Entonces la condición para optimizar mis beneficios es 
 
-$$\dfrac{\pi_{1}}{k_{1}}=\dfrac{\pi_{2}}{k_{2}}$$
+$$\frac{\pi_{1}}{k_{1}}=\frac{\pi_{2}}{k_{2}}$$
 
 Así decimos que la ganancia por peso invertido debe ser igual para las dos compañías.
 
@@ -405,233 +410,121 @@ obteniendo las condiciones necesarias;
 
 \
 
-$$\dfrac{\partial \ell }{\partial x_{i}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}+\lambda p_{i}= 0$$
+$$\frac{\partial \ell }{\partial x_{i}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}+\lambda p_{i}= 0$$
 
 esto es para todos los $({i})$
 
-$$\dfrac{\partial \ell }{\partial x_{1}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{1}}+\lambda p_{1}= 0$$
+$$\frac{\partial \ell }{\partial x_{1}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{1}}+\lambda p_{1}= 0$$
 
-$$\dfrac{\partial \ell }{\partial x_{2}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{2}}+\lambda p_{2}= 0$$
+$$\frac{\partial \ell }{\partial x_{2}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{2}}+\lambda p_{2}= 0$$
 
 
 $$....$$
 $$....$$
 
-$$\dfrac{\partial \ell }{\partial x_{n-1}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n-1}}+\lambda p_{n-1}= 0$$
+$$\frac{\partial \ell }{\partial x_{n-1}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n-1}}+\lambda p_{n-1}= 0$$
 
-$$\dfrac{\partial \ell }{\partial x_{n}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n}}+\lambda p_{n}= 0$$
-
-por ultimo 
-
-$$\dfrac{\partial \ell}{\partial \lambda} = K-\sum_{1}^{n} p_{i}x_{i} = 0$$
-
-
+$$\frac{\partial \ell }{\partial x_{n}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n}}+\lambda p_{n}= 0$$
+$$\frac{\partial \ell}{\partial \lambda} = K-\sum_{1}^{n} p_{i}x_{i} = 0$$
 
 
 Como se puede observar este sistema requiere inmediatamente que; 
 
-$$ \lambda = \dfrac{\dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x{i}}}{p_{i}} =  \dfrac{\dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x{i+1}}}{p_{i+1}} = ... = \dfrac{\dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x{n}}}{p_{n}}= \lambda $$
-
+$$\lambda = \dfrac{\dfrac{
+\partial f(x_1,x_2,x_3,...,x_n)
+}{
+\partial x{i}
+}}{p_{i}}$$
 esta es la idea básica introduciendo el multiplicador $(\lambda)$.
 
-\
-\
 
-\textbf{Ejemplo}; 
 
-supongamos que se tiene la siguiente función $ Z=x_{1}^{\alpha}x_{2}^{\beta}$ restringida al caso de $I=p_{1}x_{1}+p_{2}x_{2}$ así con la conclusión establecida, no habrá necesidad de plantear otra ves el problema puesto que el lector ha visto que acabamos de desarrollar un modelo general.
+$$\lambda = \dfrac{\dfrac{
+\partial f(x_1,x_2,x_3,...,x_n)
+}{
+\partial x{i}
+}}{p_{i}} =  \dfrac{\dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x{i+1}}}{p_{i+1}} = ... = \dfrac{\dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x{n}}}{p_{n}}= \lambda$$
+
+
+supongamos que se tiene la siguiente función $Z=x_{1}^{\alpha}x_{2}^{\beta}$ restringida al caso de $I=p_{1}x_{1}+p_{2}x_{2}$ así con la conclusión establecida, no habrá necesidad de plantear otra ves el problema puesto que el lector ha visto que acabamos de desarrollar un modelo general.
 
 entonces; 
 
-$$\dfrac{\partial Z}{\partial x_{1}}=\alpha x_{1}^{\alpha -1} x_{2}^{2}$$
+$$\frac{\partial Z}{\partial x_{1}}=\alpha x_{1}^{\alpha -1} x_{2}^{2}$$
 
-$$\dfrac{\partial Z}{\partial x_{2}}=\beta x_{2}^{\beta -1}x_{1}^{\alpha}$$
+$$\frac{\partial Z}{\partial x_{2}}=\beta x_{2}^{\beta -1}x_{1}^{\alpha}$$
 
 
 tenemos que 
 
-$$\dfrac{\alpha x_{1}^{\alpha -1} x_{2}^{\beta}}{p_{1}}=  \dfrac{\beta x_{2}^{\beta -1}x_{1}^{\alpha}}{p_{2}}$$
+$$\frac{\alpha x_{1}^{\alpha -1} x_{2}^{\beta}}{p_{1}}=  \frac{\beta x_{2}^{\beta -1}x_{1}^{\alpha}}{p_{2}}$$
 
 ahora si obtenemos las cantidades de $x_{1}$ y $x_{2}$ que maximizan las cantidades.
 
 primero debemos despejar ya sea $x_{1}$ o $x_{2}$ y después llevarlo a la restricción presupuestaria esto es;
 
 
-$$ \dfrac{ \alpha x_{1}^{-1}}{p_{1}} = \dfrac{\beta x_{2}^{-1}}{p_{2}}$$
+$$\frac{ \alpha x_{1}^{-1}}{p_{1}} = \frac{\beta x_{2}^{-1}}{p_{2}}$$
 
 
-$$x_{1}= \dfrac{\alpha p_{2} x_{2}}{\beta p_{1}}$$
-
-[*]
+$$x_{1}= \frac{\alpha p_{2} x_{2}}{\beta p_{1}}$$
 
 llevando a la restricción presupuestaria;
 
-$$ p_{1} \left( \dfrac{\alpha p_{2} x_{2}}{\beta p_{1}} \right) + p_{2} x_{2} $$
+$$p_{1} \left( \frac{\alpha p_{2} x_{2}}{\beta p_{1}} \right) + p_{2} x_{2} $$
 
-$$ \dfrac{ \alpha x_{2} p{2} }{\beta} + p_{2}x_{2}= I$$
+$$\frac{ \alpha x_{2} p{2} }{\beta} + p_{2}x_{2}= I$$
 
-$$x_{2}p_{2}(\dfrac{\alpha}{\beta}+1) = I$$
+$$x_{2}p_{2}(\frac{\alpha}{\beta}+1) = I$$
 
-$$x_{2}=\dfrac{I}{p_{2}  \left(   \dfrac{\alpha + \beta }{\beta} \right)}$$
+$$x_{2}=\frac{I}{p_{2}  \left(\frac{\alpha + \beta }{\beta} \right)}$$
 
 ahora este resultado lo llevamos a $x_{1}$  a [*]
 
 así obtenemos;
 
-$$ x_{1} = \dfrac{\alpha p_{2} \left( \dfrac {I} {p_{2} \left( \dfrac{\alpha + \beta} {\beta} \right)} \right)} {\beta p_{1}} $$
+$$x_{1} = \frac{\alpha p_{2} \left( \frac {I} {p_{2} \left( \frac{\alpha + \beta} {\beta} \right)} \right)} {\beta p_{1}} $$
 
-$$x_{1}= \dfrac{\alpha I }{\beta p_{1} \left( \dfrac{ \alpha + \beta}{\beta} \right) } $$
+$$x_{1}= \frac{\alpha I }{\beta p_{1} \left( \frac{ \alpha + \beta}{\beta} \right) }$$
 
 
-$$ x_{1} =  \dfrac{\alpha I}{P_{1}(\alpha + \beta)}$$
+$$x_{1} =  \frac{\alpha I}{P_{1}(\alpha + \beta)}$$
 
 
 para comprobar que nuestra relación es cierta ahora necesitamos  saber que realmente $p_{1}x_{1}+p_{2}x_{2}=I$.
 
 
-$$p_{1} \left( \dfrac{\alpha I}{p_{1} (\alpha + \beta) } \right) + p_{2} \left(  \dfrac{I}{p_{2} \left( \dfrac{\alpha + \beta}{\beta} \right)} \right )= I $$
+$$p_{1} \left( \frac{\alpha I}{p_{1}(\alpha + \beta) } \right) + p_{2} \left(  \frac{I}{p_{2} \left( \frac{\alpha + \beta}{\beta} \right)} \right )= I$$
 
 
 
 
 
 
- $$ = \dfrac{I}{ p_{2} \left( \dfrac{\alpha + \beta}{\beta} \right)} + \dfrac{\alpha I}{\alpha + \beta} $$ = 
+ $$= \frac{I}{ p_{2} \left( \frac{\alpha + \beta}{\beta} \right)} + \frac{\alpha I}{\alpha + \beta}$$
 
 
-$$\dfrac{ \beta I}{\alpha + \beta } + \dfrac{\alpha I}{\alpha + \beta} =I \dfrac{(\alpha + \beta)}{(\alpha + \beta)}= I$$
+$$\frac{ \beta I}{\alpha + \beta } + \frac{\alpha I}{\alpha + \beta} =I \frac{(\alpha + \beta)}{(\alpha + \beta)}= I$$
 
 esta función que acabamos de maximizar es muy utilizada en el análisis microeconómico y es nuestra puerta de entrada a este modulo, antes hablaremos de la importancia de la función. Esta función tiene dos interpretaciones;  se puede interpretar desde el punto de vista del consumidor o de la firma. En el primer caso la función que tratamos de maximizar representa la utilidad de un individuo de  consumir $x_{1}$ y $x_{2}$ y en el segundo tratamos de maximizar los beneficios económicos en el proceso productivo.
 
 Entonces si observamos el gasto que realiza el consumidor en el bien $x_{1}$  que maximiza su utilidad es 
- $$ p_{1} x_{1} =  \dfrac{\alpha I}{(\alpha + \beta)}$$ 
+ $$p_{1} x_{1} =  \frac{\alpha I}{(\alpha + \beta)}$$ 
  
-  suponiendo que $(\alpha + \beta)=1$ observamos que se gasta una parte constante de la renta  $( \alpha I)$ y es por esta razón que hacemos este supuesto pues los gastos del consumidor en el bien $x_{1}$ es una parte constante de la renta y debe disponer del $100\%$ de esta. Igualmente para el caso del bien dos  
+suponiendo que $(\alpha + \beta)=1$ observamos que se gasta una parte constante de la renta  $(\alpha I)$ y es por esta razón que hacemos este supuesto pues los gastos del consumidor en el bien $x_{1}$ es una parte constante de la renta y debe disponer del $100\%$ de esta. Igualmente para el caso del bien dos  
   
-  $$p_{2} x_{2} = I\beta}$$
+$$p_{2} x_{2}=I\beta$$
   
-
 Un análisis análogo de la participación de los factores productivos en el producto  se da para el caso de la firma el lector debe ser capa de dar una explicación intuitiva.
 
-Examinemos el caso concreto cuando se consumen tres bienes donde el consumidor asigna una parte constante de su renta o ingreso para cada una de las cantidades óptimas, pero antes tendremos en cuenta que la función de producción Cobb-Douglas es simplemente el caso especial cuando $i=2$ de la siguiente función;
 
-$$\prod_{i=1}^n x_i^{\alpha_i}  $$ [1]
-
-
-$$ \dfrac {\partial \prod_{i}^{n} x_{i}^{\alpha_{i}}}{\partial x_{i}}= (x_i)^{-1}\alpha_i\prod_{i=1}^{n}x_{i}^{\alpha_i}$$
-
-y por lo tanto podemos plantear el lagrangeano
-
-
-$$\ell = \prod_{i=1}^{n} x_{i}^{\alpha} - \lambda (I- \sum_{i=1}^{n}p_{i}x_{i} )$$
-
-$$\dfrac{\parial \ell}{\partial x_{i}} = \alpha_{i}x_{i}^{-1} \prod_{i=1}^{n} x_{i}^{\alpha_{i}} - \lambda p_{i}= 0$$
-
-como es para todos los $i$ tendríamos un sistema de ecuaciones por ahora basta establecer que 
-
-$$\lambda=   \dfrac{\alpha_{i} x_{i}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i}} = \dfrac{\alpha_{i+1} x_{i+1}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i+1}}  =   ... \dfrac{\alpha_{i+k} x_{i+k}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i+k}}  \lambda  $$
-
-
-Escojamos $x_{i}$ y $x_{i+1}$
-
-$$\dfrac{\alpha_{i} x_{i}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i}} = \dfrac{\alpha_{i+1} x_{i+1}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i+1}} = \dfrac{\alpha_{i}}{x_{i}p_{i}} = \dfrac{\alpha_{i+1}}{x_{i+1}p_{i+1}}$$ 
-
-
-despejando tenemos que 
-
-$$x_{i}=\dfrac{x_{i+1} p_{i+1} \alpha_{i}}{\alpha_{i+1} p_{i} }$$ [**]
-
-llevando a la restricción presupuestaria tenemos que; 
-
-$$p_{i} \left(\dfrac{x_{i+1} p_{i+1} \alpha_{i}}{\alpha_{i+1} p_{i} } \right)+ p_{i+1} x_{i+1}+ p_{i+2}x_{i+2} .... p_{n}x_{n} = I$$
-
-
-$$p_{i+1} x_{i+1} \left( \dfrac{\alpha_{i}}{\alpha_{i+1}} +1 \right) + p_{i+2}x_{i+2} .... p_{n}x_{n} = I$$
-
-$$ p_{i+1} x_{i+1} \left( \dfrac{\alpha_{i}}{\alpha_{i+1}} +1 \right) = I - \sum_{i=1}^{n}p_{i+2}x_{i+2}$$
-
-$$x_{i+1}=\dfrac{I - \sum_{i=1}^{n}p_{i+2}x_{i+2}}{p_{i+1}  \left(  \dfrac{\alpha_{i}}{\alpha_{i+1}} +1 \right) }$$
-
-realizando las operaciones algebraicas ( el lector debería comprobarlo); 
-
-$$x_{i}= \dfrac{(I- \sum_{i=1}^{n}p_{i+2}x_{i+2}) \alpha_{i}}{p_{i}(\alpha_{i}+ \alpha_{i+1})}$$
-
-ahora si procedamos con el modelo de tres variables que sería un caso particular. 
-
-\textbf{ejemplo};
-
-
-$$ Max  x_{1}^{\alpha_{1}} x_{2}^{\alpha_{2}} x_{3}^{\alpha_{3}}$$
-
-$$sj p_{1}x_{1}+p_{2}x_{2}+p_{3}x_{3}=I$$
-
-reemplazando en las ecuaciones correspondientes anteriores $x_{i}$ y $x_{i+1}$ tenemos que;
-
-
-
-$$x_{1}= \dfrac{(I-p_{3}x_{3})\alpha_{1}}{p_{1}(\alpha_{1} + \alpha_{2})}$$
-
-$$x_{2}= \dfrac{I - p_{3} x_{3}}{p_{2}  (\dfrac{ \alpha_{1}}{\alpha_{2}} +1) } $$
-
-ahora reemplazamos  en [**] por $i=3$ obteniendo;
-
-$$x_{3}= \dfrac{p_{1}x_{1}\alpha_{3}}{\alpha_{1} p_{3}}$$
-
-ahora reemplazando $x_{1}$ en esta ecuación obtenemos las cantidades de $x_{3}$ que maximizan mi utilidad así que; 
-
-\begin{eqnarray}
-
-x_{3}= \dfrac{\alpha_{3}I - p_{3}x_{3} \alpha_{3}}{p_{3} (\alpha_{1} + \alpha_{2}}
-
-\dfrac{ x_{3}+x_{3}\alpha_{3}}{\alpha_{1} + \alpha _{2}} = \dfrac{\alpha_{3}I}{p_{3}(\alpha_{1}+\alpha_{2})}
-
-x_{3} (\dfrac{\alpha_{1}+\alpha_{2}+\alpha_{3}}{\alpha_{1}+\alpha_{2}}) = \dfrac{\alpha_{3}I}{p_{3}(\alpha_{1}+\alpha_{2})}
-
-
-x_{3}= \dfrac{\alpha_{3}I}{p_{3}(\alpha_{1}+ \alpha_{2}+\alpha_{3}}
-
-
-
-\end{eqnarray}
-
-pero observamos que $x_{1}^{*}$ y $x_{2}^{*}$ están en función de $x_{3}^{*} $ que acabamos de hallar por lo tanto debemos reemplazar la última en las  dos primeras y hallaremos las cantidades óptimas de los 3 bienes, quedará como ejercicio realizar las operaciones algebraicas  $x_{1}$, por lo tanto teniendo en cuenta que $\alpha_{1}+\alpha_{2}+\alpha_{3}=h$ (por espacio) para $x_{2}$ esto es;
-
-
-\begin{eqnarray}
-
-
-x_{2}= \dfrac{  (I-\dfrac{\alpha_{3}I}{h})}{p_{2}(\dfrac{\alpha_{2} + \alpha_{1}}{\alpha_{2}})}
-
-x_{2} = \dfrac{ I \alpha_{2}(1-\dfrac{\alpha_{3}}{h})}{p_{2}( \alpha_{2}+\alpha_{1})}
-
-x_{2}=\dfrac{\alpha_{2}I}{p_{2}(\alpha_{1}+\alpha_{2}+\alpha_{3})}
-
-
-\end{eqnarray}
-
-así podemos resumir que para los 3 bienes dada la función de utilidad de cobb douglas; 
-
-$$x_{i}^{*}=\dfrac{\alpha_{i}I}{p_{i}(\alpha_{1}+\alpha_{2}+\alpha_{3}}$$
-
-también será bastante sencillo demostrar que el gasto es igual al ingreso.
-
-
-$$ \sum(p_{i}x_{i}^{*})=\sum p_{i}(\dfrac{I \alpha_{i}}{p_{i}\sum\alpha_{i} }) = I \dfrac{\sum \alpha_{i}}{\sum \alpha_{i}}=I $$
-
-tenga en cuenta este resultado que es muy importante en la teoría del equilibrio.
-
-Ejercicio propuesto; 
-
-maximice $ \sum_{1}^{n} \ln x_{i}^{\alpha_{i}}$ sujeto a $\sum_{1}^{n} p_{i}x_{i}$
-
-
-\subsection*{Análisis Microeconómico}
+Applications in Microeconomics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 En esta sección se exponen brevemente algunos temas relevantes del análisis microeconómico, algunos conceptos básicos que se deberían manejar con presteza  y afianzamiento.
 
 Dado en que en la sección(...) se dio una pequeña introducción a la optimización no restringida y para el multiplicador de lagrange,  el tratamiento de los conceptos básicos en microeconomia requieren un buen manejo de esta sección, pues constituye un requisito.
-
-\subsubsection*{Comportamiento Maximizador}
+}
 
 En el análisis microeconomico se supone que los agentes se comportan como optimizadores de sus recursos así el beneficio $\pi$ que reciben las empresas aunque no es una condición necesaria que sea el fin único, para este caso.
 
@@ -642,20 +535,20 @@ Los beneficios son iguales a los ingresos menos los costos.
 
 así que;
 
-$$\dfrac{ d \pi(Z)}{dZ} = \dfrac{dI(Z)}{dZ}- \dfrac{dW(Z)}{dZ}$$
+$$\frac{d\pi(Z)}{dZ} = \frac{dI(Z)}{dZ}- \frac{dW(Z)}{dZ}$$
 
 Observe que los ingresos $I(Z)$ son iguales a $p(Z)Z$ esto es el precio por el producto, observe que a la ves este precio esta en función  de la cantidad de bienes ofrecidos en la economía, cuyo comportamiento se espera este determinado por los patrones de la \textit{ley de oferta y demanda}.
 
-$\dfrac{dI(Z)}{dZ}$ se conoce como el \textbf{Ingreso Marginal $(IM)$} Y $\dfrac{dW(Z)}{dZ}$ se conoce como el \textbf{Costo Marginal $(CM)$} así que;
+$\frac{dI(Z)}{dZ}$ se conoce como el \textbf{Ingreso Marginal $(IM)$} Y $\frac{dW(Z)}{dZ}$ se conoce como el \textbf{Costo Marginal $(CM)$} así que;
 
 
-$$IM = \dfrac{dp(Z)Z}{dZ} = \dfrac{dp(Z)}{dZ}Z + \dfrac{dZ}{dZ}p(Z)= \dfrac{dp(Z)}{dz}Z+p(Z)$$
+$$IM = \frac{dp(Z)Z}{dZ} = \frac{dp(Z)}{dZ}Z + \frac{dZ}{dZ}p(Z)= \frac{dp(Z)}{dz}Z+p(Z)$$
 
 
-Ahora para simplificar nuestro análisis(solo por el momento) tendremos en cuenta que los agentes no tienen ninguna influencia sobre los precios del mercado, lo cual significa que $\dfrac{dp(Z)}{dz}=0$
-por lo tanto $IM=p(Z)$ así que en el punto donde se maximizan los recursos; $$\dfrac{d\pi(Z)}{dZ}=0$$ 
+Ahora para simplificar nuestro análisis(solo por el momento) tendremos en cuenta que los agentes no tienen ninguna influencia sobre los precios del mercado, lo cual significa que $\frac{dp(Z)}{dz}=0$
+por lo tanto $IM=p(Z)$ así que en el punto donde se maximizan los recursos; $$\frac{d\pi(Z)}{dZ}=0$$ 
 
-$$0= IM-CM$$
+$$0=IM-CM$$
 
 $$IM=CM$$
 
@@ -667,23 +560,23 @@ Mas adelante analizaremos que pasa cuando el $IM$ no es igual a precio de mercad
 La elasticidad de demanda es el cambio en las cantidades de producto adquiridas con respecto a los cambios en los precios, esto en términos porcentuales es decir;
 
 
-$$\dfrac{dlnZ}{dlnp}=\eta$$
+$$\frac{dlnZ}{dlnp}=\eta$$
 
 Se asume que $\eta$ es negativa como se enunció anteriormente. Un incremento de los precios en $ 1\%$  disminuye la demanda en $\eta \%.$
 
 Aceptaremos que la función tiene inversa, por el teorema de la función inversa.
 
-$$\dfrac{dlnp}{dlnz}=\dfrac{1}{\eta}$$
+$$\frac{dlnp}{dlnz}=\frac{1}{\eta}$$
 
 Ahora reescribiremos el ingreso marginal, para utilizar el concepto de demanda que será de elasticidad en términos prácticos suponga que los precios incrementan, por lo tanto se esperaría tener mayor ingreso por cada unidad vendida. Sin embargo,  no es del todo cierta esta afirmación depende del grado de sustitubilidad de nuestro producto entre otros factores que nos determinaran el grado de elasticidad de este, es decir;
 
 
-$$IM= \dfrac{dp(Z)}{dz}Z+p(Z)= p(Z)\left(\dfrac{dp(Z)}{dZ}\dfrac{Z}{p(Z)}+1\right)$$
+$$IM= \frac{dp(Z)}{dz}Z+p(Z)= p(Z)\left(\frac{dp(Z)}{dZ}\frac{Z}{p(Z)}+1\right)$$
 
 
 Utilizando el concepto de elasticidad diremos que;
 
-$$IM=p(Z)\left(1-\dfrac{1}{\abs{\eta}}\right)$$
+$$IM=p(Z)\left(1-\frac{1}{\abs{\eta}}\right)$$
 
 cuando $\eta$ tiende a infinito significa que nuestro ingreso marginal debe ser igual al precio de mercado, en el caso contrario cuando la elasticidad tiene de cero tendremos un ingreso marginal inferior al precio de mercado.
 
@@ -691,18 +584,15 @@ para ilustrar la importancia en la relación supongamos que $\eta=1$ esto implic
 
 Una importante implicación empírica de la ecuación anterior es que;
 
-$$ \dfrac{IM}{p}=\left(1-\dfrac{1}{\abs{\eta}}\right)$$
+$$\frac{IM}{p}=\left(1-\frac{1}{\abs{\eta}}\right)$$
 
 ahora si tenemos en cuenta que en una situación de competencia perfecta $IM=CM$
 
-
-$$\dfrac{IM-p}{p}=\dfrac{-1}{\abs{\eta}} = \dfrac{p-CM}{p}=\dfrac{1}{\abs{\eta}}$$
+$$\frac{IM-p}{p}=\frac{-1}{\abs{\eta}} = \frac{p-CM}{p}=\frac{1}{\abs{\eta}}$$
 
 como se observa la capacidad de establecer un precio por encima del costo marginal es inversamente proporcional a la elasticidad de demanda de dicho bien, este se denomina como índice de lerner y es utilizado para medir el poder de monopolio de una empresa. pues cada vez que la elasticidad tiende a infinito el costo marginal tiende al precio de mercado y por lo tanto no existe poder de monopolio.
 
 es también posible ver que el precio optimo depende del costo marginal y la elasticidad de demanda.
-
-
 
 
 La importancia de la elasticidad como concepto también se puede ver en la forma o discriminar los precios.
@@ -710,19 +600,13 @@ La importancia de la elasticidad como concepto también se puede ver en la forma
 para una empresa que vende $(n)$ bienes tenemos que sus beneficios suponiendo un costo igual para ambos;
 
 $$\pi(Z)=\sum_{i}^{n}I(z_{i}) + CT(Z)$$
-$$\dfrac{\partial \pi(Z)}{\partial z_{i}}=IM_{i}+CM=0$$
+$$\frac{\partial \pi(Z)}{\partial z_{i}}=IM_{i}+CM=0$$
 $$IM_{i}=IM_{i+1}=....=IM_{i+k}=CM$$
 
 Los ingresos marginales obtenidos por cada uno de los productos en los $(n)$ mercados deben ser iguales puesto que si no fuera cierto podríamos vender una cantidad más en cualquier de los mercados más atractivos dado que el costo marginal es igual para cada uno.
 
 
-
-
-$$IM_{i}=p_{i}\left(1-\dfrac{1}{\abs{\eta_{i}}}\right)= p_{i+1}\left(1-\dfrac{1}{\abs{\eta_{i+1}}}\right) =  ... = p_{i+k}\left(1-\dfrac{1}{\abs{\eta_{i+k}}}\right) = IM_{i+k} $$
-
-
-
-
+$$IM_{i}=p_{i}\left(1-\frac{1}{\abs{\eta_{i}}}\right)= p_{i+1}\left(1-\frac{1}{\abs{\eta_{i+1}}}\right) =  ... = p_{i+k}\left(1-\frac{1}{\abs{\eta_{i+k}}}\right) = IM_{i+k} $$
 
 
 
@@ -731,53 +615,46 @@ Así debemos definir para todos los $(n)$ artículos
 
 supongamos en el caso particular que tenemos dos mercados para brindar el mismo producto, pero el grado de sustitubilidad difiere entre ellos, por lo tanto sus elasticidades también así tenemos para el primer mercado $\eta_{1}$ y para el segundo mercado $\eta_{2}$;
 
-
-
-
-$$p_{1}\left(1-\dfrac{1}{\abs{\eta_{1}}}\right) =p_{2}\left(1-\dfrac{1}{\abs{\eta_{2}}}\right)$$
+$$p_{1}\left(1-\frac{1}{\abs{\eta_{1}}}\right) =p_{2}\left(1-\frac{1}{\abs{\eta_{2}}}\right)$$
 
 observe que los precios 
 
-$$ \dfrac{p_{1}}{p_{2}} = \left( \dfrac {1-\dfrac {1} {\abs {\eta_{2}} }} { 1 -\dfrac {1} { \abs { \eta_{1}}}}\right)   $$
+$$\frac{p_{1}}{p_{2}} = \left( \frac {1-\frac {1} {\abs {\eta_{2}} }} { 1 -\frac {1} { \abs { \eta_{1}}}}\right)$$
 
-si $\eta_{1} > \eta_{2}$ entonces la razón de los precios $ \dfrac{p_{1}}{p_{2}}< 1$ lo cual implica que $p_{1}<p_{2}$  y para el caso contrario cuando cuando $\eta_{1} < \eta_{2}$ entonces $\dfrac{p_{1}}{p_{2}}>1 $ $p_{1}>p_{2}$ por lo tanto a mayor elasticidad menor precio lo cual esta acorde con la capacidad es consistente con el indice de Lerner.
-
-\\
+si $\eta_{1} > \eta_{2}$ entonces la razón de los precios $ \frac{p_{1}}{p_{2}}< 1$ lo cual implica que $p_{1}<p_{2}$  y para el caso contrario cuando cuando $\eta_{1} < \eta_{2}$ entonces $\frac{p_{1}}{p_{2}}>1 $ $p_{1}>p_{2}$ por lo tanto a mayor elasticidad menor precio lo cual esta acorde con la capacidad es consistente con el indice de Lerner.
 
 Otro concepto importante en el análisis económico y en especial en lo que concierne al análisis empírico es la elasticidad del ingreso, que permite medir la sensibilidad de los cambios en las cantidades demandadas con respecto a los cambios en los ingresos, en el modelo anterior  del multiplicador lagrangeano  aceptamos que se maximizaba la utilidad gastando todo el ingreso, esto implica que el gasto también lo hará en la misma medida; un incremento en el ingreso de $\iota$ \% también incrementará el consumo en esa misma cantidad $dG/dI=1$;
 
-$$1 = \sum p_{i}(\dfrac{dx_{i}}{dI})$$
-si multiplicamos cada término de la sumatoria por $\dfrac{I}{I}$ y $\dfrac{x_{i}}{x_{i}}$ y se organizan los términos de tal manera que $\dfrac{p_{i}x_{i}}{I}$
+$$1 = \sum p_{i}(\frac{dx_{i}}{dI})$$
+si multiplicamos cada término de la sumatoria por $\frac{I}{I}$ y $\frac{x_{i}}{x_{i}}$ y se organizan los términos de tal manera que $\frac{p_{i}x_{i}}{I}$
 
 
-$$ \sum \dfrac{p_{i}x_{i}}{I} \dfrac{dx_{i}}{dI} \dfrac{I}{x_{i}}$$
+$$\sum \frac{p_{i}x_{i}}{I} \frac{dx_{i}}{dI} \frac{I}{x_{i}}$$
 
 obtenemos la proporción del ingreso  gastado en el bien $x_{i}$ denominado $\omega_{i}$ y la elasticidad ingreso $ \varepsilon_{i}$ de tal bien en cuestión esto quiere decir que 
 
-$$ \sum \omega_{i} \varepsilon_{i}=1 $$  que deben existir bienes inferiores,  normales y superiores; cuya demanda aumenta cuando aumenta el ingreso, disminuye o se mantienen constantes.
+$$\sum \omega_{i} \varepsilon_{i}=1 $$  que deben existir bienes inferiores,  normales y superiores; cuya demanda aumenta cuando aumenta el ingreso, disminuye o se mantienen constantes.
 
 
 En la teoría de la firma como vimos anteriormente el concepto de Ingreso marginal y costo marginal son importantes para obtener el punto donde nuestro productor maximiza su ganancia.  El costo marginal se definió como los cambios en los costos totales debido a los incrementos en la producción, existe una relación ente la marginalidad y el promedio como se verá el siguiente análisis también se aplicó al ingreso marginal;
 
 el costo total es equivalente al costo unitario o promedio $w$ por la cantidad total de producción( se comporta siempre así el costo promedio revisar en Krugman para comparar el otro supuesto); 
 
-$$\dfrac{dW(Z)}{dZ}= \dfrac{w(Z).Z}{dZ}$$
+$$\frac{dW(Z)}{dZ}= \frac{w(Z).Z}{dZ}$$
 
-
-\subsubsection{la firma}
 
 
 
 Ya hemos hablado de algunos conceptos microeconomicos abstractos como la elasticidad, y la marginalidad del ingreso y los costos que son estructuras adyacentes a situaciones diarias, ahora entremos un poco mas al campo del análisis de la firma, advirtiendo  de antemano que el análisis del consumidor no cambia absolutamente en nada sustancial (son prácticamente lo mismo en términos del análisis), por lo tanto será muy fácil para el lector introducirse en este cuando se ha abordado el análisis de la empresa.
 
 dada una función de producción 
-$Z=f(x_1,x_2,x_3,...,x_n)$, definimos los cambios en la producción cuando aumentamos la cantidad de un factor productivo, manteniendo a los demás factores constantes, esto es equivalente a la definición de la derivada parcial, expuesta con anterioridad, es decir que el \textbf{producto marginal} $PMx_{i}$ del factor $xi$ es la derivada parcial de la función de producción con respecto al factor $x_{i}$.
+$Z=f(x_1,x_2,x_3,...,x_n)$, definimos los cambios en la producción cuando aumentamos la cantidad de un factor productivo, manteniendo a los demás factores constantes, esto es equivalente a la definición de la derivada parcial, expuesta con anterioridad, es decir que el producto marginal $PMx_{i}$ del factor $xi$ es la derivada parcial de la función de producción con respecto al factor $x_{i}$.
 
 $$\frac{\partial Z}{\partial x_{i}}= PMx_{i}$$
 
 dado esto nos podemos preguntar entonces, como cambia la producción total cuando aumentamos los factores productivos, para este caso utilizamos el concepto de diferencial total; 
 
-$$dZ= \dfrac{\partial Z}{ \partial x_{i}} dx_{i} + \dfrac{\partial Z}{ \partial x_{i+1}} dx_{i+1} +...+\dfrac{\partial Z}{ \partial x_{n-1}} dx_{n-1} +\dfrac{\partial Z}{ \partial x_{n}} dx_{n}$$
+$$dZ= \frac{\partial Z}{ \partial x_{i}} dx_{i} + \frac{\partial Z}{ \partial x_{i+1}} dx_{i+1} +...+\frac{\partial Z}{ \partial x_{n-1}} dx_{n-1} +\frac{\partial Z}{ \partial x_{n}} dx_{n}$$
 
 que lo podemos reescribir de la siguiente manera;
 
@@ -790,22 +667,21 @@ Ahora es necesario introducir un concepto nuevo,  el de Tasa de Sustitución de 
 
 Es bastante fácil ver que  bastará  con que $dZ=0$ para definir nuestra TSF. Para simplificar tomemos el caso particular cuando $n=2$;
 
-
 $$\sum PMx_{i}dx_{i}=0$$
 
 por lo tanto haciendo las operaciones algebraicas, tenemos que; 
 
-$$  TSF= (-1) \dfrac{PMx_{i}}{PMx_{i+1}}=\dfrac{dx_{i+1}}{dx_{i}}$$
+$$TSF= (-1) \frac{PMx_{i}}{PMx_{i+1}}=\frac{dx_{i+1}}{dx_{i}}$$
 
 supongamos que para un nivel determinado de producción, el producto marginal del factor $x_{i}$ es el doble del del factor $x_{i+1}$ si quisiéramos mantener constante la producción, debemos  sustituir los factores, pues a menos que se especifique otra cosa ambos productos marginales son positivos. se necesita la sustitución por que es más barato por ejemplo, entonces nuestra tecnología de producción nos indicaría que debemos reducir el uso de dos unidades del factor $x_{i+1}$ para aumentar en una unidad del uso de $x_{i}$.
 
 el producto marginal está relacionado también con un concepto  que usualmente es útil en el análisis empírico; el de producto promedio del factor $x_{i}$.
 
-$$PMDx_{i}= \dfrac{Z}{x_{i}}$$
+$$PMDx_{i}= \frac{Z}{x_{i}}$$
 
-$$\dfrac{\partial PMDx_{i}}{\partial x_{i}}=0$$
+$$\frac{\partial PMDx_{i}}{\partial x_{i}}=0$$
 
-$$\dfrac{\partial PMDx_{i}}{\partial x_{i}} = \dfrac{PMx_{i}x_{i}-Z}{x_{i}^{2}} = x_{i}(PM_{i}-PMDx_{i})=0 \therefore PMx_{i}=PMDx_{i}$$ 
+$$\frac{\partial PMDx_{i}}{\partial x_{i}} = \frac{PMx_{i}x_{i}-Z}{x_{i}^{2}} = x_{i}(PM_{i}-PMDx_{i})=0 \therefore PMx_{i}=PMDx_{i}$$ 
 
 esto quiere decir que cuando el producto promedio es el máximo, en ese punto es igual al producto marginal.
 
@@ -814,75 +690,53 @@ decíamos anteriormente que $I= p(Z).Z$, en efecto cuando los mercados son compe
 simplifiquemos y supongamos que el precio es de mercado, 
 
 $$I=p.f(x_1,x_2,x_3,...,x_n)$$
-$$\dfrac{\partial I}{\partial x_{i}}= p(PMx_{i})$$
+
+$$\frac{\partial I}{\partial x_{i}}= p(PMx_{i})$$
 
 
-\subsection{Crecimiento económico}
-
-
-\subsubsection{La función neoclásica}
+Neoclassic Function
+~~~~~~~~~~~~~~~~~~~~~~~~~
 La función de producción Cobb-Douglas es simplemente el caso especial cuando $i=2$ de la siguiente función;
 
-$$\prod_{i=1}^n x_i^{\alpha_i}  $$ [1]
+$$\prod_{i=1}^n x_i^{\alpha_i}$$ 
 
 Para cualquier combinación de insumos, podemos demostrar que [1] presenta rendimientos constantes a escala (si se quiere) siempre y cuando 
 
- $$ \lambda^{\sum_{i=1}^n\alpha{_i}}=\lambda $$
+ $$\lambda^{\sum_{i=1}^n\alpha{_i}}=\lambda $$
  
  
 puesto que; 
-
-
-
 $$\prod_{i=1}^n \left(\lambda x_i \right)^{\alpha_i}=\lambda^{{\sum_{i=1}^n\alpha_i}}\prod_{i=1}^n x_i^{\alpha_i}$$
  
- 
- 
- 
- En otras palabras que la suma de las participaciones de los factores productivos en el ingreso sea la unidad $\sum_{i=1}^n\alpha{_i}=1$
- 
- al suponer esto estaríamos condicionando a que la economía es lo bastante grande para acabar con los rendimientos crecientes de escala Romer(xxx).
-\\ 
- 
- por lo tanto si se observa el punto, para determinar el grado de homogeneidad, es suficiente sumar los coeficientes de participación.
+En otras palabras que la suma de las participaciones de los factores productivos en el ingreso sea la unidad $\sum_{i=1}^n\alpha{_i}=1$
+al suponer esto estaríamos condicionando a que la economía es lo bastante grande para acabar con los rendimientos crecientes de escala Romer(xxx).
+por lo tanto si se observa el punto, para determinar el grado de homogeneidad, es suficiente sumar los coeficientes de participación.
 para el caso concreto cuando los exponentes son $\alpha$ y $1-\alpha$ sin importar el valor $\alpha$ será de grado 1. 
-
-Cuando la función de producción es homogénea de grado $\phi$, podemos considerarla de manera intensiva esto quiere decir que si
+cuando la función de producción es homogénea de grado $\phi$, podemos considerarla de manera intensiva esto quiere decir que si
 
  
-$$Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)\\ =
-\lambda^{\phi}f(x_1,x_2,x_3,...,x_n) $$
+$$Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)\\ = \lambda^{\phi}f(x_1,x_2,x_3,...,x_n)$$
 
 así que queremos expresarla de manera intensiva diremos que $\lambda=\frac{1}{x_{i}}$
 y obtenemos que;
 
-
-$$Z=f( \dfrac{x_1}{x_i},\dfrac{x_2}{x_i},\dfrac{x_3}{x_i},..1..,\dfrac{x_n}{x_i}) =
-\dfrac{1}{x_i^{\phi}}f(x_1,x_2,x_3,...,x_n) $$
+$$Z=f( \frac{x_1}{x_i},\frac{x_2}{x_i},\frac{x_3}{x_i},..1..,\frac{x_n}{x_i}) =\frac{1}{x_i^{\phi}}f(x_1,x_2,x_3,...,x_n)$$
 
 observe que el 1 de la función quiere decir que hemos escogido un insumo arbitrario. 
 
-$Z = f(x_1,x_2,x_3,...,x_n) =  x_i^\phi f( \dfrac{x_1}{x_i},\dfrac{x_2}{x_i},\dfrac{x_3}{x_i},..1..,\dfrac{x_n}{x_i})$
+$Z = f(x_1,x_2,x_3,...,x_n) =  x_i^\phi f( \frac{x_1}{x_i},\frac{x_2}{x_i},\frac{x_3}{x_i},..1..,\frac{x_n}{x_i})$
 
 Observe que en los modelos requerimos por lo general que $\phi=1$ homogenea de grado uno esto implica que 
 
-$$
-\dfrac{Z}{x_i}=f( \dfrac{x_1}{x_i},\dfrac{x_2}{x_i},\dfrac{x_3}{x_i},..1..,\dfrac{x_n}{x_i})$$
+$$\frac{Z}{x_i}=f( \frac{x_1}{x_i},\frac{x_2}{x_i},\frac{x_3}{x_i},..1..,\frac{x_n}{x_i})$$
 
 para el caso concreto de [1] podemos seleccionar cualquier insumo $x_j$ y reescribirla como; 
 
-
 $$Z=\prod_{i=1}^n \left( \frac{x_i}{x_j}\right)^{\alpha_i} x_j^{\phi}$$
-
-
-
-
-
 
 Es útil que el factor que hemos escogido sea la población(cuando decimos que esta es igual a la fuerza laboral) puesto que esto nos determinará una función de producción per cápita, así
 
-
- $$z=\prod_{i=1}^n \left( \frac{x_i}{x_j}\right)^{\alpha_i}  =\prod_{i=1}^n k_{i}^{\alpha_i}$$  [2]
+$$z=\prod_{i=1}^n \left( \frac{x_i}{x_j}\right)^{\alpha_i}  =\prod_{i=1}^n k_{i}^{\alpha_i}$$
 
 donde $z$ es el producto per cápita y $k_{i}$ es el argumento o factor productivo per cápita.
 
@@ -893,19 +747,12 @@ si logramos establecer esta relación de nuestra función de producción [1] tal
 
 El producto Marginal; 
 
-$$PMx_i=(x_i)^{-1}\alpha_i\prod_{i=1}^nx_i^{\alpha_i}$$
-
-Es positivo para todos las cantidades positivas de argumentos(insumos). Sea cual sea el valor de la participación $\alpha_i$ del factor sera positiva mientras esta también lo sea, esto quiere decir que no será cierta nuestra condición si y solo $\alpha_{i}=0$. lo que nos daría una productividad marginal nula.
+$$PMx_i=(x_i)^{-1}\alpha_i\prod_{i=1}^nx_i^{\alpha_i}$$ Es positivo para todos las cantidades positivas de argumentos(insumos). Sea cual sea el valor de la participación $\alpha_i$ del factor sera positiva mientras esta también lo sea, esto quiere decir que no será cierta nuestra condición si y solo $\alpha_{i}=0$. lo que nos daría una productividad marginal nula.
 
 
 El producto Marginal decreciente;
-
 $$\frac{\partial PMx_i}{\partial x_i}=(x_i)^{-2}\alpha_i(\alpha - 1)\prod_{i=1}^nx_i^{\alpha_i}$$
 es negativo para cualquier cantidad positiva de los argumentos, recuerde que se está hablando de una derivada parcial, lo cual implica los rendimientos de un insumo cuando los demás permanecen constantes. Ahora observe que nuestra condición no será cierta si y solo si $\alpha_i \geq 1$, lo cual sería un supuesto poco realista puesto que no se daría la famosa premisa de \textit{los rendimientos decrecientes}, seguiríamos obteniendo producto indiscriminadamente o no reduciríamos la producción cuando los factores sobrepasen su eficiencia.
-
-
-
-
 
 Los supuestos anteriores de productividad se derivan de las condiciones de \textit{inada}
 
@@ -926,58 +773,241 @@ $$PMk_i=(k_i)^{-1}\alpha_i\prod_{i=1}^nk_i^{\alpha_i}$$
 
 
 
-
 $$\frac{\partial PMk_i}{\partial k_i}=(x_i)^{-2}\alpha_i(\alpha - 1)\prod_{i=1}^nk_i^{\alpha_i}$$
 
 
-\subsection{Teorema de Euler}
+
+Euler theorem
+~~~~~~~~~~~~~~~~~~~~~
 
 Existe un teorema muy importante utilizado con frecuencia en economía denominado como el teorema de Euler y es útil para el análisis microeconómico.
-
-
 lo primero que debemos entender es que si $Z=F(x,y)$ es homogenea de grado 1, entonces;
+$$Z=\frac{\partial Z}{\partial x}x + \frac{\partial Z}{\partial y}y$$
 
-
-$$Z=\dfrac{\partial Z}{\partial x}x + \dfrac{\partial Z}{\partial y}y$$
-
-
-
-\begin{theorem}
-
-Si $Z$ es una función de n insumos y homogénea de grado $\phi$, entonces $\dfrac{dZ}{d \lambda}=\phi \lambda ^{\phi -1}Z = \sum_{i=1}^{n} \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}$
-
-
-\end{theorem}
-
+Si $Z$ es una función de n insumos y homogénea de grado $\phi$, entonces $\frac{dZ}{d \lambda}=\phi \lambda ^{\phi -1}Z = \sum_{i=1}^{n} \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}$
 se puede llegar a esa igualdad de la siguiente manera;
 
-$$Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)\\ =
-\lambda^{\phi}f(x_1,x_2,x_3,...,x_n) $$
+$$Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n) =\lambda^{\phi}f(x_1,x_2,x_3,...,x_n)$$
 
+$$\frac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda}=\frac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} \frac{\partial \lambda x_{i}}{\partial \lambda}=\frac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} x_{i} $$ [6]
 
-$$\dfrac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda}=\dfrac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} \dfrac{\partial \lambda x_{i}}{\partial \lambda}=\dfrac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} x_{i} $$ [6]
+esto se obtiene  del lado derecho como es una igualad debemos derivar al lado izquierdo, así;
 
-esto se obtiene  del lado derecho como es una igualad debemos derivar al lado izquierdo ,así ;
-
-$$ \dfrac{ \partial \lambda^{\phi}f(x_1,x_2,x_3,...,x_n)}{\partial \lambda} = \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)$$ [7]
-
+$$\frac{ \partial \lambda^{\phi}f(x_1,x_2,x_3,...,x_n)}{\partial \lambda} = \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)$$ [7]
 igualando [6] y [7] obtenemos;
 
-
-$$ \dfrac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} x_{i} = \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)$$
+$$\frac{ \partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}
+{ \partial \lambda x_{i}} x_{i} = \phi \lambda^{\phi -1 }f(x_1,x_2,x_3,...,x_n)$$
 
 por lo tanto para el diferencial total tenemos que suponiendo que $\lambda=1$
 
-$$\dfrac{dZ}{d \lambda}= \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n}  \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}   $$
+$$\frac{dZ}{d \lambda}= \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n}  \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}$$
 
 Suponiendo que la función es homogénea de grado uno (1) 
 
-
-$$f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n}  \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}   $$
+$$f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n} \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}$$
 
 
 para dos variables tenemos el resultado enunciado al principio de la sección; 
 
-$$Z = \dfrac{f(x_{1},x_{2})}{\partial x_{1}}x_{1} + \dfrac{f(x_{1},x_{2})}{\partial x_{2}}x_{2}$$
-
+$$Z = \frac{f(x_{1},x_{2})}{\partial x_{1}}x_{1} + \frac{f(x_{1},x_{2})}{\partial x_{2}}x_{2}$$
 como se quería comprobar.
+
+
+Multiple equations
+-------------------------------------------------
+
+a rectangular arrange of elements that could be operate simultaneously.
+
+there are some basic properties of matrix show aim is simultaneous equations in the form:
+
+$$\mathbf{A} \mathbf{x} = c$$ 
+
+matrix and  $\mathbf{x}$  is a vector of unknowns, whose finally is get of multiple linear system the constants.
+
+ $$ a_{11} x + a_{12} x_2  + ... + a_{1n-1}x + a_{1n}x = c_{1}$$
+ 
+ $$a_{21} x + a_{22} x_2  + ... + a_{2n-1}x + a_{2n}x = c_{2}$$
+ $$...$$ 
+ $$a_{n1} x + a_{n2} x_2  + ... + a_{n-1n-1}x + a_{n n}x = c_{n}$$
+ 
+
+
+$$
+\begin{bmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+a_{21} & a_{22} & \cdots & a_{2n}\\
+\vdots & \vdots & \ddots & \vdots\\
+a_{n1} & a_{n2} & \cdots & a_{nn}
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\x_2\\ \vdots\\x_n
+\end{bmatrix}
+=\begin{bmatrix}
+b_1\\b_2\\ \vdots\\b_n
+\end{bmatrix}
+$$
+
+
+
+
+Determinats
+```````````````
+
+from a $\mathbf{A}$ square matrix we can uses the concept of determinant to prove if the matrix it is o nor singular.
+This process it is related to a combinatorial problem, think in the solution of a system of $2*2$
+
+
+$$a_{11} x + a_{12} y = c_{1}$$
+$$a_{21} x + a_{22} y = c_{2}$$
+
+if we find the solution a these equations in the pair $(x^{*},y^{*}$), note that this satisfy the above system then a linear combination of them is also a solution.
+
+$$a_{11} x^{*} + a_{12} y^{*} - c_{1} +  a_{21} x^{*} + a_{22} y^{*}  - c_{2} = 0$$
+
+$$c_{1} - c_{1} +  c_{2}  - c_{2}=0$$
+
+
+
+$$k_{1} (0) + k_{2} (0) = 0$$
+then we can multiply the system by any constants, and the solution also will be solution of the original system.
+
+we can multiply the equations by cross numbers thus:
+
+ $$a_{22}(a_{11} x + a_{12} y = c_{1})$$
+ 
+ $$a_{21}(a_{12} x + a_{22} y = c_{2})$$
+
+and rest one to the another we have:
+
+$$a_{22}a_{11}x  - a_{12}a_{21}x = a_{22}c_{1} - a_{12}c_{2}$$ 
+
+$$x(a_{22}a_{11} - a_{12}a_{21}) =  a_{22}c_{1} - a_{12}c_{2}$$
+
+where the solution is; 
+
+$$x^{*} = \frac{ a_{22}c_{1} - a_{12}c_{2} } {a_{22}a_{11} - a_{12}a_{21}}$$
+
+note that if we want eliminate $x$ to find $y$  
+it is enough multiply the equations by, $a_{11}$ and $a_{12}$.
+
+
+A practical and handy  way  of get the $det(\mathbf{A})$ it is the laplace exapansion that also will offer us a way to calculate the inverse matrix.
+if we have $\mathbf{A}$ square matrix a lapace expansion have two important concepto cofactor and lesser principal:
+
+
+$$A = 
+\begin{bmatrix}
+a_{11} & a_{12} \\
+a_{21} & a_{22} 
+\end{bmatrix}$$
+
+
+
+the lesser principal of the element $a_{ij}$ is the submatrix $\mathbf{M_{ij}}$  that result of eliminate the $i-row$ and the $j-column$. 
+namely by $a_{22}$. 
+
+
+
+
+$$
+A = 
+\begin{bmatrix}
+a_{11} & a_{12}  & a_{13}\\
+a_{21} & a_{22}  & a_{23} \\
+a_{31} & a_{32} & a_{33} 
+\end{bmatrix}
+$$
+
+using the definition of laplace expansion we have, 
+
+$$det(\mathbf{A}) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}$$
+
+$$
+a_{11}
+\begin{vmatrix}
+a_{22} & a_{23} \\
+a_{32} & a_{33}
+\end{vmatrix}
++ a_{12}
+\begin{vmatrix}
+a_{21} & a_{23} \\
+a_{31} & a_{33}
+\end{vmatrix}
++ a_{13}
+\begin{vmatrix}
+a_{21} & a_{22} \\
+a_{31} & a_{32}
+\end{vmatrix}
+$$
+
+now, notice the reduction of a determinant, only need calculate the cross product of the determinant of second order.
+
+a cofactor is defined as:
+$$C_{ij} = (-1)^{i+j}M_{ij}$$
+
+
+
+
+then we can define the determinant as:
+$$det(\mathbf{A}) = \sum_{i=1}^{n} a_{ij} C_{ij}$$
+
+
+
+note that we only need choose a column or row, to expand apply the determinant. 
+
+if we develop a $det(\mathbf{A})$ using the elements of $j-th$ row (column) but the cofactors  of a $k-th$ row (column) then 
+
+$$det(\mathbf{A}) = 0$$
+
+we need a probe to this; 
+
+this property allow us, find a way to calculate $A^{-1}$.
+
+the matrix $\mathbf{A}$ its respective cofactor matrix $C$, transposing $C$ we have $C^{T} = [c_{ji}]$.
+if we multiply, by dot product we have that  $AC^{T} = [e_{ij}]= [\sum_{j=1}^{n} a_{ij}c_{ji}]_{n*n}$ however note that this is take the elements in the $i$ row and cofactors of $j$ row, however the only the main diagonal match adequately( the index $ji = ij$) therefore; $$AC^{T} = det(A)I$$. 
+
+now we have two important things here, the deduction of $A^{-1}$ and its uniqueness:
+$A \frac{C^{T}}{\textbf{det(A)}}= I$ and 
+we can see that $A^{-1}= \frac{C^{T}}{\textbf{det(A)}}$. In summary, the inverse matrix is the transpose matrix of cofactors this is also named adjunted matrix divided by the determinant of the system. 
+
+Cramer rule
+++++++++++++++++++
+it is rule is very useful when we are interested in a particular value solution of the system;
+$$x^{*} = A^{-1}d$$
+
+then we have 
+$$
+\begin{equation}
+A^{-1}d = [e_{ij}] = \begin{bmatrix}
+\frac{\sum d_{i}C_{ji}}{\textbf{det(A)}}
+\end{bmatrix}_{m,1} 
+\end{equation}
+$$
+
+Take in mind that the cofactor itself are independent of the arguments  used to expand in the row, for instance if we expand using $i$ row then the $C_{ij}$ for all $j$ are indepent of the $a_{ij}$ for all $j$, therefore we can get the same result to the $x_{j}$ unknown replacing the $d$ vector in the $j$ column of the $A$ matrix.
+
+for instance for the first  unknown
+$$A_{1}=
+\begin{bmatrix}
+d_{1} & a_{12} & a_{13} & \cdots & a_{1n} \\
+d_{2} &  a_{22} & a_{23} & \cdots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+d_{n} & a_{n2} & a_{n3} & \cdots & a_{nn} \\
+\end{bmatrix}
+$$
+
+
+taking the first column expanding we the laplace expression we have that
+$$det(A_{1}) = \sum d_{j} C_{j1}$$
+
+in general terms we said that the matrix $A_{k}$ replace the $k$ column of $A$ by the vector of $d$ and therefore:
+$$x^{*}_{k} = \frac{det(A_{k})}{det(A)}$$
+
+Fourier Transform
+#####################
+
+
+
+Laplace transform
+####################

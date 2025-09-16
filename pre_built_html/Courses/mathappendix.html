@@ -17,7 +17,7 @@
       <script src="../_static/documentation_options.js?v=6b480424"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]]}}</script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]], "macros": {"abs": ["\\lvert #1 \\rvert", 1]}}}</script>
       <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -69,15 +69,22 @@
 <li class="toctree-l1"><a class="reference internal" href="economics.html">Lectures in Economics</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Mathematical Appendix</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lineal-function">lineal function</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id2"></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#lineal-function">lineal function</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#exponential-and-logarithm-function">Exponential and logarithm function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logarithms">Logarithms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lagrange-multiplier">Lagrange multiplier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#applications-in-microeconomics">Applications in Microeconomics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#neoclassic-function">Neoclassic Function</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#euler-theorem">Euler theorem</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#multiple-equations">Multiple equations</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#cramer-rule">Cramer rule</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Research:</span></p>
 <ul>
@@ -118,6 +125,10 @@
              
   <section id="mathematical-appendix">
 <h1>Mathematical Appendix<a class="headerlink" href="#mathematical-appendix" title="Link to this heading"></a></h1>
+<p>Hola necesitamos saber si está actualizando o no como es posible que tengamos
+<div class="math notranslate nohighlight">
+\[\left(\frac{a}{b}\right)\]</div>
+</p>
 <p>The following lecture aim give to lector a idea about some mathematical concetps used in
 data science. This lecture not pretend subsitute the guide books, always is preferable read the proposed book.</p>
 <section id="functions">
@@ -170,9 +181,8 @@ This not allow establish a unique relation, Note that the first component of the
 \[f:\Re \longrightarrow \Re^{+}\]</div>
 </p>
 <p>A question  <span class="math notranslate nohighlight">\(x^{2}+y^{2}=r^{2}\)</span> is a function?.</p>
-</section>
 <section id="lineal-function">
-<h3>lineal function<a class="headerlink" href="#lineal-function" title="Link to this heading"></a></h3>
+<h4>lineal function<a class="headerlink" href="#lineal-function" title="Link to this heading"></a></h4>
 <p>We are going to discuss the concept of <strong>slope</strong>, in some texts scope is denoted by <span class="math notranslate nohighlight">\(m\)</span>  and is defined as:
 $$ m = \frac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}$$</p>
 <p>In other words the scope, asssuming <span class="math notranslate nohighlight">\(y = f(x)\)</span>, is the chanfge in the position in  <span class="math notranslate nohighlight">\(\Delta f(x) = \Delta y\)</span> with respect to a <span class="math notranslate nohighlight">\(\Delta x\)</span>,
@@ -204,7 +214,7 @@ two lines are parallel if have the same slope.</p>
 <div class="figure" style="text-align: center"><p><img  src="../_images/tikz-343d2703f1df55eab7e0c9c3b1775dad6494e42a.svg" alt="Figure made with TikZ" /></p>
 </div><p>consideremos el caso de como la función general de manera lineal dado un punto y la pendiente; es decir sabemos que es proporcionalidad esto quiere decir que si por el punto <span class="math notranslate nohighlight">\(a\)</span> deben recaer puntos tales que sean proporcionales en sus cambios;</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{y-y_{1}}{x-x_{1}}= m\]</div>
+\[\frac{y-y_{1}}{x-x_{1}}= m\]</div>
  podemos reescribir como;
 <div class="math notranslate nohighlight">
 \[(y-y_{1})=m(x-x_{1})\]</div>
@@ -212,7 +222,7 @@ two lines are parallel if have the same slope.</p>
 <div class="math notranslate nohighlight">
 \[y=m(x-x_{1})+ y_{1}\]</div>
 </p>
-<p><strong>Problema</strong>; Cada tres años el valor de las casas disminuye exactamente <span class="math notranslate nohighlight">\(\beta\)</span> $ , si el valor promedio de las casas es de <span class="math notranslate nohighlight">\(\alpha\)</span> $, ¿como es la formula funcional que nos permite establecer una relación para este fenómeno económico?</p>
+<p><strong>Problema</strong>; Cada tres años el valor de las casas disminuye exactamente <span class="math notranslate nohighlight">\(\beta\)</span> monetary unities, si el valor promedio de las casas es de <span class="math notranslate nohighlight">\(\alpha\)</span> $, ¿como es la formula funcional que nos permite establecer una relación para este fenómeno económico?</p>
 <p>otro <strong>problema</strong> es dada la información de la pendiente y  un punto de la función hallar su forma funcional; es decir problema; u agricultor utiliza un fertilizante el número de sacos de café que produce es de <span class="math notranslate nohighlight">\(5 \)</span> por cada 1 lt de solución acuosa del fertilizante se ha tomado un dato <span class="math notranslate nohighlight">\((3,19)\)</span> hallar la producción del agricultor cuando utiliza 8 litros de la solución.
 add the table with rate to establish wich is the slope!</p>
 <p>AGREGAR TABLA DE PENDIENTE!</p>
@@ -241,14 +251,17 @@ la hipotenusa al cuadrado es igual a la suma de los catetos al cuadrado. es deci
 <p><strong>función inversa</strong></p>
 <p>La función inversa es importante en el análisis económico por eso la hemos incluido,
 para que una  una función <span class="math notranslate nohighlight">\(f\)</span> tenga inversa <span class="math notranslate nohighlight">\(f^{-1}\)</span> se debe cumplir la condición <span class="math notranslate nohighlight">\(f\)</span> de que la función es biunívoca.
-Es decir que si <span class="math notranslate nohighlight">\(f(x_{1}) = f(x_{{2})\)</span> entonces, $ x_{1} = x_{2}$.</p>
+Es decir que si <span class="math notranslate nohighlight">\(f(x_{1})=f(x_{2})\)</span> entonces, $ x_{1} = x_{2}$.</p>
 <p>Es decir para la parábola en todo su dominio no podemos definir una función inversa debido a que como ya se dijo es simétrica y entonces <span class="math notranslate nohighlight">\(f(-x)=f(x)\)</span> y <span class="math notranslate nohighlight">\(-x\neq x\)</span>.</p>
 <p>la función inversa actúa de manera especial en economía puesto que muchos de los modelos matemáticos hacen uso de su concepto, sabrá por su curso de introducción a la economía que la demanda <span class="math notranslate nohighlight">\(Q=f(p)\)</span> con la función inversa nos aseguramos que <span class="math notranslate nohighlight">\(p=f^{-1}(Q)\)</span>, observe que antes por la regla de asignación de <span class="math notranslate nohighlight">\(f\)</span> obteníamos de un conjunto de precios, las cantidades demandadas ahora <span class="math notranslate nohighlight">\(f^{-1}\)</span> nos permite obtener del conjunto de demandas el precio respectivo.</p>
 <p>La función cuadrática es, muy útil en economía, la curva de lactancia ha sido muy estudiada para saber conocer la producción lechera; es decir el conocimiento predicción de la leche por medio de un modelo que puda ayudarnos a predecir esto de la forma;</p>
 <p><div class="math notranslate nohighlight">
 \[y=ax+bx^{2}+c\]</div>
  así la producción esta curva nos permite conocer tales estimaciones, en la producción lechera.</p>
-<p>subsection*{Función exponencial y logarítmica}</p>
+</section>
+</section>
+<section id="exponential-and-logarithm-function">
+<h3>Exponential and logarithm function<a class="headerlink" href="#exponential-and-logarithm-function" title="Link to this heading"></a></h3>
 <p>La importancia de la función exponencial, radica en una variedad de problemas prácticos que se pueden resolver por ejemplo, cada día un población de bacterias crece en el doble que el día anterior pasado (n) días cuantas bacterias hay, igualmente para el caso del capital, y otros ejemplos, aquí la utilidad radica en el potencial de quien es capaz de modelar diferentes situaciones con esta, primero trataremos de analizar  un ejemplo que se expone en “que es  y que no es la estadística”</p>
 <p>pero antes una situación planteada con anterioridad que no es exactamente este enunciado pero sigue la misma estructura; los peces de un estanque se reproducen a diario cada día hay el doble de peces que el día anterior si a los 48 días el estanque esta al 100% cuantos días son necesarios para que el estanque esté  a la mitad?</p>
 <p>se sigue el siguiente razonamiento, si cada día hay el doble del día anterior entonces la población de ayer estrictamente fue la mitad de la de hoy. esto quiere decir que si hoy esta el estanque lleno ayer estuvo a la mitad es decir 47 días fueron necesarios para que esté a la mitad. Pero a (t) días que tan lleno estará el estanque? esto implica inmediatamente tratar de construir una ecuación que nos describa tal comportamiento esto es;</p>
@@ -274,7 +287,9 @@ que era la ecuación que estábamos buscando para el problema, en general cuando
 <p><div class="math notranslate nohighlight">
 \[l(t)=N_{0} \theta^{\gamma-t}\]</div>
 </p>
-<p>subsubsection{Logaritmos}</p>
+</section>
+<section id="logarithms">
+<h3>Logarithms<a class="headerlink" href="#logarithms" title="Link to this heading"></a></h3>
 <p>La introducción de los logaritmos se hace indispensable en un texto para economistas además, esta ingeniosa estructura matemática tuvo un valor histórico muy significativo como se relata en el texto de ian stewart. El uso de los logaritmos en economía es importante, tanto para el análisis empírico como teórico.</p>
 <p>Los logaritmos fueron introducidos como un método para reducir la complejidad de algunos cálculos, por ejemplo efectuar calculos con sumas en lugar de productos, restas en lugar de divisiones, productos en lugar de potencias, y divisiones en lugar de raíces.</p>
 <p>La base de los logaritmos neperianos, es el número <span class="math notranslate nohighlight">\(e\)</span>, del cual hablaremos más adelante por ahora diremos que para una base cualquiera <span class="math notranslate nohighlight">\(a\)</span> el logaritmo  de un número positivo en esa base se es</p>
@@ -290,33 +305,36 @@ que era la ecuación que estábamos buscando para el problema, en general cuando
 \[HL= a^{x+y}\]</div>
 
 <div class="math notranslate nohighlight">
-\[\dfrac{H}{L}= a^{x-y}\]</div>
+\[\frac{H}{L}= a^{x-y}\]</div>
 
 $$ H^{n}= (a^{x})^{n}= a^{xn}$$</p>
 <p>Algunas de las propiedades de los logaritmos son:</p>
 <p><div class="math notranslate nohighlight">
 \[\log(HL)= \log x + \log y\]</div>
 </p>
-<p>$$ log(dfrac{H}{L})= log x - log y$$</p>
+<p><div class="math notranslate nohighlight">
+\[\log(H/L)= \log x - \log y\]</div>
+</p>
 <p>Sin embargo, los logaritmos en el análisis económico tienen un base preferida como dijimos anteriormente el número <span class="math notranslate nohighlight">\(e\)</span>.</p>
 <p>De acuerdo a  la relación <span class="math notranslate nohighlight">\(log_{a}(Y) = x\)</span> entonces, <span class="math notranslate nohighlight">\(a&gt;1\)</span>
 y <span class="math notranslate nohighlight">\(Y&gt;1\)</span> y <span class="math notranslate nohighlight">\(x \in \mathbb{R}\)</span>.</p>
 <p>otras de las propiedades importantes de los logaritmos son:
-<span class="math notranslate nohighlight">\(log_{a}a = 1\)</span>, <span class="math notranslate nohighlight">\(log_{a}1 =0\)</span>.</p>
+<span class="math notranslate nohighlight">\(\log_{a}a = 1\)</span>, <span class="math notranslate nohighlight">\(\log_{a}1 =0\)</span>.</p>
 <p>Como se verá el concepto de derivada es fundamental debido a que las relaciones entre magnitudes no son siempre constantes,  ¿podría explicar el lector con un ejemplo a que se debe de que la pendiente como la hemos definido es insuficiente para tales relaciones?</p>
 <p><strong>Optimización</strong></p>
 <p>En esta sección solo daremos una breve introducción intuitiva debido a que la teoría de la optimización es de suma importancia se recomienda leer directamente este tema en cualquiera de las referencias.</p>
-<p>En la figura que sigue se representa la función <span class="math notranslate nohighlight">\(F(x)\)</span> para un intervalo de su dominio como se puede evidenciar, existen dos puntos en los cuales <span class="math notranslate nohighlight">\(\dfrac{dF(x)}{dx}=f(x)\)</span> toma valor cero. Esto se evidencia en los puntos <span class="math notranslate nohighlight">\(x_{0} \)</span> y $ x_{1}$.</p>
+<p>En la figura que sigue se representa la función <span class="math notranslate nohighlight">\(F(x)\)</span> para un intervalo de su dominio como se puede evidenciar, existen dos puntos en los cuales <span class="math notranslate nohighlight">\(\frac{dF(x)}{dx}=f(x)\)</span> toma valor cero. Esto se evidencia en los puntos <span class="math notranslate nohighlight">\(x_{0} \)</span> y $ x_{1}$.</p>
 <p>Esto quiere decir que encontrar un punto de la función para la cual su derivada en ese punto es igual a cero no es una condición suficiente para establecer el máximo global de tal función. Sin embargo, usualmente en economía este problema queda descartado por el tipo de función con la cual se trabaja donde podemos estar seguros que ese punto donde la derivada es nula es el máximo.</p>
 <div class="figure" style="text-align: center"><p><img  src="../_images/tikz-75b2e12888334491209ed6beceb63bae1b0ff912.svg" alt="Figure made with TikZ" /></p>
-</div><p>#### networks
-subsubsection{Multiplicador de Lagrange}</p>
+</div></section>
+<section id="lagrange-multiplier">
+<h3>Lagrange multiplier<a class="headerlink" href="#lagrange-multiplier" title="Link to this heading"></a></h3>
 <p>Para los óptimos restringidos para los cuales el problema puede tornarse mucho mas complicado puesto que existe una limitación en los valores que <span class="math notranslate nohighlight">\(X\)</span> puede tomar, esto debe ser incorporado en el criterio del máximo.</p>
 <p>El multiplicador de Lagrange es un método que nos ayudará a resolver este problema, para comprender intuitivamente como trabaja supongamos que debemos invertir en dos compañías y que las tasas de retorno de ambas
 son <span class="math notranslate nohighlight">\(r_{1}\)</span> y$ r_{2}$ lo interesante del hecho es que desde esta perspectiva ya hemos resuelto la mitad del problema puesto que ya conocemos cual es la retribución por cada peso invertido, ahora debemos saber que tanto debemos invertir en cada una de ellas, se debe escoger la cantidad de dinero que nos retorne por las dos es la misma cantidad por que si no fuera así no se estaría maximizando los recursos pues una me ofrecerá mayor retorno sobre las otras, en otras “palabras”;</p>
 <p>siendo <span class="math notranslate nohighlight">\(\pi_{1}\)</span> , <span class="math notranslate nohighlight">\(\pi_{2}\)</span> la ganancia de invertir en la primera y segunda empresa, y <span class="math notranslate nohighlight">\(k_{1}\)</span> y <span class="math notranslate nohighlight">\(k_{2}\)</span> es la cantidad de dinero invertida en las empresas respectivamente y <span class="math notranslate nohighlight">\(k_{1}+ k_{2} =K \)</span> el total disponible de capital. Entonces la condición para optimizar mis beneficios es</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\pi_{1}}{k_{1}}=\dfrac{\pi_{2}}{k_{2}}\]</div>
+\[\frac{\pi_{1}}{k_{1}}=\frac{\pi_{2}}{k_{2}}\]</div>
 </p>
 <p>Así decimos que la ganancia por peso invertido debe ser igual para las dos compañías.</p>
 <p>De manera general tenemos una función objetivo <span class="math notranslate nohighlight">\(Z=f(x_1,x_2,x_3,...,x_n)\)</span> que queremos maximizar, es decir tener las cantidades de los <span class="math notranslate nohighlight">\(x_{i}\)</span> que me permitan obtener el valor más grande de  <span class="math notranslate nohighlight">\(Z\)</span> sujeto a una restricción presupuestaria de la forma <span class="math notranslate nohighlight">\(K=\sum_{1}^{n}p_{i}x_{i}\)</span>.</p>
@@ -326,14 +344,14 @@ son <span class="math notranslate nohighlight">\(r_{1}\)</span> y$ r_{2}$ lo int
 <p>obteniendo las condiciones necesarias;</p>
 <p></p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial \ell }{\partial x_{i}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}+\lambda p_{i}= 0\]</div>
+\[\frac{\partial \ell }{\partial x_{i}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}+\lambda p_{i}= 0\]</div>
 </p>
 <p>esto es para todos los <span class="math notranslate nohighlight">\(({i})\)</span></p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial \ell }{\partial x_{1}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{1}}+\lambda p_{1}= 0\]</div>
+\[\frac{\partial \ell }{\partial x_{1}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{1}}+\lambda p_{1}= 0\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial \ell }{\partial x_{2}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{2}}+\lambda p_{2}= 0\]</div>
+\[\frac{\partial \ell }{\partial x_{2}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{2}}+\lambda p_{2}= 0\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
 \[....\]</div>
@@ -342,160 +360,104 @@ son <span class="math notranslate nohighlight">\(r_{1}\)</span> y$ r_{2}$ lo int
 \[....\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial \ell }{\partial x_{n-1}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n-1}}+\lambda p_{n-1}= 0\]</div>
+\[\frac{\partial \ell }{\partial x_{n-1}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n-1}}+\lambda p_{n-1}= 0\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial \ell }{\partial x_{n}} = \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n}}+\lambda p_{n}= 0\]</div>
-</p>
-<p>por ultimo</p>
-<p><div class="math notranslate nohighlight">
-\[\dfrac{\partial \ell}{\partial \lambda} = K-\sum_{1}^{n} p_{i}x_{i} = 0\]</div>
+\[\frac{\partial \ell }{\partial x_{n}} = \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{n}}+\lambda p_{n}= 0\]</div>
+
+<div class="math notranslate nohighlight">
+\[\frac{\partial \ell}{\partial \lambda} = K-\sum_{1}^{n} p_{i}x_{i} = 0\]</div>
 </p>
 <p>Como se puede observar este sistema requiere inmediatamente que;</p>
-<p>$$ lambda = dfrac{dfrac{partial f(x_1,x_2,x_3,…,x_n)}{partial x{i}}}{p_{i}} =  dfrac{dfrac{partial f(x_1,x_2,x_3,…,x_n)}{partial x{i+1}}}{p_{i+1}} = … = dfrac{dfrac{partial f(x_1,x_2,x_3,…,x_n)}{partial x{n}}}{p_{n}}= lambda $$</p>
-<p>esta es la idea básica introduciendo el multiplicador <span class="math notranslate nohighlight">\((\lambda)\)</span>.</p>
-<section id="id2">
-<h4><a class="headerlink" href="#id2" title="Link to this heading"></a></h4>
-<p>textbf{Ejemplo};</p>
-<p>supongamos que se tiene la siguiente función $ Z=x_{1}^{\alpha}x_{2}^{\beta}$ restringida al caso de <span class="math notranslate nohighlight">\(I=p_{1}x_{1}+p_{2}x_{2}\)</span> así con la conclusión establecida, no habrá necesidad de plantear otra ves el problema puesto que el lector ha visto que acabamos de desarrollar un modelo general.</p>
+<p><div class="math notranslate nohighlight">
+\[\lambda = \dfrac{\dfrac{
+\partial f(x_1,x_2,x_3,...,x_n)
+}{
+\partial x{i}
+}}{p_{i}}\]</div>
+
+esta es la idea básica introduciendo el multiplicador <span class="math notranslate nohighlight">\((\lambda)\)</span>.</p>
+<p><div class="math notranslate nohighlight">
+\[\lambda = \dfrac{\dfrac{
+\partial f(x_1,x_2,x_3,...,x_n)
+}{
+\partial x{i}
+}}{p_{i}} =  \dfrac{\dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x{i+1}}}{p_{i+1}} = ... = \dfrac{\dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x{n}}}{p_{n}}= \lambda\]</div>
+</p>
+<p>supongamos que se tiene la siguiente función <span class="math notranslate nohighlight">\(Z=x_{1}^{\alpha}x_{2}^{\beta}\)</span> restringida al caso de <span class="math notranslate nohighlight">\(I=p_{1}x_{1}+p_{2}x_{2}\)</span> así con la conclusión establecida, no habrá necesidad de plantear otra ves el problema puesto que el lector ha visto que acabamos de desarrollar un modelo general.</p>
 <p>entonces;</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial Z}{\partial x_{1}}=\alpha x_{1}^{\alpha -1} x_{2}^{2}\]</div>
+\[\frac{\partial Z}{\partial x_{1}}=\alpha x_{1}^{\alpha -1} x_{2}^{2}\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial Z}{\partial x_{2}}=\beta x_{2}^{\beta -1}x_{1}^{\alpha}\]</div>
+\[\frac{\partial Z}{\partial x_{2}}=\beta x_{2}^{\beta -1}x_{1}^{\alpha}\]</div>
 </p>
 <p>tenemos que</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\alpha x_{1}^{\alpha -1} x_{2}^{\beta}}{p_{1}}=  \dfrac{\beta x_{2}^{\beta -1}x_{1}^{\alpha}}{p_{2}}\]</div>
+\[\frac{\alpha x_{1}^{\alpha -1} x_{2}^{\beta}}{p_{1}}=  \frac{\beta x_{2}^{\beta -1}x_{1}^{\alpha}}{p_{2}}\]</div>
 </p>
 <p>ahora si obtenemos las cantidades de <span class="math notranslate nohighlight">\(x_{1}\)</span> y <span class="math notranslate nohighlight">\(x_{2}\)</span> que maximizan las cantidades.</p>
 <p>primero debemos despejar ya sea <span class="math notranslate nohighlight">\(x_{1}\)</span> o <span class="math notranslate nohighlight">\(x_{2}\)</span> y después llevarlo a la restricción presupuestaria esto es;</p>
-<p>$$ dfrac{ alpha x_{1}^{-1}}{p_{1}} = dfrac{beta x_{2}^{-1}}{p_{2}}$$</p>
 <p><div class="math notranslate nohighlight">
-\[x_{1}= \dfrac{\alpha p_{2} x_{2}}{\beta p_{1}}\]</div>
+\[\frac{ \alpha x_{1}^{-1}}{p_{1}} = \frac{\beta x_{2}^{-1}}{p_{2}}\]</div>
 </p>
-<p>[*]</p>
+<p><div class="math notranslate nohighlight">
+\[x_{1}= \frac{\alpha p_{2} x_{2}}{\beta p_{1}}\]</div>
+</p>
 <p>llevando a la restricción presupuestaria;</p>
-<p>$$ p_{1} left( dfrac{alpha p_{2} x_{2}}{beta p_{1}} right) + p_{2} x_{2} $$</p>
-<p>$$ dfrac{ alpha x_{2} p{2} }{beta} + p_{2}x_{2}= I$$</p>
 <p><div class="math notranslate nohighlight">
-\[x_{2}p_{2}(\dfrac{\alpha}{\beta}+1) = I\]</div>
+\[p_{1} \left( \frac{\alpha p_{2} x_{2}}{\beta p_{1}} \right) + p_{2} x_{2} \]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[x_{2}=\dfrac{I}{p_{2}  \left(   \dfrac{\alpha + \beta }{\beta} \right)}\]</div>
+\[\frac{ \alpha x_{2} p{2} }{\beta} + p_{2}x_{2}= I\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[x_{2}p_{2}(\frac{\alpha}{\beta}+1) = I\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[x_{2}=\frac{I}{p_{2}  \left(\frac{\alpha + \beta }{\beta} \right)}\]</div>
 </p>
 <p>ahora este resultado lo llevamos a <span class="math notranslate nohighlight">\(x_{1}\)</span>  a [*]</p>
 <p>así obtenemos;</p>
-<p>$$ x_{1} = dfrac{alpha p_{2} left( dfrac {I} {p_{2} left( dfrac{alpha + beta} {beta} right)} right)} {beta p_{1}} $$</p>
 <p><div class="math notranslate nohighlight">
-\[x_{1}= \dfrac{\alpha I }{\beta p_{1} \left( \dfrac{ \alpha + \beta}{\beta} \right) } \]</div>
+\[x_{1} = \frac{\alpha p_{2} \left( \frac {I} {p_{2} \left( \frac{\alpha + \beta} {\beta} \right)} \right)} {\beta p_{1}} \]</div>
 </p>
-<p>$$ x_{1} =  dfrac{alpha I}{P_{1}(alpha + beta)}$$</p>
+<p><div class="math notranslate nohighlight">
+\[x_{1}= \frac{\alpha I }{\beta p_{1} \left( \frac{ \alpha + \beta}{\beta} \right) }\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[x_{1} =  \frac{\alpha I}{P_{1}(\alpha + \beta)}\]</div>
+</p>
 <p>para comprobar que nuestra relación es cierta ahora necesitamos  saber que realmente <span class="math notranslate nohighlight">\(p_{1}x_{1}+p_{2}x_{2}=I\)</span>.</p>
 <p><div class="math notranslate nohighlight">
-\[p_{1} \left( \dfrac{\alpha I}{p_{1} (\alpha + \beta) } \right) + p_{2} \left(  \dfrac{I}{p_{2} \left( \dfrac{\alpha + \beta}{\beta} \right)} \right )= I \]</div>
+\[p_{1} \left( \frac{\alpha I}{p_{1}(\alpha + \beta) } \right) + p_{2} \left(  \frac{I}{p_{2} \left( \frac{\alpha + \beta}{\beta} \right)} \right )= I\]</div>
 </p>
 <blockquote>
-<div><p>$$ = dfrac{I}{ p_{2} left( dfrac{alpha + beta}{beta} right)} + dfrac{alpha I}{alpha + beta} $$ =</p>
+<div><p><div class="math notranslate nohighlight">
+\[= \frac{I}{ p_{2} \left( \frac{\alpha + \beta}{\beta} \right)} + \frac{\alpha I}{\alpha + \beta}\]</div>
+</p>
 </div></blockquote>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{ \beta I}{\alpha + \beta } + \dfrac{\alpha I}{\alpha + \beta} =I \dfrac{(\alpha + \beta)}{(\alpha + \beta)}= I\]</div>
+\[\frac{ \beta I}{\alpha + \beta } + \frac{\alpha I}{\alpha + \beta} =I \frac{(\alpha + \beta)}{(\alpha + \beta)}= I\]</div>
 </p>
 <p>esta función que acabamos de maximizar es muy utilizada en el análisis microeconómico y es nuestra puerta de entrada a este modulo, antes hablaremos de la importancia de la función. Esta función tiene dos interpretaciones;  se puede interpretar desde el punto de vista del consumidor o de la firma. En el primer caso la función que tratamos de maximizar representa la utilidad de un individuo de  consumir <span class="math notranslate nohighlight">\(x_{1}\)</span> y <span class="math notranslate nohighlight">\(x_{2}\)</span> y en el segundo tratamos de maximizar los beneficios económicos en el proceso productivo.</p>
-<dl>
-<dt>Entonces si observamos el gasto que realiza el consumidor en el bien <span class="math notranslate nohighlight">\(x_{1}\)</span>  que maximiza su utilidad es</dt><dd><p>$$ p_{1} x_{1} =  dfrac{alpha I}{(alpha + beta)}$$</p>
-<blockquote>
-<div><p>suponiendo que <span class="math notranslate nohighlight">\((\alpha + \beta)=1\)</span> observamos que se gasta una parte constante de la renta  <span class="math notranslate nohighlight">\(( \alpha I)\)</span> y es por esta razón que hacemos este supuesto pues los gastos del consumidor en el bien <span class="math notranslate nohighlight">\(x_{1}\)</span> es una parte constante de la renta y debe disponer del <span class="math notranslate nohighlight">\(100\%\)</span> de esta. Igualmente para el caso del bien dos</p>
-<p><div class="math notranslate nohighlight">
-\[p_{2} x_{2} = I\beta}\]</div>
+<dl class="simple">
+<dt>Entonces si observamos el gasto que realiza el consumidor en el bien <span class="math notranslate nohighlight">\(x_{1}\)</span>  que maximiza su utilidad es</dt><dd><p><div class="math notranslate nohighlight">
+\[p_{1} x_{1} =  \frac{\alpha I}{(\alpha + \beta)}\]</div>
 </p>
-</div></blockquote>
 </dd>
 </dl>
+<p>suponiendo que <span class="math notranslate nohighlight">\((\alpha + \beta)=1\)</span> observamos que se gasta una parte constante de la renta  <span class="math notranslate nohighlight">\((\alpha I)\)</span> y es por esta razón que hacemos este supuesto pues los gastos del consumidor en el bien <span class="math notranslate nohighlight">\(x_{1}\)</span> es una parte constante de la renta y debe disponer del <span class="math notranslate nohighlight">\(100\%\)</span> de esta. Igualmente para el caso del bien dos</p>
+<p><div class="math notranslate nohighlight">
+\[p_{2} x_{2}=I\beta\]</div>
+</p>
 <p>Un análisis análogo de la participación de los factores productivos en el producto  se da para el caso de la firma el lector debe ser capa de dar una explicación intuitiva.</p>
-<p>Examinemos el caso concreto cuando se consumen tres bienes donde el consumidor asigna una parte constante de su renta o ingreso para cada una de las cantidades óptimas, pero antes tendremos en cuenta que la función de producción Cobb-Douglas es simplemente el caso especial cuando <span class="math notranslate nohighlight">\(i=2\)</span> de la siguiente función;</p>
-<p><div class="math notranslate nohighlight">
-\[\prod_{i=1}^n x_i^{\alpha_i}  \]</div>
- [1]</p>
-<p>$$ dfrac {partial prod_{i}^{n} x_{i}^{alpha_{i}}}{partial x_{i}}= (x_i)^{-1}alpha_iprod_{i=1}^{n}x_{i}^{alpha_i}$$</p>
-<p>y por lo tanto podemos plantear el lagrangeano</p>
-<p><div class="math notranslate nohighlight">
-\[\ell = \prod_{i=1}^{n} x_{i}^{\alpha} - \lambda (I- \sum_{i=1}^{n}p_{i}x_{i} )\]</div>
-</p>
-<p><div class="math notranslate nohighlight">
-\[\dfrac{\parial \ell}{\partial x_{i}} = \alpha_{i}x_{i}^{-1} \prod_{i=1}^{n} x_{i}^{\alpha_{i}} - \lambda p_{i}= 0\]</div>
-</p>
-<p>como es para todos los <span class="math notranslate nohighlight">\(i\)</span> tendríamos un sistema de ecuaciones por ahora basta establecer que</p>
-<p><div class="math notranslate nohighlight">
-\[\lambda=   \dfrac{\alpha_{i} x_{i}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i}} = \dfrac{\alpha_{i+1} x_{i+1}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i+1}}  =   ... \dfrac{\alpha_{i+k} x_{i+k}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i+k}}  \lambda  \]</div>
-</p>
-<p>Escojamos <span class="math notranslate nohighlight">\(x_{i}\)</span> y <span class="math notranslate nohighlight">\(x_{i+1}\)</span></p>
-<p><div class="math notranslate nohighlight">
-\[\dfrac{\alpha_{i} x_{i}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i}} = \dfrac{\alpha_{i+1} x_{i+1}^{-1} \prod_{i=1}^{n} x_{i} ^{\alpha_{i}}}{p_{i+1}} = \dfrac{\alpha_{i}}{x_{i}p_{i}} = \dfrac{\alpha_{i+1}}{x_{i+1}p_{i+1}}\]</div>
-</p>
-<p>despejando tenemos que</p>
-<p><div class="math notranslate nohighlight">
-\[x_{i}=\dfrac{x_{i+1} p_{i+1} \alpha_{i}}{\alpha_{i+1} p_{i} }\]</div>
- [**]</p>
-<p>llevando a la restricción presupuestaria tenemos que;</p>
-<p><div class="math notranslate nohighlight">
-\[p_{i} \left(\dfrac{x_{i+1} p_{i+1} \alpha_{i}}{\alpha_{i+1} p_{i} } \right)+ p_{i+1} x_{i+1}+ p_{i+2}x_{i+2} .... p_{n}x_{n} = I\]</div>
-</p>
-<p><div class="math notranslate nohighlight">
-\[p_{i+1} x_{i+1} \left( \dfrac{\alpha_{i}}{\alpha_{i+1}} +1 \right) + p_{i+2}x_{i+2} .... p_{n}x_{n} = I\]</div>
-</p>
-<p>$$ p_{i+1} x_{i+1} left( dfrac{alpha_{i}}{alpha_{i+1}} +1 right) = I - sum_{i=1}^{n}p_{i+2}x_{i+2}$$</p>
-<p><div class="math notranslate nohighlight">
-\[x_{i+1}=\dfrac{I - \sum_{i=1}^{n}p_{i+2}x_{i+2}}{p_{i+1}  \left(  \dfrac{\alpha_{i}}{\alpha_{i+1}} +1 \right) }\]</div>
-</p>
-<p>realizando las operaciones algebraicas ( el lector debería comprobarlo);</p>
-<p><div class="math notranslate nohighlight">
-\[x_{i}= \dfrac{(I- \sum_{i=1}^{n}p_{i+2}x_{i+2}) \alpha_{i}}{p_{i}(\alpha_{i}+ \alpha_{i+1})}\]</div>
-</p>
-<p>ahora si procedamos con el modelo de tres variables que sería un caso particular.</p>
-<p>textbf{ejemplo};</p>
-<p>$$ Max  x_{1}^{alpha_{1}} x_{2}^{alpha_{2}} x_{3}^{alpha_{3}}$$</p>
-<p><div class="math notranslate nohighlight">
-\[sj p_{1}x_{1}+p_{2}x_{2}+p_{3}x_{3}=I\]</div>
-</p>
-<p>reemplazando en las ecuaciones correspondientes anteriores <span class="math notranslate nohighlight">\(x_{i}\)</span> y <span class="math notranslate nohighlight">\(x_{i+1}\)</span> tenemos que;</p>
-<p><div class="math notranslate nohighlight">
-\[x_{1}= \dfrac{(I-p_{3}x_{3})\alpha_{1}}{p_{1}(\alpha_{1} + \alpha_{2})}\]</div>
-</p>
-<p><div class="math notranslate nohighlight">
-\[x_{2}= \dfrac{I - p_{3} x_{3}}{p_{2}  (\dfrac{ \alpha_{1}}{\alpha_{2}} +1) } \]</div>
-</p>
-<p>ahora reemplazamos  en [**] por <span class="math notranslate nohighlight">\(i=3\)</span> obteniendo;</p>
-<p><div class="math notranslate nohighlight">
-\[x_{3}= \dfrac{p_{1}x_{1}\alpha_{3}}{\alpha_{1} p_{3}}\]</div>
-</p>
-<p>ahora reemplazando <span class="math notranslate nohighlight">\(x_{1}\)</span> en esta ecuación obtenemos las cantidades de <span class="math notranslate nohighlight">\(x_{3}\)</span> que maximizan mi utilidad así que;</p>
-<p>begin{eqnarray}</p>
-<p>x_{3}= dfrac{alpha_{3}I - p_{3}x_{3} alpha_{3}}{p_{3} (alpha_{1} + alpha_{2}}</p>
-<p>dfrac{ x_{3}+x_{3}alpha_{3}}{alpha_{1} + alpha _{2}} = dfrac{alpha_{3}I}{p_{3}(alpha_{1}+alpha_{2})}</p>
-<p>x_{3} (dfrac{alpha_{1}+alpha_{2}+alpha_{3}}{alpha_{1}+alpha_{2}}) = dfrac{alpha_{3}I}{p_{3}(alpha_{1}+alpha_{2})}</p>
-<p>x_{3}= dfrac{alpha_{3}I}{p_{3}(alpha_{1}+ alpha_{2}+alpha_{3}}</p>
-<p>end{eqnarray}</p>
-<p>pero observamos que <span class="math notranslate nohighlight">\(x_{1}^{*}\)</span> y <span class="math notranslate nohighlight">\(x_{2}^{*}\)</span> están en función de <span class="math notranslate nohighlight">\(x_{3}^{*} \)</span> que acabamos de hallar por lo tanto debemos reemplazar la última en las  dos primeras y hallaremos las cantidades óptimas de los 3 bienes, quedará como ejercicio realizar las operaciones algebraicas  <span class="math notranslate nohighlight">\(x_{1}\)</span>, por lo tanto teniendo en cuenta que <span class="math notranslate nohighlight">\(\alpha_{1}+\alpha_{2}+\alpha_{3}=h\)</span> (por espacio) para <span class="math notranslate nohighlight">\(x_{2}\)</span> esto es;</p>
-<p>begin{eqnarray}</p>
-<p>x_{2}= dfrac{  (I-dfrac{alpha_{3}I}{h})}{p_{2}(dfrac{alpha_{2} + alpha_{1}}{alpha_{2}})}</p>
-<p>x_{2} = dfrac{ I alpha_{2}(1-dfrac{alpha_{3}}{h})}{p_{2}( alpha_{2}+alpha_{1})}</p>
-<p>x_{2}=dfrac{alpha_{2}I}{p_{2}(alpha_{1}+alpha_{2}+alpha_{3})}</p>
-<p>end{eqnarray}</p>
-<p>así podemos resumir que para los 3 bienes dada la función de utilidad de cobb douglas;</p>
-<p><div class="math notranslate nohighlight">
-\[x_{i}^{*}=\dfrac{\alpha_{i}I}{p_{i}(\alpha_{1}+\alpha_{2}+\alpha_{3}}\]</div>
-</p>
-<p>también será bastante sencillo demostrar que el gasto es igual al ingreso.</p>
-<p>$$ sum(p_{i}x_{i}^{*})=sum p_{i}(dfrac{I alpha_{i}}{p_{i}sumalpha_{i} }) = I dfrac{sum alpha_{i}}{sum alpha_{i}}=I $$</p>
-<p>tenga en cuenta este resultado que es muy importante en la teoría del equilibrio.</p>
-<p>Ejercicio propuesto;</p>
-<p>maximice $ \sum_{1}^{n} \ln x_{i}^{\alpha_{i}}$ sujeto a <span class="math notranslate nohighlight">\(\sum_{1}^{n} p_{i}x_{i}\)</span></p>
-<p>subsection*{Análisis Microeconómico}</p>
+</section>
+<section id="applications-in-microeconomics">
+<h3>Applications in Microeconomics<a class="headerlink" href="#applications-in-microeconomics" title="Link to this heading"></a></h3>
 <p>En esta sección se exponen brevemente algunos temas relevantes del análisis microeconómico, algunos conceptos básicos que se deberían manejar con presteza  y afianzamiento.</p>
-<p>Dado en que en la sección(…) se dio una pequeña introducción a la optimización no restringida y para el multiplicador de lagrange,  el tratamiento de los conceptos básicos en microeconomia requieren un buen manejo de esta sección, pues constituye un requisito.</p>
-<p>subsubsection*{Comportamiento Maximizador}</p>
+<p>Dado en que en la sección(…) se dio una pequeña introducción a la optimización no restringida y para el multiplicador de lagrange,  el tratamiento de los conceptos básicos en microeconomia requieren un buen manejo de esta sección, pues constituye un requisito.
+}</p>
 <p>En el análisis microeconomico se supone que los agentes se comportan como optimizadores de sus recursos así el beneficio <span class="math notranslate nohighlight">\(\pi\)</span> que reciben las empresas aunque no es una condición necesaria que sea el fin único, para este caso.</p>
 <p><div class="math notranslate nohighlight">
 \[\pi(Z)=I(Z)-W(Z)\]</div>
@@ -503,19 +465,19 @@ son <span class="math notranslate nohighlight">\(r_{1}\)</span> y$ r_{2}$ lo int
 <p>Los beneficios son iguales a los ingresos menos los costos.</p>
 <p>así que;</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{ d \pi(Z)}{dZ} = \dfrac{dI(Z)}{dZ}- \dfrac{dW(Z)}{dZ}\]</div>
+\[\frac{d\pi(Z)}{dZ} = \frac{dI(Z)}{dZ}- \frac{dW(Z)}{dZ}\]</div>
 </p>
 <p>Observe que los ingresos <span class="math notranslate nohighlight">\(I(Z)\)</span> son iguales a <span class="math notranslate nohighlight">\(p(Z)Z\)</span> esto es el precio por el producto, observe que a la ves este precio esta en función  de la cantidad de bienes ofrecidos en la economía, cuyo comportamiento se espera este determinado por los patrones de la \textit{ley de oferta y demanda}.</p>
-<p><span class="math notranslate nohighlight">\(\dfrac{dI(Z)}{dZ}\)</span> se conoce como el \textbf{Ingreso Marginal $(IM)$} Y <span class="math notranslate nohighlight">\(\dfrac{dW(Z)}{dZ}\)</span> se conoce como el \textbf{Costo Marginal $(CM)$} así que;</p>
+<p><span class="math notranslate nohighlight">\(\frac{dI(Z)}{dZ}\)</span> se conoce como el \textbf{Ingreso Marginal $(IM)$} Y <span class="math notranslate nohighlight">\(\frac{dW(Z)}{dZ}\)</span> se conoce como el \textbf{Costo Marginal $(CM)$} así que;</p>
 <p><div class="math notranslate nohighlight">
-\[IM = \dfrac{dp(Z)Z}{dZ} = \dfrac{dp(Z)}{dZ}Z + \dfrac{dZ}{dZ}p(Z)= \dfrac{dp(Z)}{dz}Z+p(Z)\]</div>
+\[IM = \frac{dp(Z)Z}{dZ} = \frac{dp(Z)}{dZ}Z + \frac{dZ}{dZ}p(Z)= \frac{dp(Z)}{dz}Z+p(Z)\]</div>
 </p>
-<p>Ahora para simplificar nuestro análisis(solo por el momento) tendremos en cuenta que los agentes no tienen ninguna influencia sobre los precios del mercado, lo cual significa que <span class="math notranslate nohighlight">\(\dfrac{dp(Z)}{dz}=0\)</span>
+<p>Ahora para simplificar nuestro análisis(solo por el momento) tendremos en cuenta que los agentes no tienen ninguna influencia sobre los precios del mercado, lo cual significa que <span class="math notranslate nohighlight">\(\frac{dp(Z)}{dz}=0\)</span>
 por lo tanto <span class="math notranslate nohighlight">\(IM=p(Z)\)</span> así que en el punto donde se maximizan los recursos; <div class="math notranslate nohighlight">
-\[\dfrac{d\pi(Z)}{dZ}=0\]</div>
+\[\frac{d\pi(Z)}{dZ}=0\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[0= IM-CM\]</div>
+\[0=IM-CM\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
 \[IM=CM\]</div>
@@ -524,28 +486,30 @@ por lo tanto <span class="math notranslate nohighlight">\(IM=p(Z)\)</span> así 
 <p>Mas adelante analizaremos que pasa cuando el <span class="math notranslate nohighlight">\(IM\)</span> no es igual a precio de mercado para esto veremos el concepto de elasticidad de demanda.</p>
 <p>La elasticidad de demanda es el cambio en las cantidades de producto adquiridas con respecto a los cambios en los precios, esto en términos porcentuales es decir;</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{dlnZ}{dlnp}=\eta\]</div>
+\[\frac{dlnZ}{dlnp}=\eta\]</div>
 </p>
 <p>Se asume que <span class="math notranslate nohighlight">\(\eta\)</span> es negativa como se enunció anteriormente. Un incremento de los precios en $ 1\%$  disminuye la demanda en <span class="math notranslate nohighlight">\(\eta \%.\)</span></p>
 <p>Aceptaremos que la función tiene inversa, por el teorema de la función inversa.</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{dlnp}{dlnz}=\dfrac{1}{\eta}\]</div>
+\[\frac{dlnp}{dlnz}=\frac{1}{\eta}\]</div>
 </p>
 <p>Ahora reescribiremos el ingreso marginal, para utilizar el concepto de demanda que será de elasticidad en términos prácticos suponga que los precios incrementan, por lo tanto se esperaría tener mayor ingreso por cada unidad vendida. Sin embargo,  no es del todo cierta esta afirmación depende del grado de sustitubilidad de nuestro producto entre otros factores que nos determinaran el grado de elasticidad de este, es decir;</p>
 <p><div class="math notranslate nohighlight">
-\[IM= \dfrac{dp(Z)}{dz}Z+p(Z)= p(Z)\left(\dfrac{dp(Z)}{dZ}\dfrac{Z}{p(Z)}+1\right)\]</div>
+\[IM= \frac{dp(Z)}{dz}Z+p(Z)= p(Z)\left(\frac{dp(Z)}{dZ}\frac{Z}{p(Z)}+1\right)\]</div>
 </p>
 <p>Utilizando el concepto de elasticidad diremos que;</p>
 <p><div class="math notranslate nohighlight">
-\[IM=p(Z)\left(1-\dfrac{1}{\abs{\eta}}\right)\]</div>
+\[IM=p(Z)\left(1-\frac{1}{\abs{\eta}}\right)\]</div>
 </p>
 <p>cuando <span class="math notranslate nohighlight">\(\eta\)</span> tiende a infinito significa que nuestro ingreso marginal debe ser igual al precio de mercado, en el caso contrario cuando la elasticidad tiene de cero tendremos un ingreso marginal inferior al precio de mercado.</p>
 <p>para ilustrar la importancia en la relación supongamos que <span class="math notranslate nohighlight">\(\eta=1\)</span> esto implica que un aumento de los precios en $ 1 \% $ reducirá las cantidades vendidas en la misma proporción quiere decir que nuestro ingreso adicional será nulo, puesto que la perdida de las ventas serán compensadas con los incrementos en el precio.</p>
 <p>Una importante implicación empírica de la ecuación anterior es que;</p>
-<p>$$ dfrac{IM}{p}=left(1-dfrac{1}{abs{eta}}right)$$</p>
+<p><div class="math notranslate nohighlight">
+\[\frac{IM}{p}=\left(1-\frac{1}{\abs{\eta}}\right)\]</div>
+</p>
 <p>ahora si tenemos en cuenta que en una situación de competencia perfecta <span class="math notranslate nohighlight">\(IM=CM\)</span></p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{IM-p}{p}=\dfrac{-1}{\abs{\eta}} = \dfrac{p-CM}{p}=\dfrac{1}{\abs{\eta}}\]</div>
+\[\frac{IM-p}{p}=\frac{-1}{\abs{\eta}} = \frac{p-CM}{p}=\frac{1}{\abs{\eta}}\]</div>
 </p>
 <p>como se observa la capacidad de establecer un precio por encima del costo marginal es inversamente proporcional a la elasticidad de demanda de dicho bien, este se denomina como índice de lerner y es utilizado para medir el poder de monopolio de una empresa. pues cada vez que la elasticidad tiende a infinito el costo marginal tiende al precio de mercado y por lo tanto no existe poder de monopolio.</p>
 <p>es también posible ver que el precio optimo depende del costo marginal y la elasticidad de demanda.</p>
@@ -555,47 +519,51 @@ por lo tanto <span class="math notranslate nohighlight">\(IM=p(Z)\)</span> así 
 \[\pi(Z)=\sum_{i}^{n}I(z_{i}) + CT(Z)\]</div>
 
 <div class="math notranslate nohighlight">
-\[\dfrac{\partial \pi(Z)}{\partial z_{i}}=IM_{i}+CM=0\]</div>
+\[\frac{\partial \pi(Z)}{\partial z_{i}}=IM_{i}+CM=0\]</div>
 
 <div class="math notranslate nohighlight">
 \[IM_{i}=IM_{i+1}=....=IM_{i+k}=CM\]</div>
 </p>
 <p>Los ingresos marginales obtenidos por cada uno de los productos en los <span class="math notranslate nohighlight">\((n)\)</span> mercados deben ser iguales puesto que si no fuera cierto podríamos vender una cantidad más en cualquier de los mercados más atractivos dado que el costo marginal es igual para cada uno.</p>
 <p><div class="math notranslate nohighlight">
-\[IM_{i}=p_{i}\left(1-\dfrac{1}{\abs{\eta_{i}}}\right)= p_{i+1}\left(1-\dfrac{1}{\abs{\eta_{i+1}}}\right) =  ... = p_{i+k}\left(1-\dfrac{1}{\abs{\eta_{i+k}}}\right) = IM_{i+k} \]</div>
+\[IM_{i}=p_{i}\left(1-\frac{1}{\abs{\eta_{i}}}\right)= p_{i+1}\left(1-\frac{1}{\abs{\eta_{i+1}}}\right) =  ... = p_{i+k}\left(1-\frac{1}{\abs{\eta_{i+k}}}\right) = IM_{i+k} \]</div>
 </p>
 <p>Así debemos definir para todos los <span class="math notranslate nohighlight">\((n)\)</span> artículos</p>
 <p>supongamos en el caso particular que tenemos dos mercados para brindar el mismo producto, pero el grado de sustitubilidad difiere entre ellos, por lo tanto sus elasticidades también así tenemos para el primer mercado <span class="math notranslate nohighlight">\(\eta_{1}\)</span> y para el segundo mercado <span class="math notranslate nohighlight">\(\eta_{2}\)</span>;</p>
 <p><div class="math notranslate nohighlight">
-\[p_{1}\left(1-\dfrac{1}{\abs{\eta_{1}}}\right) =p_{2}\left(1-\dfrac{1}{\abs{\eta_{2}}}\right)\]</div>
+\[p_{1}\left(1-\frac{1}{\abs{\eta_{1}}}\right) =p_{2}\left(1-\frac{1}{\abs{\eta_{2}}}\right)\]</div>
 </p>
 <p>observe que los precios</p>
-<p>$$ dfrac{p_{1}}{p_{2}} = left( dfrac {1-dfrac {1} {abs {eta_{2}} }} { 1 -dfrac {1} { abs { eta_{1}}}}right)   $$</p>
-<p>si <span class="math notranslate nohighlight">\(\eta_{1} &gt; \eta_{2}\)</span> entonces la razón de los precios $ \dfrac{p_{1}}{p_{2}}&lt; 1$ lo cual implica que <span class="math notranslate nohighlight">\(p_{1}&lt;p_{2}\)</span>  y para el caso contrario cuando cuando <span class="math notranslate nohighlight">\(\eta_{1} &lt; \eta_{2}\)</span> entonces <span class="math notranslate nohighlight">\(\dfrac{p_{1}}{p_{2}}&gt;1 \)</span> <span class="math notranslate nohighlight">\(p_{1}&gt;p_{2}\)</span> por lo tanto a mayor elasticidad menor precio lo cual esta acorde con la capacidad es consistente con el indice de Lerner.</p>
-<p>\</p>
+<p><div class="math notranslate nohighlight">
+\[\frac{p_{1}}{p_{2}} = \left( \frac {1-\frac {1} {\abs {\eta_{2}} }} { 1 -\frac {1} { \abs { \eta_{1}}}}\right)\]</div>
+</p>
+<p>si <span class="math notranslate nohighlight">\(\eta_{1} &gt; \eta_{2}\)</span> entonces la razón de los precios $ \frac{p_{1}}{p_{2}}&lt; 1$ lo cual implica que <span class="math notranslate nohighlight">\(p_{1}&lt;p_{2}\)</span>  y para el caso contrario cuando cuando <span class="math notranslate nohighlight">\(\eta_{1} &lt; \eta_{2}\)</span> entonces <span class="math notranslate nohighlight">\(\frac{p_{1}}{p_{2}}&gt;1 \)</span> <span class="math notranslate nohighlight">\(p_{1}&gt;p_{2}\)</span> por lo tanto a mayor elasticidad menor precio lo cual esta acorde con la capacidad es consistente con el indice de Lerner.</p>
 <p>Otro concepto importante en el análisis económico y en especial en lo que concierne al análisis empírico es la elasticidad del ingreso, que permite medir la sensibilidad de los cambios en las cantidades demandadas con respecto a los cambios en los ingresos, en el modelo anterior  del multiplicador lagrangeano  aceptamos que se maximizaba la utilidad gastando todo el ingreso, esto implica que el gasto también lo hará en la misma medida; un incremento en el ingreso de <span class="math notranslate nohighlight">\(\iota\)</span> \% también incrementará el consumo en esa misma cantidad <span class="math notranslate nohighlight">\(dG/dI=1\)</span>;</p>
 <p><div class="math notranslate nohighlight">
-\[1 = \sum p_{i}(\dfrac{dx_{i}}{dI})\]</div>
+\[1 = \sum p_{i}(\frac{dx_{i}}{dI})\]</div>
 
-si multiplicamos cada término de la sumatoria por <span class="math notranslate nohighlight">\(\dfrac{I}{I}\)</span> y <span class="math notranslate nohighlight">\(\dfrac{x_{i}}{x_{i}}\)</span> y se organizan los términos de tal manera que <span class="math notranslate nohighlight">\(\dfrac{p_{i}x_{i}}{I}\)</span></p>
-<p>$$ sum dfrac{p_{i}x_{i}}{I} dfrac{dx_{i}}{dI} dfrac{I}{x_{i}}$$</p>
+si multiplicamos cada término de la sumatoria por <span class="math notranslate nohighlight">\(\frac{I}{I}\)</span> y <span class="math notranslate nohighlight">\(\frac{x_{i}}{x_{i}}\)</span> y se organizan los términos de tal manera que <span class="math notranslate nohighlight">\(\frac{p_{i}x_{i}}{I}\)</span></p>
+<p><div class="math notranslate nohighlight">
+\[\sum \frac{p_{i}x_{i}}{I} \frac{dx_{i}}{dI} \frac{I}{x_{i}}\]</div>
+</p>
 <p>obtenemos la proporción del ingreso  gastado en el bien <span class="math notranslate nohighlight">\(x_{i}\)</span> denominado <span class="math notranslate nohighlight">\(\omega_{i}\)</span> y la elasticidad ingreso $ \varepsilon_{i}$ de tal bien en cuestión esto quiere decir que</p>
-<p>$$ sum omega_{i} varepsilon_{i}=1 $$  que deben existir bienes inferiores,  normales y superiores; cuya demanda aumenta cuando aumenta el ingreso, disminuye o se mantienen constantes.</p>
+<p><div class="math notranslate nohighlight">
+\[\sum \omega_{i} \varepsilon_{i}=1 \]</div>
+  que deben existir bienes inferiores,  normales y superiores; cuya demanda aumenta cuando aumenta el ingreso, disminuye o se mantienen constantes.</p>
 <p>En la teoría de la firma como vimos anteriormente el concepto de Ingreso marginal y costo marginal son importantes para obtener el punto donde nuestro productor maximiza su ganancia.  El costo marginal se definió como los cambios en los costos totales debido a los incrementos en la producción, existe una relación ente la marginalidad y el promedio como se verá el siguiente análisis también se aplicó al ingreso marginal;</p>
 <p>el costo total es equivalente al costo unitario o promedio <span class="math notranslate nohighlight">\(w\)</span> por la cantidad total de producción( se comporta siempre así el costo promedio revisar en Krugman para comparar el otro supuesto);</p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{dW(Z)}{dZ}= \dfrac{w(Z).Z}{dZ}\]</div>
+\[\frac{dW(Z)}{dZ}= \frac{w(Z).Z}{dZ}\]</div>
 </p>
-<p>subsubsection{la firma}</p>
 <p>Ya hemos hablado de algunos conceptos microeconomicos abstractos como la elasticidad, y la marginalidad del ingreso y los costos que son estructuras adyacentes a situaciones diarias, ahora entremos un poco mas al campo del análisis de la firma, advirtiendo  de antemano que el análisis del consumidor no cambia absolutamente en nada sustancial (son prácticamente lo mismo en términos del análisis), por lo tanto será muy fácil para el lector introducirse en este cuando se ha abordado el análisis de la empresa.</p>
 <p>dada una función de producción
-<span class="math notranslate nohighlight">\(Z=f(x_1,x_2,x_3,...,x_n)\)</span>, definimos los cambios en la producción cuando aumentamos la cantidad de un factor productivo, manteniendo a los demás factores constantes, esto es equivalente a la definición de la derivada parcial, expuesta con anterioridad, es decir que el \textbf{producto marginal} <span class="math notranslate nohighlight">\(PMx_{i}\)</span> del factor <span class="math notranslate nohighlight">\(xi\)</span> es la derivada parcial de la función de producción con respecto al factor <span class="math notranslate nohighlight">\(x_{i}\)</span>.</p>
+<span class="math notranslate nohighlight">\(Z=f(x_1,x_2,x_3,...,x_n)\)</span>, definimos los cambios en la producción cuando aumentamos la cantidad de un factor productivo, manteniendo a los demás factores constantes, esto es equivalente a la definición de la derivada parcial, expuesta con anterioridad, es decir que el producto marginal <span class="math notranslate nohighlight">\(PMx_{i}\)</span> del factor <span class="math notranslate nohighlight">\(xi\)</span> es la derivada parcial de la función de producción con respecto al factor <span class="math notranslate nohighlight">\(x_{i}\)</span>.</p>
 <p><div class="math notranslate nohighlight">
 \[\frac{\partial Z}{\partial x_{i}}= PMx_{i}\]</div>
 </p>
 <p>dado esto nos podemos preguntar entonces, como cambia la producción total cuando aumentamos los factores productivos, para este caso utilizamos el concepto de diferencial total;</p>
 <p><div class="math notranslate nohighlight">
-\[dZ= \dfrac{\partial Z}{ \partial x_{i}} dx_{i} + \dfrac{\partial Z}{ \partial x_{i+1}} dx_{i+1} +...+\dfrac{\partial Z}{ \partial x_{n-1}} dx_{n-1} +\dfrac{\partial Z}{ \partial x_{n}} dx_{n}\]</div>
+\[dZ= \frac{\partial Z}{ \partial x_{i}} dx_{i} + \frac{\partial Z}{ \partial x_{i+1}} dx_{i+1} +...+\frac{\partial Z}{ \partial x_{n-1}} dx_{n-1} +\frac{\partial Z}{ \partial x_{n}} dx_{n}\]</div>
 </p>
 <p>que lo podemos reescribir de la siguiente manera;</p>
 <p><div class="math notranslate nohighlight">
@@ -608,88 +576,82 @@ si multiplicamos cada término de la sumatoria por <span class="math notranslate
 \[\sum PMx_{i}dx_{i}=0\]</div>
 </p>
 <p>por lo tanto haciendo las operaciones algebraicas, tenemos que;</p>
-<p>$$  TSF= (-1) dfrac{PMx_{i}}{PMx_{i+1}}=dfrac{dx_{i+1}}{dx_{i}}$$</p>
+<p><div class="math notranslate nohighlight">
+\[TSF= (-1) \frac{PMx_{i}}{PMx_{i+1}}=\frac{dx_{i+1}}{dx_{i}}\]</div>
+</p>
 <p>supongamos que para un nivel determinado de producción, el producto marginal del factor <span class="math notranslate nohighlight">\(x_{i}\)</span> es el doble del del factor <span class="math notranslate nohighlight">\(x_{i+1}\)</span> si quisiéramos mantener constante la producción, debemos  sustituir los factores, pues a menos que se especifique otra cosa ambos productos marginales son positivos. se necesita la sustitución por que es más barato por ejemplo, entonces nuestra tecnología de producción nos indicaría que debemos reducir el uso de dos unidades del factor <span class="math notranslate nohighlight">\(x_{i+1}\)</span> para aumentar en una unidad del uso de <span class="math notranslate nohighlight">\(x_{i}\)</span>.</p>
 <p>el producto marginal está relacionado también con un concepto  que usualmente es útil en el análisis empírico; el de producto promedio del factor <span class="math notranslate nohighlight">\(x_{i}\)</span>.</p>
 <p><div class="math notranslate nohighlight">
-\[PMDx_{i}= \dfrac{Z}{x_{i}}\]</div>
+\[PMDx_{i}= \frac{Z}{x_{i}}\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial PMDx_{i}}{\partial x_{i}}=0\]</div>
+\[\frac{\partial PMDx_{i}}{\partial x_{i}}=0\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial PMDx_{i}}{\partial x_{i}} = \dfrac{PMx_{i}x_{i}-Z}{x_{i}^{2}} = x_{i}(PM_{i}-PMDx_{i})=0 \therefore PMx_{i}=PMDx_{i}\]</div>
+\[\frac{\partial PMDx_{i}}{\partial x_{i}} = \frac{PMx_{i}x_{i}-Z}{x_{i}^{2}} = x_{i}(PM_{i}-PMDx_{i})=0 \therefore PMx_{i}=PMDx_{i}\]</div>
 </p>
 <p>esto quiere decir que cuando el producto promedio es el máximo, en ese punto es igual al producto marginal.</p>
 <p>decíamos anteriormente que <span class="math notranslate nohighlight">\(I= p(Z).Z\)</span>, en efecto cuando los mercados son competitivos podríamos suponer que <span class="math notranslate nohighlight">\(IM=p\)</span> ahora pensemos en el caso particular donde <span class="math notranslate nohighlight">\(I=p(Z).f(x_1,x_2,x_3,...,x_n)\)</span></p>
 <p>simplifiquemos y supongamos que el precio es de mercado,</p>
 <p><div class="math notranslate nohighlight">
 \[I=p.f(x_1,x_2,x_3,...,x_n)\]</div>
-
-<div class="math notranslate nohighlight">
-\[\dfrac{\partial I}{\partial x_{i}}= p(PMx_{i})\]</div>
 </p>
-<p>subsection{Crecimiento económico}</p>
-<p>\subsubsection{La función neoclásica}
-La función de producción Cobb-Douglas es simplemente el caso especial cuando <span class="math notranslate nohighlight">\(i=2\)</span> de la siguiente función;</p>
 <p><div class="math notranslate nohighlight">
-\[\prod_{i=1}^n x_i^{\alpha_i}  \]</div>
- [1]</p>
+\[\frac{\partial I}{\partial x_{i}}= p(PMx_{i})\]</div>
+</p>
+</section>
+<section id="neoclassic-function">
+<h3>Neoclassic Function<a class="headerlink" href="#neoclassic-function" title="Link to this heading"></a></h3>
+<p>La función de producción Cobb-Douglas es simplemente el caso especial cuando <span class="math notranslate nohighlight">\(i=2\)</span> de la siguiente función;</p>
+<p><div class="math notranslate nohighlight">
+\[\prod_{i=1}^n x_i^{\alpha_i}\]</div>
+</p>
 <p>Para cualquier combinación de insumos, podemos demostrar que [1] presenta rendimientos constantes a escala (si se quiere) siempre y cuando</p>
 <blockquote>
-<div><p>$$ lambda^{sum_{i=1}^nalpha{_i}}=lambda $$</p>
+<div><p><div class="math notranslate nohighlight">
+\[\lambda^{\sum_{i=1}^n\alpha{_i}}=\lambda \]</div>
+</p>
 </div></blockquote>
-<p>puesto que;</p>
-<p><div class="math notranslate nohighlight">
+<p>puesto que;
+<div class="math notranslate nohighlight">
 \[\prod_{i=1}^n \left(\lambda x_i \right)^{\alpha_i}=\lambda^{{\sum_{i=1}^n\alpha_i}}\prod_{i=1}^n x_i^{\alpha_i}\]</div>
 </p>
-<blockquote>
-<div><p>En otras palabras que la suma de las participaciones de los factores productivos en el ingreso sea la unidad <span class="math notranslate nohighlight">\(\sum_{i=1}^n\alpha{_i}=1\)</span></p>
-<p>al suponer esto estaríamos condicionando a que la economía es lo bastante grande para acabar con los rendimientos crecientes de escala Romer(xxx).</p>
-</div></blockquote>
-<p>\</p>
-<blockquote>
-<div><p>por lo tanto si se observa el punto, para determinar el grado de homogeneidad, es suficiente sumar los coeficientes de participación.</p>
-</div></blockquote>
-<p>para el caso concreto cuando los exponentes son <span class="math notranslate nohighlight">\(\alpha\)</span> y <span class="math notranslate nohighlight">\(1-\alpha\)</span> sin importar el valor <span class="math notranslate nohighlight">\(\alpha\)</span> será de grado 1.</p>
-<p>Cuando la función de producción es homogénea de grado <span class="math notranslate nohighlight">\(\phi\)</span>, podemos considerarla de manera intensiva esto quiere decir que si</p>
+<p>En otras palabras que la suma de las participaciones de los factores productivos en el ingreso sea la unidad <span class="math notranslate nohighlight">\(\sum_{i=1}^n\alpha{_i}=1\)</span>
+al suponer esto estaríamos condicionando a que la economía es lo bastante grande para acabar con los rendimientos crecientes de escala Romer(xxx).
+por lo tanto si se observa el punto, para determinar el grado de homogeneidad, es suficiente sumar los coeficientes de participación.
+para el caso concreto cuando los exponentes son <span class="math notranslate nohighlight">\(\alpha\)</span> y <span class="math notranslate nohighlight">\(1-\alpha\)</span> sin importar el valor <span class="math notranslate nohighlight">\(\alpha\)</span> será de grado 1.
+cuando la función de producción es homogénea de grado <span class="math notranslate nohighlight">\(\phi\)</span>, podemos considerarla de manera intensiva esto quiere decir que si</p>
 <p><div class="math notranslate nohighlight">
-\[\begin{split}Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)\\ =
-\lambda^{\phi}f(x_1,x_2,x_3,...,x_n) \end{split}\]</div>
+\[\begin{split}Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)\\ = \lambda^{\phi}f(x_1,x_2,x_3,...,x_n)\end{split}\]</div>
 </p>
 <p>así que queremos expresarla de manera intensiva diremos que <span class="math notranslate nohighlight">\(\lambda=\frac{1}{x_{i}}\)</span>
 y obtenemos que;</p>
 <p><div class="math notranslate nohighlight">
-\[Z=f( \dfrac{x_1}{x_i},\dfrac{x_2}{x_i},\dfrac{x_3}{x_i},..1..,\dfrac{x_n}{x_i}) =
-\dfrac{1}{x_i^{\phi}}f(x_1,x_2,x_3,...,x_n) \]</div>
+\[Z=f( \frac{x_1}{x_i},\frac{x_2}{x_i},\frac{x_3}{x_i},..1..,\frac{x_n}{x_i}) =\frac{1}{x_i^{\phi}}f(x_1,x_2,x_3,...,x_n)\]</div>
 </p>
 <p>observe que el 1 de la función quiere decir que hemos escogido un insumo arbitrario.</p>
-<p><span class="math notranslate nohighlight">\(Z = f(x_1,x_2,x_3,...,x_n) =  x_i^\phi f( \dfrac{x_1}{x_i},\dfrac{x_2}{x_i},\dfrac{x_3}{x_i},..1..,\dfrac{x_n}{x_i})\)</span></p>
+<p><span class="math notranslate nohighlight">\(Z = f(x_1,x_2,x_3,...,x_n) =  x_i^\phi f( \frac{x_1}{x_i},\frac{x_2}{x_i},\frac{x_3}{x_i},..1..,\frac{x_n}{x_i})\)</span></p>
 <p>Observe que en los modelos requerimos por lo general que <span class="math notranslate nohighlight">\(\phi=1\)</span> homogenea de grado uno esto implica que</p>
 <p><div class="math notranslate nohighlight">
-\[
-\dfrac{Z}{x_i}=f( \dfrac{x_1}{x_i},\dfrac{x_2}{x_i},\dfrac{x_3}{x_i},..1..,\dfrac{x_n}{x_i})\]</div>
+\[\frac{Z}{x_i}=f( \frac{x_1}{x_i},\frac{x_2}{x_i},\frac{x_3}{x_i},..1..,\frac{x_n}{x_i})\]</div>
 </p>
 <p>para el caso concreto de [1] podemos seleccionar cualquier insumo <span class="math notranslate nohighlight">\(x_j\)</span> y reescribirla como;</p>
 <p><div class="math notranslate nohighlight">
 \[Z=\prod_{i=1}^n \left( \frac{x_i}{x_j}\right)^{\alpha_i} x_j^{\phi}\]</div>
 </p>
 <p>Es útil que el factor que hemos escogido sea la población(cuando decimos que esta es igual a la fuerza laboral) puesto que esto nos determinará una función de producción per cápita, así</p>
-<blockquote>
-<div><p><div class="math notranslate nohighlight">
+<p><div class="math notranslate nohighlight">
 \[z=\prod_{i=1}^n \left( \frac{x_i}{x_j}\right)^{\alpha_i}  =\prod_{i=1}^n k_{i}^{\alpha_i}\]</div>
-  [2]</p>
-</div></blockquote>
+</p>
 <p>donde <span class="math notranslate nohighlight">\(z\)</span> es el producto per cápita y <span class="math notranslate nohighlight">\(k_{i}\)</span> es el argumento o factor productivo per cápita.</p>
 <p>Lo importante a notar ahora de nuestra función de producción per capita es que nos permite estudiar el crecimiento del producto por persona, sin embargo hay otras condiciones que se deben cumplir como las condiciones de INADA.</p>
 <p>si logramos establecer esta relación de nuestra función de producción [1] tal que el producto marginal del factor <span class="math notranslate nohighlight">\(x_{i}\)</span> sea positivo pero decreciente estaremos ante una satisfactoria función de producción denominada neoclásica.</p>
 <p>El producto Marginal;</p>
 <p><div class="math notranslate nohighlight">
 \[PMx_i=(x_i)^{-1}\alpha_i\prod_{i=1}^nx_i^{\alpha_i}\]</div>
-</p>
-<p>Es positivo para todos las cantidades positivas de argumentos(insumos). Sea cual sea el valor de la participación <span class="math notranslate nohighlight">\(\alpha_i\)</span> del factor sera positiva mientras esta también lo sea, esto quiere decir que no será cierta nuestra condición si y solo <span class="math notranslate nohighlight">\(\alpha_{i}=0\)</span>. lo que nos daría una productividad marginal nula.</p>
-<p>El producto Marginal decreciente;</p>
-<p><div class="math notranslate nohighlight">
+ Es positivo para todos las cantidades positivas de argumentos(insumos). Sea cual sea el valor de la participación <span class="math notranslate nohighlight">\(\alpha_i\)</span> del factor sera positiva mientras esta también lo sea, esto quiere decir que no será cierta nuestra condición si y solo <span class="math notranslate nohighlight">\(\alpha_{i}=0\)</span>. lo que nos daría una productividad marginal nula.</p>
+<p>El producto Marginal decreciente;
+<div class="math notranslate nohighlight">
 \[\frac{\partial PMx_i}{\partial x_i}=(x_i)^{-2}\alpha_i(\alpha - 1)\prod_{i=1}^nx_i^{\alpha_i}\]</div>
 
 es negativo para cualquier cantidad positiva de los argumentos, recuerde que se está hablando de una derivada parcial, lo cual implica los rendimientos de un insumo cuando los demás permanecen constantes. Ahora observe que nuestra condición no será cierta si y solo si <span class="math notranslate nohighlight">\(\alpha_i \geq 1\)</span>, lo cual sería un supuesto poco realista puesto que no se daría la famosa premisa de \textit{los rendimientos decrecientes}, seguiríamos obteniendo producto indiscriminadamente o no reduciríamos la producción cuando los factores sobrepasen su eficiencia.</p>
@@ -712,43 +674,228 @@ las dos propiedades se pueden comprobar de ;
 <p><div class="math notranslate nohighlight">
 \[\frac{\partial PMk_i}{\partial k_i}=(x_i)^{-2}\alpha_i(\alpha - 1)\prod_{i=1}^nk_i^{\alpha_i}\]</div>
 </p>
-<p>subsection{Teorema de Euler}</p>
-<p>Existe un teorema muy importante utilizado con frecuencia en economía denominado como el teorema de Euler y es útil para el análisis microeconómico.</p>
-<p>lo primero que debemos entender es que si <span class="math notranslate nohighlight">\(Z=F(x,y)\)</span> es homogenea de grado 1, entonces;</p>
-<p><div class="math notranslate nohighlight">
-\[Z=\dfrac{\partial Z}{\partial x}x + \dfrac{\partial Z}{\partial y}y\]</div>
+</section>
+<section id="euler-theorem">
+<h3>Euler theorem<a class="headerlink" href="#euler-theorem" title="Link to this heading"></a></h3>
+<p>Existe un teorema muy importante utilizado con frecuencia en economía denominado como el teorema de Euler y es útil para el análisis microeconómico.
+lo primero que debemos entender es que si <span class="math notranslate nohighlight">\(Z=F(x,y)\)</span> es homogenea de grado 1, entonces;
+<div class="math notranslate nohighlight">
+\[Z=\frac{\partial Z}{\partial x}x + \frac{\partial Z}{\partial y}y\]</div>
 </p>
-<p>begin{theorem}</p>
-<p>Si <span class="math notranslate nohighlight">\(Z\)</span> es una función de n insumos y homogénea de grado <span class="math notranslate nohighlight">\(\phi\)</span>, entonces <span class="math notranslate nohighlight">\(\dfrac{dZ}{d \lambda}=\phi \lambda ^{\phi -1}Z = \sum_{i=1}^{n} \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}\)</span></p>
-<p>end{theorem}</p>
-<p>se puede llegar a esa igualdad de la siguiente manera;</p>
+<p>Si <span class="math notranslate nohighlight">\(Z\)</span> es una función de n insumos y homogénea de grado <span class="math notranslate nohighlight">\(\phi\)</span>, entonces <span class="math notranslate nohighlight">\(\frac{dZ}{d \lambda}=\phi \lambda ^{\phi -1}Z = \sum_{i=1}^{n} \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}\)</span>
+se puede llegar a esa igualdad de la siguiente manera;</p>
 <p><div class="math notranslate nohighlight">
-\[\begin{split}Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)\\ =
-\lambda^{\phi}f(x_1,x_2,x_3,...,x_n) \end{split}\]</div>
+\[Z=f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n) =\lambda^{\phi}f(x_1,x_2,x_3,...,x_n)\]</div>
 </p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda}=\dfrac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} \dfrac{\partial \lambda x_{i}}{\partial \lambda}=\dfrac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} x_{i} \]</div>
+\[\frac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda}=\frac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} \frac{\partial \lambda x_{i}}{\partial \lambda}=\frac{\partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}{\partial \lambda x_{i}} x_{i} \]</div>
  [6]</p>
-<p>esto se obtiene  del lado derecho como es una igualad debemos derivar al lado izquierdo ,así ;</p>
-<p>$$ dfrac{ partial lambda^{phi}f(x_1,x_2,x_3,…,x_n)}{partial lambda} = phi lambda ^{phi -1 }f(x_1,x_2,x_3,…,x_n)$$ [7]</p>
-<p>igualando [6] y [7] obtenemos;</p>
-<p>$$ dfrac{partial f(lambda x_1,lambda x_2,lambda x_3,…,lambda x_n)}{partial lambda x_{i}} x_{i} = phi lambda ^{phi -1 }f(x_1,x_2,x_3,…,x_n)$$</p>
+<p>esto se obtiene  del lado derecho como es una igualad debemos derivar al lado izquierdo, así;</p>
+<p><div class="math notranslate nohighlight">
+\[\frac{ \partial \lambda^{\phi}f(x_1,x_2,x_3,...,x_n)}{\partial \lambda} = \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)\]</div>
+ [7]
+igualando [6] y [7] obtenemos;</p>
+<p><div class="math notranslate nohighlight">
+\[\frac{ \partial f(\lambda x_1,\lambda x_2,\lambda x_3,...,\lambda x_n)}
+{ \partial \lambda x_{i}} x_{i} = \phi \lambda^{\phi -1 }f(x_1,x_2,x_3,...,x_n)\]</div>
+</p>
 <p>por lo tanto para el diferencial total tenemos que suponiendo que <span class="math notranslate nohighlight">\(\lambda=1\)</span></p>
 <p><div class="math notranslate nohighlight">
-\[\dfrac{dZ}{d \lambda}= \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n}  \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}   \]</div>
+\[\frac{dZ}{d \lambda}= \phi \lambda ^{\phi -1 }f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n}  \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}\]</div>
 </p>
 <p>Suponiendo que la función es homogénea de grado uno (1)</p>
 <p><div class="math notranslate nohighlight">
-\[f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n}  \dfrac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}   \]</div>
+\[f(x_1,x_2,x_3,...,x_n)= \sum_{i=1}^{n} \frac{\partial f(x_1,x_2,x_3,...,x_n)}{\partial x_{i}}x_{i}\]</div>
 </p>
 <p>para dos variables tenemos el resultado enunciado al principio de la sección;</p>
 <p><div class="math notranslate nohighlight">
-\[Z = \dfrac{f(x_{1},x_{2})}{\partial x_{1}}x_{1} + \dfrac{f(x_{1},x_{2})}{\partial x_{2}}x_{2}\]</div>
+\[Z = \frac{f(x_{1},x_{2})}{\partial x_{1}}x_{1} + \frac{f(x_{1},x_{2})}{\partial x_{2}}x_{2}\]</div>
+
+como se quería comprobar.</p>
+</section>
+</section>
+<section id="multiple-equations">
+<h2>Multiple equations<a class="headerlink" href="#multiple-equations" title="Link to this heading"></a></h2>
+<p>a rectangular arrange of elements that could be operate simultaneously.</p>
+<p>there are some basic properties of matrix show aim is simultaneous equations in the form:</p>
+<p><div class="math notranslate nohighlight">
+\[\mathbf{A} \mathbf{x} = c\]</div>
 </p>
-<p>como se quería comprobar.</p>
+<p>matrix and  <span class="math notranslate nohighlight">\(\mathbf{x}\)</span>  is a vector of unknowns, whose finally is get of multiple linear system the constants.</p>
+<blockquote>
+<div><p>$$ a_{11} x + a_{12} x_2  + … + a_{1n-1}x + a_{1n}x = c_{1}$$</p>
+<p><div class="math notranslate nohighlight">
+\[a_{21} x + a_{22} x_2  + ... + a_{2n-1}x + a_{2n}x = c_{2}\]</div>
+
+<div class="math notranslate nohighlight">
+\[...\]</div>
+
+<div class="math notranslate nohighlight">
+\[a_{n1} x + a_{n2} x_2  + ... + a_{n-1n-1}x + a_{n n}x = c_{n}\]</div>
+</p>
+</div></blockquote>
+<p><div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
+a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}
+\end{bmatrix}
+\begin{bmatrix}
+x_1\\x_2\\ \vdots\\x_n
+\end{bmatrix}
+=\begin{bmatrix}
+b_1\\b_2\\ \vdots\\b_n
+\end{bmatrix}
+\end{split}\]</div>
+</p>
+<p>from a <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> square matrix we can uses the concept of determinant to prove if the matrix it is o nor singular.
+This process it is related to a combinatorial problem, think in the solution of a system of <span class="math notranslate nohighlight">\(2*2\)</span></p>
+<p><div class="math notranslate nohighlight">
+\[a_{11} x + a_{12} y = c_{1}\]</div>
+
+<div class="math notranslate nohighlight">
+\[a_{21} x + a_{22} y = c_{2}\]</div>
+</p>
+<p>if we find the solution a these equations in the pair <span class="math notranslate nohighlight">\((x^{*},y^{*}\)</span>), note that this satisfy the above system then a linear combination of them is also a solution.</p>
+<p><div class="math notranslate nohighlight">
+\[a_{11} x^{*} + a_{12} y^{*} - c_{1} +  a_{21} x^{*} + a_{22} y^{*}  - c_{2} = 0\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[c_{1} - c_{1} +  c_{2}  - c_{2}=0\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[k_{1} (0) + k_{2} (0) = 0\]</div>
+
+then we can multiply the system by any constants, and the solution also will be solution of the original system.</p>
+<p>we can multiply the equations by cross numbers thus:</p>
+<blockquote>
+<div><p><div class="math notranslate nohighlight">
+\[a_{22}(a_{11} x + a_{12} y = c_{1})\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[a_{21}(a_{12} x + a_{22} y = c_{2})\]</div>
+</p>
+</div></blockquote>
+<p>and rest one to the another we have:</p>
+<p><div class="math notranslate nohighlight">
+\[a_{22}a_{11}x  - a_{12}a_{21}x = a_{22}c_{1} - a_{12}c_{2}\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[x(a_{22}a_{11} - a_{12}a_{21}) =  a_{22}c_{1} - a_{12}c_{2}\]</div>
+</p>
+<p>where the solution is;</p>
+<p><div class="math notranslate nohighlight">
+\[x^{*} = \frac{ a_{22}c_{1} - a_{12}c_{2} } {a_{22}a_{11} - a_{12}a_{21}}\]</div>
+</p>
+<p>note that if we want eliminate <span class="math notranslate nohighlight">\(x\)</span> to find <span class="math notranslate nohighlight">\(y\)</span>
+it is enough multiply the equations by, <span class="math notranslate nohighlight">\(a_{11}\)</span> and <span class="math notranslate nohighlight">\(a_{12}\)</span>.</p>
+<p>A practical and handy  way  of get the <span class="math notranslate nohighlight">\(det(\mathbf{A})\)</span> it is the laplace exapansion that also will offer us a way to calculate the inverse matrix.
+if we have <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> square matrix a lapace expansion have two important concepto cofactor and lesser principal:</p>
+<p><div class="math notranslate nohighlight">
+\[\begin{split}A =
+\begin{bmatrix}
+a_{11} &amp; a_{12} \\
+a_{21} &amp; a_{22}
+\end{bmatrix}\end{split}\]</div>
+</p>
+<p>the lesser principal of the element <span class="math notranslate nohighlight">\(a_{ij}\)</span> is the submatrix <span class="math notranslate nohighlight">\(\mathbf{M_{ij}}\)</span>  that result of eliminate the <span class="math notranslate nohighlight">\(i-row\)</span> and the <span class="math notranslate nohighlight">\(j-column\)</span>.
+namely by <span class="math notranslate nohighlight">\(a_{22}\)</span>.</p>
+<p><div class="math notranslate nohighlight">
+\[\begin{split}
+A =
+\begin{bmatrix}
+a_{11} &amp; a_{12}  &amp; a_{13}\\
+a_{21} &amp; a_{22}  &amp; a_{23} \\
+a_{31} &amp; a_{32} &amp; a_{33}
+\end{bmatrix}
+\end{split}\]</div>
+</p>
+<p>using the definition of laplace expansion we have,</p>
+<p><div class="math notranslate nohighlight">
+\[det(\mathbf{A}) = a_{11}C_{11} + a_{12}C_{12} + a_{13}C_{13}\]</div>
+</p>
+<p><div class="math notranslate nohighlight">
+\[\begin{split}
+a_{11}
+\begin{vmatrix}
+a_{22} &amp; a_{23} \\
+a_{32} &amp; a_{33}
+\end{vmatrix}
++ a_{12}
+\begin{vmatrix}
+a_{21} &amp; a_{23} \\
+a_{31} &amp; a_{33}
+\end{vmatrix}
++ a_{13}
+\begin{vmatrix}
+a_{21} &amp; a_{22} \\
+a_{31} &amp; a_{32}
+\end{vmatrix}
+\end{split}\]</div>
+</p>
+<p>now, notice the reduction of a determinant, only need calculate the cross product of the determinant of second order.</p>
+<p>a cofactor is defined as:
+<div class="math notranslate nohighlight">
+\[C_{ij} = (-1)^{i+j}M_{ij}\]</div>
+</p>
+<p>then we can define the determinant as:
+<div class="math notranslate nohighlight">
+\[det(\mathbf{A}) = \sum_{i=1}^{n} a_{ij} C_{ij}\]</div>
+</p>
+<p>note that we only need choose a column or row, to expand apply the determinant.</p>
+<p>if we develop a <span class="math notranslate nohighlight">\(det(\mathbf{A})\)</span> using the elements of <span class="math notranslate nohighlight">\(j-th\)</span> row (column) but the cofactors  of a <span class="math notranslate nohighlight">\(k-th\)</span> row (column) then</p>
+<p><div class="math notranslate nohighlight">
+\[det(\mathbf{A}) = 0\]</div>
+</p>
+<p>we need a probe to this;</p>
+<p>this property allow us, find a way to calculate <span class="math notranslate nohighlight">\(A^{-1}\)</span>.</p>
+<p>the matrix <span class="math notranslate nohighlight">\(\mathbf{A}\)</span> its respective cofactor matrix <span class="math notranslate nohighlight">\(C\)</span>, transposing <span class="math notranslate nohighlight">\(C\)</span> we have <span class="math notranslate nohighlight">\(C^{T} = [c_{ji}]\)</span>.
+if we multiply, by dot product we have that  <span class="math notranslate nohighlight">\(AC^{T} = [e_{ij}]= [\sum_{j=1}^{n} a_{ij}c_{ji}]_{n*n}\)</span> however note that this is take the elements in the <span class="math notranslate nohighlight">\(i\)</span> row and cofactors of <span class="math notranslate nohighlight">\(j\)</span> row, however the only the main diagonal match adequately( the index <span class="math notranslate nohighlight">\(ji = ij\)</span>) therefore; <div class="math notranslate nohighlight">
+\[AC^{T} = det(A)I\]</div>
+.</p>
+<p>now we have two important things here, the deduction of <span class="math notranslate nohighlight">\(A^{-1}\)</span> and its uniqueness:
+<span class="math notranslate nohighlight">\(A \frac{C^{T}}{\textbf{det(A)}}= I\)</span> and
+we can see that <span class="math notranslate nohighlight">\(A^{-1}= \frac{C^{T}}{\textbf{det(A)}}\)</span>. In summary, the inverse matrix is the transpose matrix of cofactors this is also named adjunted matrix divided by the determinant of the system.</p>
 </section>
 </section>
-</section>
+<section id="cramer-rule">
+<h1>Cramer rule<a class="headerlink" href="#cramer-rule" title="Link to this heading"></a></h1>
+<p>it is rule is very useful when we are interested in a particular value solution of the system;
+<div class="math notranslate nohighlight">
+\[x^{*} = A^{-1}d\]</div>
+</p>
+<p>then we have
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+A^{-1}d = [e_{ij}] = \begin{bmatrix}
+\frac{\sum d_{i}C_{ji}}{\textbf{det(A)}}
+\end{bmatrix}_{m,1}
+\end{equation}
+\]</div>
+</p>
+<p>Take in mind that the cofactor itself are independent of the arguments  used to expand in the row, for instance if we expand using <span class="math notranslate nohighlight">\(i\)</span> row then the <span class="math notranslate nohighlight">\(C_{ij}\)</span> for all <span class="math notranslate nohighlight">\(j\)</span> are indepent of the <span class="math notranslate nohighlight">\(a_{ij}\)</span> for all <span class="math notranslate nohighlight">\(j\)</span>, therefore we can get the same result to the <span class="math notranslate nohighlight">\(x_{j}\)</span> unknown replacing the <span class="math notranslate nohighlight">\(d\)</span> vector in the <span class="math notranslate nohighlight">\(j\)</span> column of the <span class="math notranslate nohighlight">\(A\)</span> matrix.</p>
+<p>for instance for the first  unknown
+<div class="math notranslate nohighlight">
+\[\begin{split}A_{1}=
+\begin{bmatrix}
+d_{1} &amp; a_{12} &amp; a_{13} &amp; \cdots &amp; a_{1n} \\
+d_{2} &amp;  a_{22} &amp; a_{23} &amp; \cdots &amp; a_{2n} \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots &amp; \vdots\\
+d_{n} &amp; a_{n2} &amp; a_{n3} &amp; \cdots &amp; a_{nn} \\
+\end{bmatrix}
+\end{split}\]</div>
+</p>
+<p>taking the first column expanding we the laplace expression we have that
+<div class="math notranslate nohighlight">
+\[det(A_{1}) = \sum d_{j} C_{j1}\]</div>
+</p>
+<p>in general terms we said that the matrix <span class="math notranslate nohighlight">\(A_{k}\)</span> replace the <span class="math notranslate nohighlight">\(k\)</span> column of <span class="math notranslate nohighlight">\(A\)</span> by the vector of <span class="math notranslate nohighlight">\(d\)</span> and therefore:
+<div class="math notranslate nohighlight">
+\[x^{*}_{k} = \frac{det(A_{k})}{det(A)}\]</div>
+</p>
 </section>
 
 
