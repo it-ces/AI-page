@@ -2,7 +2,7 @@
 Decisions 
 ==============================================================
 
-Take decisions in bussiness frameworks.
+Take decisions in bussiness frameworks, include inventory models, and optimization.
 
 ----------------------------------------------------------------------------------------
 
@@ -19,7 +19,11 @@ Take decisions in bussiness frameworks.
     * - Newsvendor model
       - `Newsvendor <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/modelo_inventario.ipynb>`_
     * - poisson 
-      - `notebook  <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/poisson_mba(ai_page).ipynb>`_
+      - `notebook poisson <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/poisson_mba(ai_page).ipynb>`_
+    * - t-test 
+      - `notebook t-test  <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/t_test_mba_cost_suplier.ipynb>`_
+    * - ANOVA
+      - `notebook ANOVA <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Anova_sales_mba(ai_page).ipynb>`_
     * - Introduction to regression
       - `notebok LR <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Linear_regression_mba(ai_page).ipynb>`_
     * - Regression application
