@@ -1,8 +1,21 @@
 General Path and Tracks
 ++++++++++++++++++++++++++++++++++++++
 
+
+
+
+
  General 16 weeks program...
 =======================
+
+our data
+
+.. image:: ./4geeks.png
+   :align: center
+   :height: 300px
+   :width:  350px
+   :scale: 100 %
+
 
 
 
@@ -25,6 +38,9 @@ Week 1
    * - Day 2
      - Pandas
      - `Slides Pandas <https://github.com/it-ces/PUBLIC-AI/blob/main/PANDAS(talleres-slides)/Pandas_.pdf>`_
+   * - Day 3
+     - Pandas work
+     - `Works <https://github.com/it-ces/Talleres/blob/main/Mortality-rate.pdf>`_
 
 Week 2
 ------
@@ -36,12 +52,15 @@ Week 2
    * - Day
      - Description
      - Material
+   * - Day 1
+     - Calculus 
+     - :doc:`Lecures in maths <../Courses/mathappendix>`
+   * - Day 2
+     - Applications of calculus
+     - `Slides microeconomics <https://github.com/it-ces/PUBLIC-AI/blob/main/MICRO/1.ComputationalEconomics.pdf>`_
    * - Day 3
-     - Practical Pandas 
-     - :doc:`Pandas labs <../Courses/handledata>`
-   * - Day 4
-     - Decision Tree 
-     - `Slides Decision Tree <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Decision-tree-preliminar.pdf>`_
+     - Gradient descent
+     - :doc:`Lecures in maths <../Courses/opto>`
 
 Week 3
 ------
@@ -53,12 +72,16 @@ Week 3
    * - Day
      - Description
      - Material
-   * - Day 5
+   * - Day 1
      - KNN 
      - SLIDES
-   * - Day 6
+   * - Day 2
      - Support Vector Machine
      - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
+   * - Day 3
+     - Support Vector Machine
+     - `Slides SVM <https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf>`_
+
 
 Week 4
 ------
@@ -77,6 +100,96 @@ Week 4
      - Final work
      - Write presentation
 
+
+Week 5
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 7
+     - Analytics workflow  
+     - See material here
+   * - Day 8
+     - Final work
+     - Write presentation
+
+
+Week 6
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 7
+     - Analytics workflow  
+     - See material here
+   * - Day 8
+     - Final work
+     - Write presentation
+
+
+Week 7
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 7
+     - Analytics workflow  
+     - See material here
+   * - Day 8
+     - Final work
+     - Write presentation
+
+
+
+Week 8
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 7
+     - Analytics workflow  
+     - See material here
+   * - Day 8
+     - Final work
+     - Write presentation
+
+
+Week 9
+------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 30 30
+
+   * - Day
+     - Description
+     - Material
+   * - Day 7
+     - Analytics workflow  
+     - See material here
+   * - Day 8
+     - Final work
+     - Write presentation
 
 
 Machine Learning 

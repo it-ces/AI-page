@@ -59,6 +59,8 @@ The General index could be:
    Courses/evolve
    Courses/economics
    Courses/mathappendix
+   Courses/Decisions
+
 ..
    Courses/programming
 ..

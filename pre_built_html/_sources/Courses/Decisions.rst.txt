@@ -1,0 +1,46 @@
+
+Decisions 
+==============================================================
+
+Take decisions in bussiness frameworks.
+
+----------------------------------------------------------------------------------------
+
+.. list-table:: Resources
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Problem
+      - Notebook 
+    * - Binomial  campaing assesment
+      - `notebook binomial <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/binomial_mba(ai_page).ipynb>`_
+    * - Normal inventory
+      - `notebook normal <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/normal_mba(ai_page).ipynb>`_
+    * - Newsvendor model
+      - `Newsvendor <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/modelo_inventario.ipynb>`_
+    * - poisson 
+      - `notebook  <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/poisson_mba(ai_page).ipynb>`_
+    * - Introduction to regression
+      - `notebok LR <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Linear_regression_mba(ai_page).ipynb>`_
+    * - Regression application
+      - application
+    * - Rate of subsistution
+      - explaniation
+    * - Price Discrimination
+      - Notebook 
+    * - Introduction to logistic regression
+      - implementation example
+    * - Assesment of models
+      - notebook 
+    * - Decision tree
+      - implementation
+    * - Survival elements
+      - notebook
+    * - Introduction to optimization
+      - slides
+    * - Pyomo
+      - Excercise
+    * - Pyomo 2 
+      - Excercise
+    
+  

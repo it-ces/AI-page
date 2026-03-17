@@ -1004,6 +1004,9 @@ $$det(A_{1}) = \sum d_{j} C_{j1}$$
 in general terms we said that the matrix $A_{k}$ replace the $k$ column of $A$ by the vector of $d$ and therefore:
 $$x^{*}_{k} = \frac{det(A_{k})}{det(A)}$$
 
+
+
+
 Fourier Transform
 #####################
 
@@ -1011,3 +1014,4 @@ Fourier Transform
 
 Laplace transform
 ####################
+
