@@ -27,6 +27,9 @@ Slides
       - Introduction to the idea of statistical significance
     * - `ANOVA  <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/ANOVA.pdf>`_ 
       - Introduction to analysis of variance
+    * - `Survival Analysis  <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Surival_intro.pdf>`_ 
+      - Introduction to Surival
+
 
 
 Simulations

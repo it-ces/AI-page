@@ -26,12 +26,10 @@ Take decisions in bussiness frameworks, include inventory models, and optimizati
       - `notebook ANOVA <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Anova_sales_mba(ai_page).ipynb>`_
     * - Introduction to regression
       - `notebok LR <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Linear_regression_mba(ai_page).ipynb>`_
-    * - Regression application
-      - application
-    * - Rate of subsistution
-      - explaniation
+    * - Demand 
+      - `Slides demand <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Linear_demand_price.pdf>`_
     * - Price Discrimination
-      - Notebook 
+      - `Notebook demand <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Uber_price_discrimination_regression_mba(ai_page).ipynb>`_
     * - Introduction to logistic regression
       - implementation example
     * - Assesment of models

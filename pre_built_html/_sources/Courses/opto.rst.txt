@@ -23,3 +23,6 @@ Slides
       - `Raphson Newton <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/Numerical%20optimization/RaphsonNewthon(ai_page).ipynb>`_
     * - Lagrange Multiplier (notebook)
       - `Lagrante utility maximization <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/Lagrange/Lagrange(ai-page).ipynb>`_
+    * - Grey Wolf Optimizer (GWO) (slides)
+      - `GWO <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/GWO.pdf>`_
+
