@@ -1,0 +1,21 @@
+
+Technology and information
+==============================================================
+
+Some slides related with database and technologia as git.
+
+   
+Slides
+----------------------------------------------------------------------------------------
+.. list-table:: Notebooks 
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Model
+      - Material
+    * - Terminal
+      - `Slides terminal  <https://github.com/it-ces/PUBLIC-AI/blob/main/tech/terminal.pdf>`_
+    * - Web scrapping
+      - `Slides wb <https://github.com/it-ces/PUBLIC-AI/blob/main/tech/web-scrap.pdf>`_
+
+

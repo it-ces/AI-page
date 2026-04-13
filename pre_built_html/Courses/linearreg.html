@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Machine learning &mdash; Iván Trujillo Abella v3 documentation</title>
+  <title>Linaer regression &mdash; Iván Trujillo Abella v3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
@@ -17,11 +17,13 @@
       <script src="../_static/documentation_options.js?v=cf30803d"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]], "macros": {"abs": ["\\lvert #1 \\rvert", 1]}}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Natural Language Processing" href="NLP.html" />
-    <link rel="prev" title="Analytics" href="analytics.html" /> 
+    <link rel="next" title="Optimization" href="opto.html" />
+    <link rel="prev" title="Probability and statistics" href="probsimul.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -54,18 +56,20 @@
 <li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IIND2107.html">IIND-2107</a></li>
 <li class="toctree-l1"><a class="reference internal" href="timeSeries.html">Time series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeSeries.html#material">Material</a></li>
 <li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="linearreg.html">Linaer regression</a></li>
-<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
-<li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Machine learning</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linaer regression</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#slides">Slides</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#videos">Videos</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#laboratories">Laboratories</a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ML.html">Machine learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NLP.html">Natural Language Processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NLP.html#notebooks">Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NNets.html">Neural Networks</a></li>
@@ -104,9 +108,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Machine learning</li>
+      <li class="breadcrumb-item active">Linaer regression</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Courses/ML.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Courses/linearreg.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -114,16 +118,21 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="machine-learning">
-<h1>Machine learning<a class="headerlink" href="#machine-learning" title="Link to this heading"></a></h1>
-<p>There several algorithms of machine learning,  among them we can
-find Support Vector Machine (SVM), linear regression,
-logistic regression, Decision Trees, Random Forest, Adaboost among another popular
-algorithms.</p>
+  <section id="linaer-regression">
+<h1>Linaer regression<a class="headerlink" href="#linaer-regression" title="Link to this heading"></a></h1>
+<p>In this section, we will review regression from a statistical perspective. For a machine learning perspective, see the machine learning section.</p>
+<p>The main goal is to find the best line that fits the data. For instance, consider the following figures constructed using World Bank data.</p>
+<p><a class="reference internal" href="../_images/gdp-ruralpop.jpg"><img alt="pic1" src="../_images/gdp-ruralpop.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/gdp-co2.jpg"><img alt="pic2" src="../_images/gdp-co2.jpg" style="width: 45%;" /></a></p>
+<p>The problem in each dataset consists of finding a linear approximation <span class="math notranslate nohighlight">\(\hat{y}_{i}\)</span> of the true value <span class="math notranslate nohighlight">\(y_{i}\)</span>, where the error is measured as <span class="math notranslate nohighlight">\(u_{i}^{2} = (y_{i} - \hat{y}_{i})^{2}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\begin{equation}
+    \min_{\beta_{0}, \beta_{1}} \sum u_{i}^{2}
+\end{equation}</div><p><a class="reference internal" href="../_images/gdp-ruralpop-fit.jpg"><img alt="pic3" src="../_images/gdp-ruralpop-fit.jpg" style="width: 45%;" /></a> <a class="reference internal" href="../_images/gdp-co2-fit.jpg"><img alt="pic4" src="../_images/gdp-co2-fit.jpg" style="width: 45%;" /></a></p>
+<p>Here, we see that the values <span class="math notranslate nohighlight">\(\beta_{0}\)</span> and <span class="math notranslate nohighlight">\(\beta_{1}\)</span> that solve the problem can be obtained using two methods: <strong>Maximum Likelihood Estimation</strong> and the <strong>Least Squares Method</strong>. Both methods yield similar results.</p>
 <section id="slides">
 <h2>Slides<a class="headerlink" href="#slides" title="Link to this heading"></a></h2>
-<table class="docutils align-default" id="id1">
-<caption><span class="caption-text">Another resources….</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
+<table class="docutils align-default" id="id2">
+<caption><span class="caption-text">Notebooks</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
 <colgroup>
 <col style="width: 33.3%" />
 <col style="width: 66.7%" />
@@ -134,44 +143,46 @@ algorithms.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Background concepts</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Background-ML.pdf">Slides Background concepts</a></p></td>
+<tr class="row-even"><td><p>Introduction to linear regression</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/linear_reg_stats.pdf">Slides</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Linear regression</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Linear-regression.pdf">Slides Linear regression</a></p></td>
+<tr class="row-odd"><td><p>Linear regression notebook</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Introducci%C3%B3n_a_la_regresi%C3%B3n_lineal_simple_supuestos_(ai_page).ipynb">Notebook lr</a></p></td>
 </tr>
-<tr class="row-even"><td><p>Regularization</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Regularization.pdf">Slides Regularization</a></p></td>
+<tr class="row-even"><td><p>Excercise linear regression</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Introducci%C3%B3n_a_la_reg_m%C3%BAltiple_(ai_page).ipynb">Notebook excercise lr</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Logistic regression</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/LogisticRegression.pdf">Slides logistic regression</a></p></td>
+<tr class="row-odd"><td><p>Introduction to dummy variables</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Dummy-interactions.pdf">Dummy variables slides</a></p></td>
 </tr>
-<tr class="row-even"><td><p>Naive Bayes</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Naive-preliminar.pdf">Slides Naive Bayes</a></p></td>
+<tr class="row-even"><td><p>Multicollinearity</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/multicolinealidad(ai_page).ipynb">Notebook</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>K-Nearest Neighborhoods (KNN)</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/KKN.pdf">Slides KNN</a></p></td>
+<tr class="row-odd"><td><p>Assumptions</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/notes-assumptions-linear-regression.pdf">Slides assumptions</a></p></td>
 </tr>
-<tr class="row-even"><td><p>Neural Networks (NN)</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Neural_NetworksV0.pdf">Slides Neural Networks</a></p></td>
+<tr class="row-even"><td><p>Assumptions</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/multicolinealidad(ai_page).ipynb">Notebook assumptions</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Decision Tree</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Decision-tree-preliminar.pdf">Slides DT</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Support Vector Machine (SVM)</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/Support%20Vector%20Machine/SVM.pdf">Slides SVM</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>Insolvency prediction example</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Pymes%20-%20Insolvencia.pdf">Slides example</a></p></td>
+<tr class="row-odd"><td><p>Especification</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/especificaci%C3%B3n_(ai_page).ipynb">Notebook especification</a></p></td>
 </tr>
 </tbody>
 </table>
+<section id="videos">
+<h3>Videos<a class="headerlink" href="#videos" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=ZM1nhydYUKk&amp;t=1360s">Bivariate - OLS</a></p></li>
+</ul>
+</section>
 <section id="laboratories">
 <h3>Laboratories<a class="headerlink" href="#laboratories" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LogisticRegression_bankruptcy(lab).ipynb">Logistic regression LAB 1</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Introducci%C3%B3n_Problem_OLS.ipynb">Cobb-Douglas production function</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LN_producci%C3%B3n(BIT).ipynb">Cobb-Douglas production function II</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Instrumental%20Variables.ipynb">Instrumental variables</a></p></li>
+<li><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Regularization-linear(ai_page).ipynb">Regularization</a></p></li>
 </ul>
-<p>K-means, PCA, a priori algorithm are in <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">mining</span></code> folder…</p>
 </section>
 </section>
 </section>
@@ -180,8 +191,8 @@ algorithms.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="analytics.html" class="btn btn-neutral float-left" title="Analytics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="NLP.html" class="btn btn-neutral float-right" title="Natural Language Processing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="probsimul.html" class="btn btn-neutral float-left" title="Probability and statistics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="opto.html" class="btn btn-neutral float-right" title="Optimization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

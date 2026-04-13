@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Time series &mdash; Iván Trujillo Abella v3 documentation</title>
+  <title>Technology and information &mdash; Iván Trujillo Abella v3 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="/vagrant/class/_static/css/custom.css" />
@@ -17,13 +17,11 @@
       <script src="../_static/documentation_options.js?v=cf30803d"></script>
       <script src="../_static/doctools.js?v=9bcbadda"></script>
       <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
-      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "displayMath": [["$$", "$$"], ["\\[", "\\]"]], "macros": {"abs": ["\\lvert #1 \\rvert", 1]}}}</script>
-      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Probability and statistics" href="probsimul.html" />
-    <link rel="prev" title="IIND-2107" href="IIND2107.html" /> 
+    <link rel="next" title="Research" href="../Research.html" />
+    <link rel="prev" title="Decisions" href="Decisions.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -55,11 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="programming.html">Introduction to programming</a></li>
 <li class="toctree-l1"><a class="reference internal" href="handledata.html">Handling data with pandas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="IIND2107.html">IIND-2107</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Time series</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#moving-avarage">Moving avarage</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#material">Material</a></li>
+<li class="toctree-l1"><a class="reference internal" href="timeSeries.html">Time series</a></li>
 <li class="toctree-l1"><a class="reference internal" href="probsimul.html">Probability and statistics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linearreg.html">Linaer regression</a></li>
 <li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
@@ -75,7 +69,10 @@
 <li class="toctree-l1"><a class="reference internal" href="mathappendix.html">Mathematical Appendix</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mathappendix.html#cramer-rule">Cramer rule</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Decisions.html">Decisions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tech.html">Technology and information</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Technology and information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#slides">Slides</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Research:</span></p>
 <ul>
@@ -104,9 +101,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Time series</li>
+      <li class="breadcrumb-item active">Technology and information</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Courses/timeSeries.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Courses/tech.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -114,45 +111,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="time-series">
-<h1>Time series<a class="headerlink" href="#time-series" title="Link to this heading"></a></h1>
-<p>This section is very introductory.</p>
-<section id="moving-avarage">
-<h2>Moving avarage<a class="headerlink" href="#moving-avarage" title="Link to this heading"></a></h2>
-<p>Take in mind the simple mean (unweighted).</p>
-<table class="docutils align-default">
-<tbody>
-<tr class="row-odd"><td><p>X</p></td>
-<td><p>X.shift(1)</p></td>
-<td><p>X.shift(2)</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_{1}\)</span></p></td>
-<td><p>NaN</p></td>
-<td><p>NaN</p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(x_{2}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(x_{1}\)</span></p></td>
-<td><p>NaN</p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_{3}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(x_{2}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(x_{1}\)</span></p></td>
-</tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(x_{4}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(x_{3}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(x_{2}\)</span></p></td>
-</tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(x_{5}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(x_{4}\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(x_{3}\)</span></p></td>
-</tr>
-</tbody>
-</table>
-<p>Then you can construct a sum of each column.</p>
-</section>
-</section>
-<section id="material">
-<h1>Material<a class="headerlink" href="#material" title="Link to this heading"></a></h1>
+  <section id="technology-and-information">
+<h1>Technology and information<a class="headerlink" href="#technology-and-information" title="Link to this heading"></a></h1>
+<p>Some slides related with database and technologia as git.</p>
+<section id="slides">
+<h2>Slides<a class="headerlink" href="#slides" title="Link to this heading"></a></h2>
 <table class="docutils align-default" id="id1">
 <caption><span class="caption-text">Notebooks</span><a class="headerlink" href="#id1" title="Link to this table"></a></caption>
 <colgroup>
@@ -165,28 +128,23 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Introduction financial series</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/Introducci%C3%B3n_a_las_series_financieras_return(Ai_page).ipynb">Notebook introduction</a></p></td>
+<tr class="row-even"><td><p>Terminal</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/tech/terminal.pdf">Slides terminal</a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Introduction to decomposition</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/Decomposition_times_series_(ai_page).ipynb">Notebook decomposition</a></p></td>
-</tr>
-<tr class="row-even"><td><p>Introduction to ARIMA</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/ARIMA.ipynb">Notebook intro ARIMA</a></p></td>
-</tr>
-<tr class="row-odd"><td><p>ARIMA excersice</p></td>
-<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/running.ipynb">Notebook excercise</a></p></td>
+<tr class="row-odd"><td><p>Web scrapping</p></td>
+<td><p><a class="reference external" href="https://github.com/it-ces/PUBLIC-AI/blob/main/tech/web-scrap.pdf">Slides wb</a></p></td>
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="IIND2107.html" class="btn btn-neutral float-left" title="IIND-2107" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="probsimul.html" class="btn btn-neutral float-right" title="Probability and statistics" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Decisions.html" class="btn btn-neutral float-left" title="Decisions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Research.html" class="btn btn-neutral float-right" title="Research" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

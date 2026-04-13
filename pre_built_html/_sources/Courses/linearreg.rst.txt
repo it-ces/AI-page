@@ -1,0 +1,76 @@
+Linaer regression
+==============================================================
+
+In this section, we will review regression from a statistical perspective. For a machine learning perspective, see the machine learning section.
+
+
+
+The main goal is to find the best line that fits the data. For instance, consider the following figures constructed using World Bank data.
+
+.. |pic1| image:: /Courses/images/gdp-ruralpop.jpg
+   :width: 45%
+
+.. |pic2| image:: /Courses/images/gdp-co2.jpg
+   :width: 45%
+
+|pic1| |pic2|
+
+The problem in each dataset consists of finding a linear approximation :math:`\hat{y}_{i}` of the true value :math:`y_{i}`, where the error is measured as :math:`u_{i}^{2} = (y_{i} - \hat{y}_{i})^{2}`.
+
+.. math::
+    :nowrap:
+
+    \begin{equation}
+        \min_{\beta_{0}, \beta_{1}} \sum u_{i}^{2}
+    \end{equation}
+
+.. |pic3| image:: /Courses/images/gdp-ruralpop-fit.jpg
+   :width: 45%
+
+.. |pic4| image:: /Courses/images/gdp-co2-fit.jpg
+   :width: 45%
+
+|pic3| |pic4|
+
+Here, we see that the values :math:`\beta_{0}` and :math:`\beta_{1}` that solve the problem can be obtained using two methods: **Maximum Likelihood Estimation** and the **Least Squares Method**. Both methods yield similar results.
+
+
+Slides
+----------------------------------------------------------------------------------------
+
+.. list-table:: Notebooks
+    :widths: 10 20
+    :header-rows: 1
+
+    * - Model
+      - Material
+
+    * - Introduction to linear regression
+      - `Slides <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/linear_reg_stats.pdf>`_
+    * - Linear regression notebook
+      - `Notebook lr <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Introducci%C3%B3n_a_la_regresi%C3%B3n_lineal_simple_supuestos_(ai_page).ipynb>`_
+    * - Excercise linear regression
+      - `Notebook excercise lr <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Introducci%C3%B3n_a_la_reg_m%C3%BAltiple_(ai_page).ipynb>`_
+    * - Introduction to dummy variables
+      - `Dummy variables slides <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/Dummy-interactions.pdf>`_
+    * - Multicollinearity
+      - `Notebook <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/multicolinealidad(ai_page).ipynb>`_
+    * - Assumptions
+      - `Slides assumptions <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/notes-assumptions-linear-regression.pdf>`_
+    * - Assumptions
+      - `Notebook assumptions <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/multicolinealidad(ai_page).ipynb>`_
+    * - Especification
+      - `Notebook especification <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/especificaci%C3%B3n_(ai_page).ipynb>`_
+
+Videos
+***********************************************************
+
+* `Bivariate - OLS <https://www.youtube.com/watch?v=ZM1nhydYUKk&t=1360s>`_
+
+Laboratories
+********************************************************
+
+* `Cobb-Douglas production function <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Introducci%C3%B3n_Problem_OLS.ipynb>`_
+* `Cobb-Douglas production function II <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LN_producci%C3%B3n(BIT).ipynb>`_
+* `Instrumental variables <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Instrumental%20Variables.ipynb>`_
+* `Regularization <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Regularization-linear(ai_page).ipynb>`_

@@ -1,5 +1,11 @@
 Data Analysis project
 =============================
+Hi, I’m an economist with a master’s degree in Artificial Intelligence, with a strong background in statistics, optimization, and machine learning.
+
+I am currently improving educational materials on my platform, *ai-page.readthedocs.io*, where I publish content on probability, statistics, machine learning, microeconomics, and metaheuristics, among other topics.
+
+
+In this web-site include material, for some courses.
 
 Topics 
 =========================
@@ -49,6 +55,7 @@ The General index could be:
    Courses/IIND2107
    Courses/timeSeries
    Courses/probsimul
+   Courses/linearreg
    Courses/opto
    Courses/mining
    Courses/analytics
@@ -60,6 +67,7 @@ The General index could be:
    Courses/economics
    Courses/mathappendix
    Courses/Decisions
+   Courses/tech
 
 ..
    Courses/programming

@@ -6,7 +6,6 @@ data analyisis, please  free feel of coumicate with us, if you have suggestions
 or find mistakes, also if you think that we can add material about some particular topic.
 
 
-
 Iván Andrés Trujillo Abella
 ------------------------------------------------------------------
 .. image:: ./photovancho.jpg
@@ -14,8 +13,18 @@ Iván Andrés Trujillo Abella
    :width:  500px
    :scale: 50 %
 
-Hi, I'm an economist with a master's degree in artificial intelligence, currently working in the financial sector on data-driven problems.
+Hi, I’m an economist with a master’s degree in Artificial Intelligence, with a strong background in statistics, optimization, and machine learning. I am currently studying game theory and agent-based modeling, focusing on applications to industrial and economic problems.
 
+I have experience in the healthcare, education, and financial sectors, particularly in credit risk, where I have developed origination and default prediction models. I have also contributed to projects related to financial inclusion.
+
+During my master’s studies, I worked on training neural networks using evolutionary computation techniques for bankruptcy prediction.
+
+I am currently improving educational materials on my platform, *ai-page.readthedocs.io*, where I publish content on probability, statistics, machine learning, microeconomics, and metaheuristics, among other topics.
+
+**Profiles**
+
+- `GitHub <https://github.com/it-ces>`_
+- `LinkedIn <https://www.linkedin.com/in/iv%C3%A1n-trujillo-abella-1a683419a/>`_
 
 Contact me
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

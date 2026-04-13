@@ -26,3 +26,4 @@ Slides
     * - Grey Wolf Optimizer (GWO) (slides)
       - `GWO <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/GWO.pdf>`_
 
+in this section you find material about numerical, linear and metaheuristics.

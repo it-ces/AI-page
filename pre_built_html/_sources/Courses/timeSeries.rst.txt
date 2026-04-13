@@ -1,6 +1,7 @@
 Time series
 ------------------------------------------------------------------------
 
+This section is very introductory.
 
 
 
@@ -27,3 +28,24 @@ Take in mind the simple mean (unweighted).
 
 Then you can construct a sum of each column.
 
+
+
+Material 
+----------------------------------------------------------------------------------------
+
+.. list-table:: Notebooks
+    :widths: 10 20
+    :header-rows: 1
+
+    * - Model
+      - Material
+
+    * - Introduction financial series
+      - `Notebook introduction <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/Introducci%C3%B3n_a_las_series_financieras_return(Ai_page).ipynb>`_
+    * -  Introduction to decomposition
+      - `Notebook decomposition <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/Decomposition_times_series_(ai_page).ipynb>`_
+    * - Introduction to ARIMA
+      - `Notebook intro ARIMA <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/ARIMA.ipynb>`_
+    * -  ARIMA excersice
+      - `Notebook excercise <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/running.ipynb>`_
+   
