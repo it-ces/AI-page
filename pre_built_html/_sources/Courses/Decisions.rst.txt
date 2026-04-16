@@ -30,12 +30,6 @@ Take decisions in bussiness frameworks, include inventory models, and optimizati
       - `Slides demand <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Linear_demand_price.pdf>`_
     * - Price Discrimination
       - `Notebook demand discriminated <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/Uber_reg_price_discrimination(ai_page).ipynb>`_
-    * - Introduction to logistic regression
-      - implementation example
-    * - Assesment of models
-      - notebook 
-    * - Decision tree
-      - implementation
     * - Survival elements
       - notebook
     * - Introduction to optimization
