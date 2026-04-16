@@ -1,39 +1,55 @@
-Data Analysis project
-=============================
-Hi, I’m an economist with a master’s degree in Artificial Intelligence, with a strong background in statistics, optimization, and machine learning.
+Iván Trujillo Abella
+====================
 
-I am currently improving educational materials on my platform, *ai-page.readthedocs.io*, where I publish content on probability, statistics, machine learning, microeconomics, and metaheuristics, among other topics.
+Economist and M.Sc. in Artificial Intelligence, with a strong background in statistics, optimization, machine learning, and credit risk.
+
+This microsite presents the academic work and teaching methodology of Iván Trujillo Abella, including materials in Python, Stata, and evolutionary algorithms applied to economics, data science, and agent-based modeling.
+
+Website: https://ai-page.readthedocs.io/
 
 
-In this web-site include material, for some courses.
+About this site
+---------------
 
-Topics 
+This platform provides educational content on:
+
+- Probability and statistics  
+- Machine learning  
+- Optimization and metaheuristics  
+- Game theory and Agent-Based models.
+
+Areas of specialization
+-----------------------
+
+- Machine Learning applied to Economics  
+- Metaheuristic Optimization (Genetic Algorithms, Grey Wolf Optimizer, Ant Colony, ...)  
+- Agent-Based Modeling (ABM)  
+- Credit Risk Modeling  
+- Game Theory  
+
+
+Topics
 =========================
-
-
-The General index could be:
 
 * Data mining: 
    * Clustering
    * Apriori
 
 * Machine learning:
-      * Linear Regression
-      * Logistic Regression
-      * Neural Networs
-      * Support Vector Machine
+   * Linear Regression
+   * Logistic Regression
+   * Neural Networks
+   * Support Vector Machine
 
 * Genetic algorithms
 
 * Probability and statistics:
-      * Hypothesis testing
-      * Comparing groups  
+   * Hypothesis testing
+   * Comparing groups  
 
 * Economics:
-      * Microeconomics
-      * Economic Growth
-
-
+   * Microeconomics
+   * Economic Growth
 
 
 .. toctree::
@@ -69,10 +85,6 @@ The General index could be:
    Courses/Decisions
    Courses/tech
 
-..
-   Courses/programming
-..
-
 
 .. toctree::
    :maxdepth: 2
@@ -90,14 +102,9 @@ The General index could be:
    Projects
 
 
-
 .. toctree::
    :maxdepth: 2
    :hidden:
    :caption: Contributors:
 
    info/information
-
-
-
-
