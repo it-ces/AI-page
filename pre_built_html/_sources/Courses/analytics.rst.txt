@@ -501,6 +501,7 @@ EDA laboratories II
 
 
 * `Correlation Matrix <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Correlation_matrix(BIT).ipynb>`_
+* `Mutual Information (MI) <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Correlation_matrix(BIT).ipynb>`_
 * `Normality test <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_population(BIT).ipynb>`_
 * `Contigency Table <https://github.com/it-ces/labHealth/blob/master/Health_Second_Class.ipynb>`_
 

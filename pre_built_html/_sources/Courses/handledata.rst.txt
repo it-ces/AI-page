@@ -28,18 +28,22 @@ problems according to keywords
 Load data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Load a URL and excel file
+#. `load url (video) <https://www.youtube.com/watch?v=yzdhyzRmAB4&t=6s>`_
+#. `load from local (video) <https://www.youtube.com/watch?v=yzdhyzRmAB4&t=6s>`_
+
 
 Change name and drop columns
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. Change name of columns
-#. Drop a column or a set of them
+#. `Change name of columns colab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/change_name_columns(ai_page).ipynb>`_
+
+#. `Create and drop columns <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Restaurants(ai_page)sol.ipynb>`_
+
 
 
 Counting Missing values
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-#. NAN
+#. `Nans colab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Nans(ai_page).ipynb>`_
 
 
 
@@ -151,3 +155,12 @@ Table one
 Visualization 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * `Introduction to matplolib <https://github.com/it-ces/PUBLIC-AI/blob/952e12ad3b9f65ee11717c2974be8c4cf7613bc0/short-labs-pandas/introduction%20to%20matplotlib.ipynb#L10>`_
+
+
+
+
+
+
+Hands-on Pandas workshop 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

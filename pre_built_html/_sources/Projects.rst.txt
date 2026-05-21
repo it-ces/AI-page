@@ -54,3 +54,7 @@ Genetic K-means
 K-means is a greedy algorithm in this repo we will develop the exposed by ...
 
 
+Economic disparity in Colombia
+------------------------------------------------------------------------------------------------------
+
+`streamlit GDP-inequality <https://colombia-inequality-nvdd4pzdnve4deqfjkwppf.streamlit.app/>`_
