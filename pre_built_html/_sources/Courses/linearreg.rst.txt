@@ -74,3 +74,8 @@ Laboratories
 * `Cobb-Douglas production function II <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/LN_producci%C3%B3n(BIT).ipynb>`_
 * `Instrumental variables <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Instrumental%20Variables.ipynb>`_
 * `Regularization <https://github.com/it-ces/PUBLIC-AI/blob/main/REGRESION/LABS/Regularization-linear(ai_page).ipynb>`_
+
+
+Impacto
+-----------------------------------------------------
+* * `Intro diff and diff and PSM <https://github.com/it-ces/PUBLIC-AI/blob/main/DifDif-Propensity%20Score/Untitled.ipynb>`_

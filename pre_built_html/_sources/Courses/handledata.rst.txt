@@ -57,9 +57,13 @@ Filter values
 
 Groupby
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+#. `Bankrupt by sector <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/bankrupt_sector(groupby).ipynb>`_
 #. `Introduction to groupby  <https://github.com/it-ces/PUBLIC-AI/blob/main/PANDAS(talleres-slides)/Labs/GroupBy(ai_page).ipynb>`_
 #. `Excersice using groupby <https://github.com/it-ces/PUBLIC-AI/blob/main/PANDAS(talleres-slides)/Labs/lab-share-market.ipynb>`_
+
+
+Dates
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
@@ -157,10 +161,10 @@ Visualization
 * `Introduction to matplolib <https://github.com/it-ces/PUBLIC-AI/blob/952e12ad3b9f65ee11717c2974be8c4cf7613bc0/short-labs-pandas/introduction%20to%20matplotlib.ipynb#L10>`_
 
 
-
-
-
-
 Hands-on Pandas workshop 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Taller 1 <https://github.com/it-ces/Talleres/blob/main/tallerU1.pdf>`_
+* `Taller 2 <https://github.com/it-ces/Talleres/blob/main/TallerU2.pdf>`_
+* `Taller 3 <https://github.com/it-ces/Talleres/blob/main/TallerU3.pdf>`_
 
