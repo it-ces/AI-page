@@ -64,6 +64,8 @@ Groupby
 
 Dates
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#. `Intro dates <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/dates_(AI_PAGE).ipynb>`_
+#. `Count transactions <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Count_transactions(ai_page).ipynb>`_
 
 
 
@@ -167,4 +169,8 @@ Hands-on Pandas workshop
 * `Taller 1 <https://github.com/it-ces/Talleres/blob/main/tallerU1.pdf>`_
 * `Taller 2 <https://github.com/it-ces/Talleres/blob/main/TallerU2.pdf>`_
 * `Taller 3 <https://github.com/it-ces/Talleres/blob/main/TallerU3.pdf>`_
+* `Taller 4 <https://github.com/it-ces/Talleres/blob/main/work_overdue.pdf>`_
+* `Taller 5 <https://github.com/it-ces/Talleres/blob/main/taller-clothing-store.pdf>`_
+* `Taller 6 <https://github.com/it-ces/Talleres/blob/main/taller-sales-semester.pdf>`_
+
 
