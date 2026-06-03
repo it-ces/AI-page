@@ -174,3 +174,13 @@ Hands-on Pandas workshop
 * `Taller 6 <https://github.com/it-ces/Talleres/blob/main/taller-sales-semester.pdf>`_
 
 
+
+Solutions Pandas workshop 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Taller 1 <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/taller1_sol(ai_pageU).ipynb>`_
+* `Taller 2 <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/taller2_sol(ai_pageU).ipynb>`_
+* `Taller 3 <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/taller3_sol(ai_pageU).ipynb>`_
+* `Taller 4 <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/taller4_sol(ai_pageU).ipynb>`_
+* `Taller 5 <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/taller5_sol(ai_pageU).ipynb>`_
+* `Taller 6 <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/taller6_sol(ai_pageU).ipynb>`_
