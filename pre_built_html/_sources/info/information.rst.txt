@@ -13,18 +13,17 @@ Iván Andrés Trujillo Abella
    :width:  500px
    :scale: 50 %
 
-Hi, I’m an economist with a master’s degree in Artificial Intelligence, with a strong background in statistics, optimization, and machine learning. I am currently studying game theory and agent-based modeling, focusing on applications to industrial and economic problems.
+Hi, I’m an economist with a Master’s degree in Artificial Intelligence and currently pursuing a Master’s degree in Mathematics at the Pontificia Universidad Javeriana.
 
-I have experience in the healthcare, education, and financial sectors, particularly in credit risk, where I have developed origination and default prediction models. I have also contributed to projects related to financial inclusion.
+My professional experience spans the healthcare, education, and financial sectors, with a strong focus on credit risk analytics. I have developed credit origination and default prediction models and contributed to financial inclusion initiatives through data-driven solutions.
 
-During my master’s studies, I worked on training neural networks using evolutionary computation techniques for bankruptcy prediction.
-
-I am currently improving educational materials on my platform, *ai-page.readthedocs.io*, where I publish content on probability, statistics, machine learning, microeconomics, and metaheuristics, among other topics.
+I am passionate about applied mathematics, machine learning, optimization, and quantitative modeling. Through my platform, ai-page.readthedocs.io, I create educational content on probability, statistics, machine learning, microeconomics, metaheuristics, and related fields.
 
 **Profiles**
 
 - `GitHub <https://github.com/it-ces>`_
 - `LinkedIn <https://www.linkedin.com/in/iv%C3%A1n-trujillo-abella-1a683419a/>`_
+- `Google scholar <https://scholar.google.com/citations?user=hOIfXGwAAAAJ&hl=es&oi=ao>`_
 
 Contact me
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -44,6 +44,8 @@ Material
       - `Notebook introduction <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/Introducci%C3%B3n_a_las_series_financieras_return(Ai_page).ipynb>`_
     * -  Introduction to decomposition
       - `Notebook decomposition <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/Decomposition_times_series_(ai_page).ipynb>`_
+    * - Introduction to stationarity 
+      - `Notebook stationarity <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/Stationarity(ai_page).ipynb>`_
     * - Introduction to ARIMA
       - `Notebook intro ARIMA <https://github.com/it-ces/PUBLIC-AI/blob/main/time-serie/ARIMA.ipynb>`_
     * -  ARIMA excersice

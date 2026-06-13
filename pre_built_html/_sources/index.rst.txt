@@ -1,12 +1,11 @@
 Iván Trujillo Abella
 ====================
 
-Economist and M.Sc. in Artificial Intelligence, with a strong background in statistics, optimization, machine learning, and credit risk.
+Economist, M.Sc. in Artificial Intelligence, and currently pursuing an M.Sc. in Mathematics at the Pontificia Universidad Javeriana. His interests include optimization, machine learning, agent-based modeling, game theory, and quantitative methods for decision-making.
 
-This microsite presents the academic work and teaching methodology of Iván Trujillo Abella, including materials in Python, Stata, and evolutionary algorithms applied to economics, data science, and agent-based modeling.
+This microsite presents educational materials, research projects, and teaching resources in statistics, economics, data science, and artificial intelligence, with practical implementations in Python and evolutionary computation.
 
-Website: https://ai-page.readthedocs.io/
-
+Website: ai-page.readthedocs.io
 
 About this site
 ---------------
