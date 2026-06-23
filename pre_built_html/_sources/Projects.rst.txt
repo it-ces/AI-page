@@ -23,6 +23,7 @@ Educational gap
 Ranking of universities
 -----------------------------------------------------------------------------------------------
 
+`Saber Pro 2024 - streamlit <https://education-project-app-ttegjnbwr6s7womwbqewvt.streamlit.app/>`_
 
 
 Gravity model
