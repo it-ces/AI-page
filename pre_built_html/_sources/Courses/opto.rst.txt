@@ -27,3 +27,26 @@ Slides
       - `GWO <https://github.com/it-ces/PUBLIC-AI/blob/main/OPTIMIZATION/GWO.pdf>`_
 
 in this section you find material about numerical, linear and metaheuristics.
+
+
+
+
+
+
+
+
+
+Workshop
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table:: Content
+    :widths: 5  20
+    :header-rows: 1
+
+    * - Material
+      - Description
+    * - `capital allocation <https://github.com/it-ces/Talleres/blob/main/taller_asignaci%C3%B3n_pyomo.pdf>`_
+      - Assignment of capital in bank
+    * -  `delivery problem <https://github.com/it-ces/Talleres/blob/main/delivery_workshop_opta.pdf>`_
+      - uses historical data to allocate the number of deliveries
+
+
