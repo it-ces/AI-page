@@ -1,0 +1,61 @@
+Projects
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Here you find some projects using data managment and machine learning models using public data.
+
+Mortality inequality by tuberculosis
+-------------------------------------------------------
+
+The followint project used information retrieved from
+DANE to study the inequality mortality in Colombia.
+
+The project is hosted in `github <https://github.com/it-ces/ai-page-LABS/tree/main/Mortality>`_
+
+
+Educational gap
+------------------------------------------------------------------------------------------------
+
+
+
+
+
+Ranking of universities
+-----------------------------------------------------------------------------------------------
+
+`Saber Pro 2024 - streamlit <https://education-project-app-ttegjnbwr6s7womwbqewvt.streamlit.app/>`_
+
+
+Gravity model
+-------------------------------------------------------------------------------------------------
+In this module are concatenate four databases to test international hypothesis over international trade.
+
+`Github repo <https://github.com/it-ces/ai-page-LABS/blob/main/Gravity%20-%20model/Gravity_model(ai_page).ipynb>`_
+
+
+TSP using genetic algorithms
+--------------------------------------------------------------------------------------------------
+
+The Travel Salesman Problem (TSP).
+
+
+
+Feature selection
+------------------------------------------------------------------------------------------------
+
+In this repo will be developed an Ant Colony Optimization (ACO) algorithm to develop
+feature selection. 
+
+
+
+
+Genetic K-means 
+---------------------------------------------------------------------------------------------------
+
+K-means is a greedy algorithm in this repo we will develop the exposed by ...
+
+
+Economic disparity in Colombia
+------------------------------------------------------------------------------------------------------
+
+`streamlit GDP-inequality <https://colombia-inequality-nvdd4pzdnve4deqfjkwppf.streamlit.app/>`_

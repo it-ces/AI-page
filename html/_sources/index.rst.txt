@@ -1,0 +1,109 @@
+Iván Trujillo Abella
+====================
+
+Economist, M.Sc. in Artificial Intelligence, and currently pursuing an M.Sc. in Mathematics at the Pontificia Universidad Javeriana. His interests include optimization, machine learning, agent-based modeling, game theory, and quantitative methods for decision-making.
+
+This microsite presents educational materials, research projects, and teaching resources in statistics, economics, data science, and artificial intelligence, with practical implementations in Python and evolutionary computation.
+
+Website: ai-page.readthedocs.io
+
+About this site
+---------------
+
+This platform provides educational content on:
+
+- Probability and statistics  
+- Machine learning  
+- Optimization and metaheuristics  
+- Game theory and Agent-Based models.
+
+Areas of specialization
+-----------------------
+
+- Machine Learning applied to Economics  
+- Metaheuristic Optimization (Genetic Algorithms, Grey Wolf Optimizer, Ant Colony, ...)  
+- Agent-Based Modeling (ABM)  
+- Credit Risk Modeling  
+- Game Theory  
+
+
+Topics
+=========================
+
+* Data mining: 
+   * Clustering
+   * Apriori
+
+* Machine learning:
+   * Linear Regression
+   * Logistic Regression
+   * Neural Networks
+   * Support Vector Machine
+
+* Genetic algorithms
+
+* Probability and statistics:
+   * Hypothesis testing
+   * Comparing groups  
+
+* Economics:
+   * Microeconomics
+   * Economic Growth
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: BIT:
+
+   BIT/generalinfo
+   BIT/tracks
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Courses:
+   
+
+   Courses/programming
+   Courses/handledata
+   Courses/IIND2107
+   Courses/timeSeries
+   Courses/probsimul
+   Courses/linearreg
+   Courses/opto
+   Courses/mining
+   Courses/analytics
+   Courses/ML
+   Courses/NLP
+   Courses/NNets
+   Courses/ineqlab
+   Courses/evolve
+   Courses/economics
+   Courses/mathappendix
+   Courses/Decisions
+   Courses/tech
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Research:
+
+   Research
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Projects:
+
+   Projects
+
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Contributors:
+
+   info/information

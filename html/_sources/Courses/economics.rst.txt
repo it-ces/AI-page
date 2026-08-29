@@ -1,0 +1,27 @@
+
+
+Lectures in Economics
+=======================================================================
+
+
+
+
+Microeconomics
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. note::
+
+    `Click here te see the slides <https://github.com/it-ces/PUBLIC-AI/blob/main/MICRO/1.ComputationalEconomics.pdf>`_
+
+
+
+
+
+Economic Growth
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. note::
+
+    `Click here te see the slides <https://github.com/it-ces/PUBLIC-AI/blob/main/MACRO/introduction%20to%20economic%20growth.pdf>`_
+
+
