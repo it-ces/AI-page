@@ -104,6 +104,8 @@ Workshop
 
     * - Material
       - Description
+    * - `manual review <https://github.com/it-ces/Talleres/blob/main/manual_review.pdf>`_
+      - In this workshop, you must help to determine capacity planning
     * - `transactions <https://github.com/it-ces/Talleres/blob/main/alert_fraud_detection.pdf>`_
       - In this workshop, you must provide statistical information to support a fraud prevention model for financial transactions.
     * -  `fraud times <https://github.com/it-ces/Talleres/blob/main/alert_fraud_operation.pdf>`_
