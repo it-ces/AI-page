@@ -93,3 +93,18 @@ There is a great history behind this simulation:
 This history involves some persons as Savant and Paul erdos.
 
 * `Monty Hall Simulation <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/Monty_hall_Simulation.ipynb>`_ 
+
+
+
+Workshop
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. list-table:: Content
+    :widths: 5  20
+    :header-rows: 1
+
+    * - Material
+      - Description
+    * - `transactions <https://github.com/it-ces/Talleres/blob/main/alert_fraud_detection.pdf>`_
+      - In this workshop, you must provide statistical information to support a fraud prevention model for financial transactions.
+    * -  `fraud times <https://github.com/it-ces/Talleres/blob/main/alert_fraud_operation.pdf>`_
+      - In this workshop, you must provide statistical information to monitor operational pressure caused by fraud-related activity.
