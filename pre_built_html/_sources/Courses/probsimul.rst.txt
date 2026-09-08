@@ -23,9 +23,11 @@ Slides
       - Introduction to normal and binomial distribution, central limit theorem.
     * - `Confidence intervals <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/CI.pdf>`_
       - Confidence interval for mean and proportions
+    * - `Probability distributions and applications <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Distributions_applications.pdf>`_
+      - applications of poisson, exponential, weibull, gamma, binomial negative...
     * - `EDA importance <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/CI.pdf>`_
       - why EDA is so important?
-    * -  `P-value  <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/P-value.pdf>`_   
+    * - `P-value  <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/P-value.pdf>`_   
       - Introduction to the idea of statistical significance
     * - `ANOVA  <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/ANOVA.pdf>`_ 
       - Introduction to analysis of variance
