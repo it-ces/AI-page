@@ -1,0 +1,87 @@
+
+
+Data mining
+======================================================================
+Here we have a lot of information about different topics.
+
+
+Slides
+----------------------------------------------------------------------------------------
+.. list-table:: Data mining.
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Model
+      - Material
+    
+    * - Clustering 
+      - `Slides clustering <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-models/Cluster-slides.pdf>`_
+    * - Association rules (Apriori)
+      - `Slides Apriori algorithm <https://github.com/it-ces/PUBLIC-AI/blob/main/APRIORI/2.%20A%20priori.pdf>`_
+    * - Principal Components Algorithms(PCA)
+      - `Slides PCA <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/PCA_slides.pdf>`_
+
+In this section we will find information about different topics as 
+Association rules, clustering and, reduction of dimensionality.
+
+
+Laboratories
+***************************************************************************
+
+* `PCA - linear regression <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/PCA(ai_page).ipynb>`_
+* `Course of dimensionality simulation <https://github.com/it-ces/PUBLIC-AI/blob/main/PCA/Curse_of_dimensionality_simulation(ai_page).ipynb>`_
+* `Clustering <https://github.com/it-ces/PUBLIC-AI/blob/main/CLUSTER/clustering-K-H-DS(ai-page).ipynb>`_
+
+
+
+
+Apriori algorithm
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We are interested in find out if the products $X$ and $Y$ are sistutes  or complementaries.
+in a database with transactions made it of inovices in a period of time:
+
++----+--------------------+
+| id |      Products      |
++----+--------------------+
+|  1 |  Milk, Bread,...,  |
++----+--------------------+
+|  2 |   Eggs, Coce,...,  |
++----+--------------------+
+|  3 | Milk, Cookies,..., |
++----+--------------------+
+|  . |         ...        |
++----+--------------------+
+|  N |  Oranges, lettuce  |
++----+--------------------+
+
+
+How to known what products will be bought togheter of a total of $N$?
+if we assest each possible combination then will have a computational complexity of 
+
+.. math::
+    :nowrap:
+
+    \begin{equation}
+        3^{N} - 2^{N-1} + 1
+    \end{equation}
+
+Therefore the Apriori algorithm allow us solve this in a more effcient way.
+
+
+Clustering
+----------------------------------------------------------------------------------
+
+The unsupervised learning is a field of learning.
+
+
+K-means
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+.. warning::
+
+    The models based in distance are affected by `curse of dimensionality`
+    to see more information about that please refer to.
+

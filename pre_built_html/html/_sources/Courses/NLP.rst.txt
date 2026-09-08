@@ -1,0 +1,23 @@
+Natural Language Processing
+----------------------------------------------------------
+The text is very important in industrial or financial applications.
+
+Notebooks
+----------------------------------------------------------------------------------------
+.. list-table:: Notebooks NLP
+    :widths: 10  20 
+    :header-rows: 1
+
+    * - Model
+      - Material
+    
+    * - Multinomial bayes spam detector 
+      - `Notebook spam detector <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/MultinomialBayes_classifier(ai_page)last_update.ipynb>`_
+    * - Multinomial bayes lyrics classification 
+      - `Notebook lyrics classification  <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/lyrics_nlp(ai_page).ipynb>`_
+    * - Topic Modelling
+      - `Notebook lyrics topic <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/Topic_modelling_summary(ai_page).ipynb>`_
+    * - Cluster songs
+      - `Notebook cluster text <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/ClusteringText(ai_page).ipynb>`_
+    * - Emoji prediction
+      - `Emoji prediction text <https://github.com/it-ces/PUBLIC-AI/blob/main/NLP/Emoji-prediction(ai-page).ipynb>`_

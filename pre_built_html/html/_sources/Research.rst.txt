@@ -1,0 +1,19 @@
+Research
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+In this section you willd find datasets, .py files and  notebooks to replicate the results.
+
+General
+=======================
+.. list-table:: Projects repositories 
+    :widths: 10  20 12
+    :header-rows: 1
+
+    * - Project
+      - Description
+      - Material
+    * - Information
+      - Genetic Annealing Neural Network to predicty bankruptcy: Colombian case.
+      - `Repository <https://github.com/it-ces/PUJ-GeneticAnnealingNN>`_
+    * - Information
+      - Genetic programming to define Neural Network Architecture
+      - `Repository <https://github.com/it-ces/PUJ-GeneticAnnealingNN>`_
