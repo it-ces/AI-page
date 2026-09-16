@@ -25,7 +25,7 @@ Slides
       - Confidence interval for mean and proportions
     * - `Probability distributions and applications <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Distributions_applications.pdf>`_
       - applications of poisson, exponential, weibull, gamma, binomial negative...
-    * - `EDA importance <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/CI.pdf>`_
+    * - `EDA importance <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/EDA_importance.pdf>`_
       - why EDA is so important?
     * - `P-value  <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/P-value.pdf>`_   
       - Introduction to the idea of statistical significance
@@ -114,5 +114,7 @@ Workshop
       - In this workshop, you must provide statistical information to support a fraud prevention model for financial transactions.
     * -  `fraud times <https://github.com/it-ces/Talleres/blob/main/alert_fraud_operation.pdf>`_
       - In this workshop, you must provide statistical information to monitor operational pressure caused by fraud-related activity.
+    * -  `fraud times <https://github.com/it-ces/Talleres/blob/main/Default_borrower_month.pdf>`_
+      - In this workshop, you must provide statistical information to cover default losses
     * - `number of clients <https://github.com/it-ces/Talleres/blob/main/markov-taller.pdf>`_
       -  In this workshop, you must use a discrete-time Markov chain to estimate the number of clients over a given time horizon.

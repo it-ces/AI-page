@@ -43,4 +43,6 @@ Workshop
       - Assignment of capital in bank
     * -  `delivery problem <https://github.com/it-ces/Talleres/blob/main/delivery_workshop_opta.pdf>`_
       - uses historical data to allocate the number of deliveries
+    * -  `collections problem <https://github.com/it-ces/Talleres/blob/main/Default_in_time.pdf>`_
+      - uses historical data to priorize collections
 
