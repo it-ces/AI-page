@@ -114,7 +114,9 @@ Workshop
       - In this workshop, you must provide statistical information to support a fraud prevention model for financial transactions.
     * -  `fraud times <https://github.com/it-ces/Talleres/blob/main/alert_fraud_operation.pdf>`_
       - In this workshop, you must provide statistical information to monitor operational pressure caused by fraud-related activity.
-    * -  `fraud times <https://github.com/it-ces/Talleres/blob/main/Default_borrower_month.pdf>`_
+    * - `monetary losses <https://github.com/it-ces/Talleres/blob/main/monetary_losses_poisson.pdf>`_   
+      -  In this workshop, you must estimate monetary losses based on the frequency and severity of defaults.  `Colab solution <https://github.com/it-ces/PUBLIC-AI/blob/main/Probability/Simlab/poisson_panel_lgd_ead_monetary_loss(ai_page).ipynb>`_   
+    * - `default losses <https://github.com/it-ces/Talleres/blob/main/Default_borrower_month.pdf>`_
       - In this workshop, you must provide statistical information to cover default losses
     * - `number of clients <https://github.com/it-ces/Talleres/blob/main/markov-taller.pdf>`_
       -  In this workshop, you must use a discrete-time Markov chain to estimate the number of clients over a given time horizon.

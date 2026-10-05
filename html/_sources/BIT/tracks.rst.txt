@@ -211,13 +211,11 @@ Week 10
    * - Day 2
      - Regularized linear regression
      - `colab Regularized lr <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-notebooks/Linear_regression_sklearn_II_(ai_page).ipynb>`_ 
-
    * - Day 3
      - Cross validation
-     - 
-      - `Slides cross val <https://github.com/it-ces/round-2/blob/main/flujo.pdf>`_ 
-      - `Slides cross val <https://github.com/it-ces/round-2/blob/main/flujo.pdf>`_
-Week 11
+     -
+       * `Slides cross val <https://github.com/it-ces/round-2/blob/main/flujo.pdf>`_
+       * `colab lasso-cv <https://github.com/it-ces/PUBLIC-AI/blob/main/ML-notebooks/Linear_regression_sklearn_III_(ai_page)_ipynb.ipynb>`_
 ------------
 
 .. list-table::
