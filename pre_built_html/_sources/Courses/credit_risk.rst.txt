@@ -1,0 +1,4 @@
+Credit Risk
+==============================================================
+
+In this section we are going to see some important topics in credit risk.

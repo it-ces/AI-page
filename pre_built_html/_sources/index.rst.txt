@@ -1,54 +1,25 @@
 Iván Trujillo Abella
 ====================
 
-Economist, M.Sc. in Artificial Intelligence, and currently pursuing an M.Sc. in Mathematics at the Pontificia Universidad Javeriana. His interests include optimization, machine learning, agent-based modeling, game theory, and quantitative methods for decision-making.
+Economist, M.Sc. in Artificial Intelligence, and currently pursuing an M.Sc. in Mathematics at the Pontificia Universidad Javeriana. His interests include optimization, finance,  machine learning and quantitative methods for decision-making.
 
-This microsite presents educational materials, research projects, and teaching resources in statistics, economics, data science, and artificial intelligence, with practical implementations in Python and evolutionary computation.
+**Profiles**
 
-Website: ai-page.readthedocs.io
+- `GitHub <https://github.com/it-ces>`_
+- `LinkedIn <https://www.linkedin.com/in/iv%C3%A1n-trujillo-abella-1a683419a/>`_
 
-About this site
----------------
 
-This platform provides educational content on:
+This microsite presents educational materials, research projects, and teaching resources in optimization,  statistics, finance, economics, data science, and artificial intelligence, with practical implementations in Python.
 
-- Probability and statistics  
-- Machine learning  
-- Optimization and metaheuristics  
-- Game theory and Agent-Based models.
 
 Areas of specialization
 -----------------------
 
-- Machine Learning applied to Economics  
+- Artificial intelligence
 - Metaheuristic Optimization (Genetic Algorithms, Grey Wolf Optimizer, Ant Colony, ...)  
-- Agent-Based Modeling (ABM)  
-- Credit Risk Modeling  
-- Game Theory  
-
-
-Topics
-=========================
-
-* Data mining: 
-   * Clustering
-   * Apriori
-
-* Machine learning:
-   * Linear Regression
-   * Logistic Regression
-   * Neural Networks
-   * Support Vector Machine
-
-* Genetic algorithms
-
-* Probability and statistics:
-   * Hypothesis testing
-   * Comparing groups  
-
-* Economics:
-   * Microeconomics
-   * Economic Growth
+- Financial Optimization
+- Credit Risk Modeling
+- Prescriptive analytics
 
 
 .. toctree::
@@ -74,6 +45,9 @@ Topics
    Courses/opto
    Courses/mining
    Courses/analytics
+   Courses/credit_risk
+   Courses/financialOptimization
+   Courses/portfolio
    Courses/ML
    Courses/NLP
    Courses/NNets
