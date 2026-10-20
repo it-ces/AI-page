@@ -65,6 +65,9 @@
 <li class="toctree-l1"><a class="reference internal" href="opto.html">Optimization</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mining.html">Data mining</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analytics.html">Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credit_risk.html">Credit Risk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="financialOptimization.html">Financial optimization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="portfolio.html">Portfolio Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ML.html">Machine learning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NLP.html">Natural Language Processing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="NLP.html#notebooks">Notebooks</a></li>
@@ -75,6 +78,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#entropy">Entropy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Entropy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#idea">Idea</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#codemaster">codemaster</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#theil-index">Theil index</a></li>
@@ -145,6 +149,22 @@ the public</p>
 </section>
 <section id="entropy">
 <h2>Entropy<a class="headerlink" href="#entropy" title="Link to this heading"></a></h2>
+</section>
+<section id="id1">
+<h2>Entropy<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">entropy</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">vals</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+    <span class="n">acum</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">vals</span><span class="p">:</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="p">(</span><span class="n">array</span> <span class="o">==</span> <span class="n">val</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">/</span> <span class="n">array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">term</span> <span class="o">=</span> <span class="o">-</span><span class="n">p</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+        <span class="n">acum</span> <span class="o">=</span> <span class="n">acum</span> <span class="o">+</span> <span class="n">term</span>
+
+    <span class="k">return</span> <span class="n">acum</span>
+</pre></div>
+</div>
 </section>
 <section id="idea">
 <h2>Idea<a class="headerlink" href="#idea" title="Link to this heading"></a></h2>

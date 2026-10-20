@@ -108,6 +108,8 @@ Workshop
 
     * - Material
       - Description
+    * - `bakery inventory <https://github.com/it-ces/Talleres/blob/main/workshop_bakery.pdf>`_
+      -  In this workshop, using historical data you must provide an estimation of demand.
     * - `manual review <https://github.com/it-ces/Talleres/blob/main/manual_review.pdf>`_
       - In this workshop, you must help to determine capacity planning
     * - `transactions <https://github.com/it-ces/Talleres/blob/main/alert_fraud_detection.pdf>`_

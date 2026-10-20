@@ -24,6 +24,24 @@ Gini index
 
 Entropy
 ====================================
+Entropy
+=======
+
+.. code-block:: python
+
+    def entropy(data):
+        array = np.array(data)
+        vals = set(array)
+        acum = 0
+
+        for val in vals:
+            p = (array == val).sum() / array.shape[0]
+            term = -p * np.log2(p)
+            acum = acum + term
+
+        return acum
+
+        
 Idea
 ============
 Is a concept shanon offert a perspective...
