@@ -22,6 +22,14 @@ Areas of specialization
 - Prescriptive analytics
 
 
+Meet - class
+-------------------------------------------
+
+- `Clase <https://meet.google.com/meet/yvs-imxn-zpk>`_
+
+
+
+
 .. toctree::
    :maxdepth: 2
    :hidden:
