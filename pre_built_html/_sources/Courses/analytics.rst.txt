@@ -454,6 +454,7 @@ Here we find some laboratories to practice.
 * `EDA Categorical <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_population(BIT).ipynb>`_
 * `EDA Numerical <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/EDA_lifeExp_(BIT).ipynb>`_
 * `Relative position <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/Quantile(BIT).ipynb>`_
+* `kurtosis and skewness <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/kurtosis_and_skewness_(ai_page).ipynb>`_
 * `Practical lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/LaboratoryPandas(ONE).ipynb>`_
 * `Matplotlib lab <https://github.com/it-ces/PUBLIC-AI/blob/main/short-labs-pandas/introduction%20to%20matplotlib.ipynb>`_
 * `Credit Card Consumption EDA <https://github.com/it-ces/PUBLIC-AI/blob/main/Analytics/credit_card_EDA_DESCRIPTIVE(ai_page).ipynb>`_
