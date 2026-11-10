@@ -16,7 +16,7 @@ Take decisions in bussiness frameworks, include inventory models, and optimizati
       - `notebook binomial <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/binomial_mba(ai_page).ipynb>`_
     * - Normal inventory
       - `notebook normal <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/normal_mba(ai_page).ipynb>`_
-    * - Newsvendor model
+    * - `Newsvendor (Slides) <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/inventario_newsvendor.pdf>`_
       - `Newsvendor <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/modelo_inventario.ipynb>`_
     * - poisson 
       - `notebook poisson <https://github.com/it-ces/PUBLIC-AI/blob/main/DIAI/poisson_mba(ai_page).ipynb>`_
